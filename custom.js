@@ -5,22 +5,32 @@ $(document).ready(() => {
 $(window).resize(() => {
 	refreshWebsite();
 });
+
 function initWebsite() {
   console.log('Welcome to Softwerkstatt! :)');
+  addTabsEvents();
 }
 
-var aspectRatio = -1;
-var borderWidth = 1920;
-var borderheight = 600;
-
 function refreshWebsite() {
-  var newAspectRatio = $(window).width() / $(window).height();
-  if(aspectRatio != newAspectRatio) {
-    aspectRatio = newAspectRatio;
-    var wantAspectRatio = borderWidth / borderheight;
-    var wantHeight = $(window).width() / wantAspectRatio;
-    $('.border').css('height', wantHeight + 'px');
-    $('.border-container:not(footer) .container').css('padding', wantHeight / 2 + 'px 0');
-    $('footer.border-container .container').css('padding-top', wantHeight / 3 + 'px');
+  const borderWidth = 1920;
+  const borderHeight = 600;
+  const wantAspectRatio = borderWidth / borderHeight;
+  var wantHeight = $(window).width() / wantAspectRatio;
+  $('.border').css('height', wantHeight + 'px');
+  $('.border-container:not(footer) .container').css('padding', wantHeight / 2 + 'px 0');
+  $('footer.border-container .container').css('padding-top', wantHeight / 3 + 'px');
+}
+
+function addTabsEvents() {
+  $('#tab_navi li').on('click', (e) => {
+    var index = $(e.target).index();
+    changeActive('#tab-navi', index)
+    changeActive('#tab-content', index)
+    changeActive('#tab-thumb', index)
+  });
+
+  function changeActive(selector, index) {
+    $(`${selector} li.active`).removeClass('active');
+    $(`${selector} li:nth-child(${index + 1})`).addClass('active');
   }
 }
