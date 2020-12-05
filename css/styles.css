@@ -59,23 +59,23 @@ body {
   #tab-navi ul li:hover {
     border-color: #59dfff;
   }
-  #tab_navi ul li.active {
+  #tab-navi ul li.active {
     border-color: #000;
   }
-#tab_content {
+#tab-content {
 }
-  #tab_content ul li {
+  #tab-content ul li {
     display: none;
   }
-    #tab_content ul li.active {
+    #tab-content ul li.active {
       display: block;
     }
-#tab_thumb {
+#tab-thumb {
 }
-  #tab_thumb ul li {
+  #tab-thumb ul li {
     display: none;
   }
-    #tab_thumb ul li.active {
+    #tab-thumb ul li.active {
       display: block;
     }
 

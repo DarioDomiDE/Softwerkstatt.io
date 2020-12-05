@@ -22,7 +22,7 @@ function refreshWebsite() {
 }
 
 function addTabsEvents() {
-  $('#tab_navi li').on('click', (e) => {
+  $('#tab-navi li').on('click', (e) => {
     var index = $(e.target).index();
     changeActive('#tab-navi', index)
     changeActive('#tab-content', index)
