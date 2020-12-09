@@ -1,0 +1,16 @@
+{
+  "name": "Softwerkstatt",
+  "version": "1.0.0",
+  "description": "Company Website",
+  "scripts": {
+    "start": "light-server -s . -b 127.0.0.1 -p 8080"
+  },
+  "main": "index.html",
+  "repository": "git@github.com:DarioDomiDE/Softwerkstatt.io.git",
+  "author": "Dario D. Müller <moin@softwerkstatt.io>",
+  "license": "MIT",
+  "devDependencies": {
+    "light-server": "^2.9.1"
+  },
+  "dependencies": {}
+}
