@@ -8,7 +8,10 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/reset.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/font.css">
+  <!-- <link rel="stylesheet" href="css/reset.css"> -->
   <link rel="stylesheet" href="css/styles.css">
 
   <title>Softwerkstatt</title>
@@ -19,8 +22,9 @@
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="mx-auto">
-          <iframe width="1000" height="800" src="https://www.youtube.com/embed/XfLcLMgmLs4?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <img class="img-fluid rounded" id="header-image" src="img/header.png" alt="">
+          <!-- <iframe width="1000" height="800" src="https://www.youtube.com/embed/XfLcLMgmLs4?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <img class="img-fluid rounded" id="header-image" src="img/header.png" alt=""> -->
+          <img class="rounded" src="img/header_with_bg.png" alt="">
         </div>
       </div>
     </div>
@@ -31,11 +35,12 @@
     <div class="border border-top"></div>
     <div class="container">
       <div class="row">
-        <div class="col-md-12 mt-5 mb-5 text-white">
-          <h1>"Wir haben eine Vision:</h1>
-          <h2>Unser Handwerk und Ihre Software."</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-          <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>
+        <div class="col-md-12 mt-16 mb-16 text-white">
+          <h1 class="mt-8">„Wir haben eine Vision:<br /><span class="smaller">&nbsp;&nbsp;&nbsp;Unser Handwerk und Ihre Software.“<span></h1>
+          <p class="my-16">Ahoi! Segel setzen! Anker lichten! Auf zu neuen Ufern...<br />
+            Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.<br />
+            Wir sind Macher. Ein Zusammenschluss leidenschaftlicher Softwareentwickler.</p>
+          <a class="btn btn-primary btn-lg mb-16" href="#">UNVERBINDLICH ANFRAGEN &raquo;</a>
         </div>
       </div>
     </div>
@@ -46,7 +51,12 @@
   <div class="bg-white">
     <div class="container">
       <div class="row mt-5 mb-5">
-        <div class="col-md-3" id="tab-navi">
+        <div class="col-md-12 mb-16">
+          <h2>Hier unterstützen wir</h2>
+        </div>
+      </div>
+      <div class="row mt-5 mb-5">
+        <div class="col-md-12 col-xl-3 col-xxl-3" id="tab-navi">
           <ul>
             <li class="active">Digitale Strategie</li>
             <li>Digitalisierung<br />&amp; Industrie 4.0</li>
@@ -54,11 +64,11 @@
             <li>Digitale Transformation</li>
           </ul>
         </div>
-        <div class="col-md-6" id="tab-content">
+        <div class="col-md-8 col-xl-6 col-xxl-6" id="tab-content">
           <ul>
             <li class="active">
-              <h2>What We Do 1</h2>
-              <p>Text 1.. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
+              <h2>Digitale Transformation</h2>
+              <p>Geschäftsmodelle und Branchen verändern sich, werden digital und Arbeitsabläufe effizierter. Als Technologiepartner wissen wir aus der Praxis: Die besten Visionen und Software-Strategien helfen wenig ohne individuelle Lösungen für etablierte Arbeitsabläufe. Dabei bedarf es passgenaue Beratung Umsetzung und Einführung, damit skalierbare Plattform geschaffen werden, die mit dem Ihren Unternehmens Prozessen wachsen können. Wir bieten maßgeschneiderte Software- Lösungen und Automatisierung für unternehmens- kritische Anwendungen. Mit dem Ziel Arbeits- abläufe zu verbessern und Auslastung zu steiern, um nachhaltiges Wachstum Ihrer Abteiligungen und Mitarbeiter zu erreichen.</p>
             </li>
             <li>
               <h2>This is Text 2</h2>
@@ -72,13 +82,9 @@
               <h2>This is Text 4</h2>
               <p>Whatevery 4... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
             </li>
-            <li>
-              <h2>This is Text 5</h2>
-              <p>Whatevery 5... Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias, adipisci nesciunt voluptate. Voluptatum.</p>
-            </li>
           </ul>
         </div>
-        <div class="col-md-3" id="tab-thumb">
+        <div class="col-md-4 col-xl-3 col-xxl-3" id="tab-thumb">
           <ul>
             <li class="active"><img class="img-fluid rounded" src="http://placehold.it/300x500" alt=""></li>
             <li><img class="img-fluid rounded" src="http://placehold.it/300x505" alt=""></li>
@@ -88,16 +94,23 @@
           </ul>
         </div>
       </div>
+      <div class="row mt-5 mb-5 justify-content-end">
+        <div class="col-md-4 mb-16">
+          <a class="btn btn-primary btn-lg" href="#">UNVERBINDLICH ANFRAGEN &raquo;</a>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- Solutions -->
   <div class="bg-light border-container">
+    <div class="border border-top border-gradient"></div>
     <div class="border border-top"></div>
     <div class="container">
       <div class="row">
-        <div class="col-md-12" style="height: 400px;">
+        <div class="col-md-12">
           <h2>How-To</h2>
+          <img src="img/how_to.png" alt="How-To" />
         </div>
       </div>
     </div>
@@ -217,8 +230,8 @@
     <div class="container">
       <div class="row justify-content-around">
         <div class="col-md-3">
-          <h2>Freunde werden?</h2>
-          <p>Wenn wir Ihre Vorstellungen, gemeinsam<br />
+          <h6>Freunde werden?</h6>
+          <p class="small">Wenn wir Ihre Vorstellungen, gemeinsam<br />
             die Welt zu erobern, teilen, dann lass uns<br />
             Freunde werden und kennen lernen.</p>
             <ul>
@@ -227,19 +240,19 @@
             </ul>
         </div>
         <div class="col-md-3">
-          <h2>Sie haben Fragen?</h2>
+          <h6>Sie haben Fragen?</h6>
           <p>Wir haben Antworten! Fragen kostet ja nix.
             Gerne beraten wir Sie unverbindlich bei Ihnen 
             Projekten rund um Digitalisierung.</p>
           <ul>
             <li>Ansprechpartner: Dario D. Müller</li>
-            <li><a href="#">+49 (0) 40 123 456</a></li>
+            <li>+49 (0) 176 209 967 95</li>
             <li><a href="#">moin@softwerkstatt.io</a></li>
             <li>Straße 123, 22525 Hamburg</li>
           </ul>
         </div>
         <div class="col-md-3">
-          <h2>Interesse geweckt?</h2>
+          <h6>Interesse geweckt?</h6>
           <p>Schön, dass wir Ihr Interesse wecken konnten.
             Senden Sie uns doch sehr gerne eine E-Mail
             oder rufen Sie uns an. Wir freuen uns drauf!</p>

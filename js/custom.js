@@ -13,7 +13,7 @@ function initWebsite() {
 
 function refreshWebsite() {
   const borderWidth = 1920;
-  const borderHeight = 600;
+  const borderHeight = 400;
   const wantAspectRatio = borderWidth / borderHeight;
   var wantHeight = $(window).width() / wantAspectRatio;
   $('.border').css('height', wantHeight + 'px');
