@@ -1,5 +1,10 @@
 # softwerkstatt
 
+
+## Requirements 
+
+  * Use nodejs 12.x or 14.x or newer (10.x not working)
+
 ## Project setup
 ```
 yarn install
