@@ -3,14 +3,14 @@
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url('fonts/TCB_____.TTF') format('ttf');
+  src: url('./assets/fonts/TCB_____.TTF') format('ttf');
 }
 @font-face {
   font-family: 'Tw Cen MT';
   font-style: italic;
   font-weight: 600;
   font-display: swap;
-  src: url('fonts/TCBI____.TTF') format('ttf');
+  src: url('./assets/fonts/TCBI____.TTF') format('ttf');
 }
 
 @font-face {
@@ -18,14 +18,14 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('fonts/TCCB____.TTF') format('ttf');
+  src: url('./assets/fonts/TCCB____.TTF') format('ttf');
 }
 @font-face {
   font-family: 'Tw Cen MT';
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: url('fonts/TCCEB.TTF') format('ttf');
+  src: url('./assets/fonts/TCCEB.TTF') format('ttf');
 }
 
 @font-face {
@@ -33,12 +33,12 @@
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: url('fonts/TCM_____.TTF') format('ttf');
+  src: url('./assets/fonts/TCM_____.TTF') format('ttf');
 }
 @font-face {
   font-family: 'Tw Cen MT';
   font-style: italic;
   font-weight: 200;
   font-display: swap;
-  src: url('fonts/TCMI____.TTF') format('ttf');
+  src: url('./assets/fonts/TCMI____.TTF') format('ttf');
 }
