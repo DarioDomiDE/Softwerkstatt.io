@@ -1,29 +1,14 @@
-# softwerkstatt
+# Softwerkstatt Website
 
 
-## Requirements 
+## Setup 
 
   * Use nodejs 12.x or 14.x or newer (10.x not working)
+  * npm i
 
-## Project setup
+### Commands
 ```
-yarn install
+npm run serve
+npm run build
+npm run lint
 ```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
