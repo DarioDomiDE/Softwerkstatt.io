@@ -1,5 +1,6 @@
 <template>
   <Welcome />
+  <Curved />
   <Intro />
   <Services3 />
   <Solutions />
@@ -12,6 +13,7 @@
 
 <script>
 import Welcome from './components/Welcome.vue'
+import Curved from './components/Curved.vue'
 import Intro from './components/Intro.vue'
 import Services3 from './components/Services3.vue'
 import Solutions from './components/Solutions.vue'
@@ -25,6 +27,7 @@ export default {
   name: 'App',
   components: {
     Welcome,
+    Curved,
     Intro,
     Services3,
     Solutions,
@@ -36,3 +39,35 @@ export default {
   }
 }
 </script>
+
+<style>
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 4.8em;
+  line-height: 1.0;
+}
+  h1 span.smaller {
+    font-size: 0.75em;
+  }
+h2 {
+  font-size: 3.8em;
+}
+h3 {
+  /* font-size: 3.8em; */
+}
+h4 {
+  /* font-size: 3.8em; */
+}
+h5 {
+  /* font-size: 3.8em; */
+}
+h6 {
+  font-size: 2.0em;
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+  font-family: 'Tw Cen MT', sans-serif;
+}
+</style>
