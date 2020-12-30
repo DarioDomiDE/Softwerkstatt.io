@@ -1,6 +1,5 @@
 <template>
   <Welcome />
-  <Curved />
   <Intro />
   <Services3 />
   <Solutions />
@@ -13,7 +12,6 @@
 
 <script>
 import Welcome from './components/Welcome.vue'
-import Curved from './components/Curved.vue'
 import Intro from './components/Intro.vue'
 import Services3 from './components/Services3.vue'
 import Solutions from './components/Solutions.vue'
@@ -27,7 +25,6 @@ export default {
   name: 'App',
   components: {
     Welcome,
-    Curved,
     Intro,
     Services3,
     Solutions,

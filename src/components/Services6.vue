@@ -1,5 +1,5 @@
 <template>
-  <section class="h-screen bg-gray-100">
+  <curved class="bg-blue-100">
     <div class="container pt-32 pb-32">
       <div class="">
         <h4>Leistungen</h4>
@@ -34,11 +34,16 @@
         </article>
       </div>
     </div>
-  </section>
+  </curved>
 </template>
 
 <script>
+import Curved from './Curved.vue'
 export default {
+  name: 'Solutions',
+  components: {
+    Curved
+  }
 }
 </script>
 

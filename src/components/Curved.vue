@@ -1,11 +1,10 @@
 <template>
-  <section class="bg-gray-100 myborder-container" v-bind:style="{padding: Math.floor(wantHeight / 2) + 'px 0'}">
+  <section class="h-screen bg-gray-100 myborder-container" v-bind:style="{padding: Math.floor(wantHeight / 2) + 'px 0'}">
     <div class="myborder myborder-top" v-bind:style="{ height: wantHeight + 'px' }"></div>
     <div class="myborder-content">
-      <!-- ToDo insert Content here -->
-      Text<br /><br /><br /><br /><br />Bla<br /><br /><br /><br /><br />Blubb
+      <slot>Content here</slot>
     </div>
-    <div class="myborder myborder-bottom" v-bind:style="{ height: wantHeight + 'px' }"></div>
+    <div class="myborder myborder-bottom" v-if="!skipBorderTop" v-bind:style="{ height: wantHeight + 'px' }"></div>
   </section>
 </template>
 
@@ -17,7 +16,8 @@ export default {
       windowHeight: window.innerHeight,
       windowWidth: window.innerWidth,
       aspectRatio: -1,
-      wantHeight: 0
+      wantHeight: 0,
+      skipBorderTop: false
     }
   },
   methods: {
