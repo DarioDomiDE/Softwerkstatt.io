@@ -1,28 +1,37 @@
 <template>
   <curved class="bg-gray-100">
-    <div class="container h-screen pt-32 pb-32">
+    <div class="container max-w-screen-lg h-screen pb-8">
+      <h2 class="col-span-12">Projekte</h2>
+      <p class="col-span-12 mb-12 w-full md:max-w-4xl">Wir begleiten unsere Kunden und schaffen Mehrwert, damit aus Ideen Wirklichkeit wird. Wir verhindern Stillstand, lieben Lösungen, und entwickeln ausschließlich Individualsoftware - echte Unikate eben.</p>
       
-      <div class="grid grid-cols-12">
-        <h2 class="col-span-12">Projekte</h2>
-        <p class="col-span-12">Wir begleiten unsere Kunden und schaffen Mehrwert, damit aus Ideen Wirklichkeit wird. Wir verhindern Stillstand, lieben Lösungen, und entwickeln ausschließlich Individualsoftware - echte Unikate eben.</p>
+      <div class="flex w-full">
 
-        <div class="col-span-1">
-          <svg class="custom-icon rounded-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="flex-1 my-auto mr-4">
+          <svg class="custom-icon rounded-full cursor-pointer p-1 md:p-2 border-2 sm:border-3 md:border-4 border-black" v-on:click="clickedLeft" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
         </div>
 
-        <div class="col-start-5 col-span-4 p-10 bg-white rounded shadow-md">
-          <div>
-            <h5>Weischer Select Pro</h5>
-            <div><img class="img-fluid rounded" src="http://placehold.it/400x200" alt=""></div>
-            <span>Web-Tool zur Kunden-Betreuung</span>
-            <span>Deutsche Fernsehlotterie</span>
-          </div>
+        <div class="flex-initial px-16 py-4 bg-white rounded shadow-md">
+          <figure class="active">
+            <h5>CRM</h5>
+            <img class="img-fluid rounded" src="./../assets/img/project_x.jpg" alt="">
+            <figcaption class="text-right">Web-Tool zur Verwaltung von Aufträgen und Kunden<br />Deutsche Fernsehlotterie</figcaption>
+          </figure>
+          <figure>
+            <h5>Web-Shop</h5>
+            <img class="img-fluid rounded" src="./../assets/img/project_y.jpg" alt="">
+            <figcaption class="text-right">Tool zur Littfassseulen Buchung<br />Weischer Media</figcaption>
+          </figure>
+          <figure>
+            <h5>Wunderbox</h5>
+            <img class="img-fluid rounded" src="./../assets/img/project_y.jpg" alt="">
+            <figcaption class="text-right">Casual Mobile Game<br />Peppermynt</figcaption>
+          </figure>
         </div>
         
-        <div class="col-start-12 col-span-1">
-          <svg class="custom-icon rounded-full" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <div class="flex-1 my-auto ml-4">
+          <svg class="custom-icon rounded-full cursor-pointer p-1 md:p-2 border-2 sm:border-3 md:border-4 border-black float-right" v-on:click="clickedRight" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
         </div>
@@ -38,15 +47,29 @@ export default {
   name: 'Projects',
   components: {
     Curved
+  },
+  methods: {
+    clickedLeft: () => {
+    },
+    clickedRight: () => {
+    }
   }
 }
 </script>
 
 <style scoped>
 .custom-icon {
-  border: 4px solid #000;
-  /* border-radius: 100%; */
   width: 80px;
-  padding: 10px;
+  max-width: 100%;
+  min-width: 40px;
+}
+figure {
+  display: none;
+}
+figure.active {
+  display: block;
+}
+h5 {
+  font-size: 2.4em;
 }
 </style>
