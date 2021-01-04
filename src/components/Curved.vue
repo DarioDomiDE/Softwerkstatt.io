@@ -1,7 +1,7 @@
 <template>
-  <section class="h-screen bg-gray-100 myborder-container" v-bind:style="{padding: Math.floor(wantHeight / 2) + 'px 0'}">
+  <section class="bg-gray-100 myborder-container" v-bind:style="{padding: Math.floor(wantHeight / 2) + 'px 0'}">
     <div class="myborder myborder-top" v-bind:style="{ height: wantHeight + 'px' }"></div>
-    <div class="myborder-content">
+    <div class="relative">
       <slot>Content here</slot>
     </div>
     <div class="myborder myborder-bottom" v-if="!skipBorderTop" v-bind:style="{ height: wantHeight + 'px' }"></div>

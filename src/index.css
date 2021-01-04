@@ -36,10 +36,10 @@ h5 {
 h6 {
   font-size: 2.0em;
 }
-p {
+p, li {
   font-size: 1.2em;
 }
 
-h1, h2, h3, h4, h5, h6, p, span {
+h1, h2, h3, h4, h5, h6, p, span, li {
   font-family: 'Tw Cen MT', sans-serif;
 }
