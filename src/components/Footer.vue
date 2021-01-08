@@ -1,6 +1,6 @@
 <template>
-  <curved class="bg-green-500">
-    <div class="container max-w-screen-xl flex flex-col md:flex-row px-16">
+  <curved class="gradient" v-bind:skipBorderBottom="true">
+    <div class="container max-w-screen-xl flex flex-col md:flex-row px-16 pb-16">
       
       <div class="flex-1">
         <h6>Freunde werden?</h6>
@@ -53,5 +53,8 @@ h6 {
 p, li {
   color: white;
   font-size: 1.1em;
+}
+.gradient {
+  background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;
 }
 </style>

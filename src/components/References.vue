@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto max-w-screen-lg h-screen pt-16 pb-16 px-4 lg:px-0">
+  <section class="container mx-auto max-w-screen-lg min-h-screen pt-16 pb-16 px-4 lg:px-0">
     <h2>Referenzen</h2>
     <p class="w-full md:max-w-2xl">Ein Dutzend gute Gründe, mit uns zu arbeiten. Dies ist ein Auszug unserer Kunden, bei denen wir stolz sind, sie glücklich gemacht und unterstützt haben zu dürfen.</p>
     <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4

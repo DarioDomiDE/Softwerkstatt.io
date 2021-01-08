@@ -1,5 +1,5 @@
 <template>
-  <section class="container h-screen pt-32 pb-32">
+  <section class="container min-h-screen pt-32 pb-32">
     <h4>Hier unterstützen wir</h4>
 
     <div class="grid lg:grid-rows-6 lg:grid-cols-4 grid-flow-col gap-4 grid-rows-4 grid-cols-1">

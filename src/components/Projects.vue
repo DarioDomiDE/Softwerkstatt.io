@@ -1,8 +1,8 @@
 <template>
-  <curved class="bg-gray-100">
-    <div class="container max-w-screen-lg h-screen pb-8">
-      <h2 class="col-span-12">Projekte</h2>
-      <p class="col-span-12 mb-12 w-full md:max-w-4xl">Wir begleiten unsere Kunden und schaffen Mehrwert, damit aus Ideen Wirklichkeit wird. Wir verhindern Stillstand, lieben Lösungen, und entwickeln ausschließlich Individualsoftware - echte Unikate eben.</p>
+  <curved class="bg-gray-100 min-h-screen">
+    <div class="container max-w-screen-lg pb-8 px-4 xl:px-0">
+      <h2 class="">Projekte</h2>
+      <p class="mb-12 w-full md:max-w-4xl">Wir begleiten unsere Kunden und schaffen Mehrwert, damit aus Ideen Wirklichkeit wird. Wir verhindern Stillstand, lieben Lösungen, und entwickeln ausschließlich Individualsoftware - echte Unikate eben.</p>
       
       <div class="flex w-full">
 

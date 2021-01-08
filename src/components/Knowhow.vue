@@ -1,10 +1,10 @@
 <template>
-  <section class="container h-screen pt-32 pb-32">
-    <h4>Handwerk</h4>
-    <p>Jetzt wird‘s technisch! Wir sind auf Full-Stack- und Backend-Entwicklung spezialisiert. Wir programmieren Websites, mobile<br />Apps und Datenbanken. Sie können zwischen Spritsparend und Vollausstattung wählen - und alles dazwischen.</p>
-    <div class="grid grid-cols-4 gap-4">
+  <section class="container max-w-screen-xl py-16 px-4 xl:px-0">
+    <h2>Handwerk</h2>
+    <p class="pb-8 w-full md:max-w-4xl">Jetzt wird‘s technisch! Wir sind auf Full-Stack- und Backend-Entwicklung spezialisiert. Wir programmieren Websites, mobile Apps und Datenbanken. Sie können zwischen Spritsparend und Vollausstattung wählen - und alles dazwischen.</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
       <div>
-        <h3>Technologien</h3>
+        <h4>Technologien</h4>
         <ul>
           <li>Responsive Websites</li>
           <li>Plattformunabhängige Mobile Apps</li>
@@ -16,7 +16,7 @@
         </ul>
       </div>
       <div>
-        <h3>Werkzeuge</h3>
+        <h4>Werkzeuge</h4>
         <ul>
           <li>Web: Vue.js &amp; Angular</li>
           <li>Mobile: React Native, Flutter, Unity3D</li>
@@ -26,8 +26,8 @@
           <li>Hosting: Azure &amp; AWS</li>
         </ul>
       </div>
-      <div class="col-span-2">
-        <h3>Muttersprachen</h3>
+      <div class="md:col-span-2">
+        <h4>Muttersprachen</h4>
         <img src="./../assets/img/technologies.jpg" alt="">
       </div>
     </div>

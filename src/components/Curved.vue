@@ -1,23 +1,25 @@
 <template>
-  <section class="bg-gray-100 myborder-container" v-bind:style="{padding: Math.floor(wantHeight / 2) + 'px 0'}">
+  <section class="bg-gray-100 relative" v-bind:style="{ padding: Math.floor(wantHeight / 2) + 'px 0 ' + (!skipBorderBottom ? Math.floor(wantHeight / 2) : 0) + 'px 0' }">
     <div class="myborder myborder-top" v-bind:style="{ height: wantHeight + 'px' }"></div>
     <div class="relative">
       <slot>Content here</slot>
     </div>
-    <div class="myborder myborder-bottom" v-if="!skipBorderTop" v-bind:style="{ height: wantHeight + 'px' }"></div>
+    <div class="myborder myborder-bottom" v-if="!skipBorderBottom" v-bind:style="{ height: wantHeight + 'px' }"></div>
   </section>
 </template>
 
 <script>
 export default {
   name: 'test',
-  data() {
+  props: {
+    skipBorderBottom: Boolean
+  },
+  data: () => {
     return {
       windowHeight: window.innerHeight,
       windowWidth: window.innerWidth,
       aspectRatio: -1,
-      wantHeight: 0,
-      skipBorderTop: false
+      wantHeight: 0
     }
   },
   methods: {
@@ -34,7 +36,6 @@ export default {
         this.aspectRatio = newAspectRatio;
         var wantAspectRatio = borderWidth / borderHeight
         this.wantHeight = Math.floor(this.windowWidth / wantAspectRatio);
-        // ToDo if footer for Container -> 'padding-top': wantHeight / 3 + 'px'
       }
     }
   },
@@ -51,9 +52,6 @@ export default {
 </script>
 
 <style scoped>
-.myborder-container {
-  position: relative;
-}
 .myborder {
   position: absolute;
   width: 100%;
@@ -66,7 +64,6 @@ export default {
 }
 .myborder-bottom {
   bottom: 0;
-
   -moz-transform: scaleX(-1) scaleY(-1);
   -o-transform: scaleX(-1) scaleY(-1);
   -ms-transform: scaleX(-1) scaleY(-1);
