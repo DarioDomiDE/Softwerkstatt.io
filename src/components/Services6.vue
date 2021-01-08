@@ -29,6 +29,7 @@
           <p>Effizient vs effektiv, Lieber Schnell am Markt statt perfektes Handwerk. Wir hinterfragen, was ist dringend, aber was wichtig ist. Konzentration auf Core-Features und Kompromisse eingehen.</p>
         </article>
       </div>
+      <button class="bg-white rounded-full shadow-md hover:shadow-xl transform scale-101 focus:outline-none transition-all font-semibold px-8 py-3 text-xl text-gray-700 mt-8" v-on:click="onClickCta">UNVERBINDLICH ANFRAGEN &raquo;</button>
     </div>
   </curved>
 </template>

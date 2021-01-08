@@ -5,6 +5,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin-bottom: 88px;
+}
+body > div {
+  background-color: #fff;
+}
 #app {
   font-family: 'Tw Cen MT', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -42,4 +48,14 @@ p, li {
 
 h1, h2, h3, h4, h5, h6, p, span, li {
   font-family: 'Tw Cen MT', sans-serif;
+}
+a {
+  text-decoration: underline;
+}
+a:hover {
+  font-weight: bold;
+}
+.scale-101:hover {
+  --tw-scale-x: 1.01;
+  --tw-scale-y: 1.01;
 }

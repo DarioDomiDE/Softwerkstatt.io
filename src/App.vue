@@ -4,10 +4,11 @@
   <Services3 />
   <Solutions />
   <Services6 />
-  <Knowhow />
+  <Technical />
   <Projects />
   <References />
   <Footer />
+  <Footer2 />
 </template>
 
 <script>
@@ -16,10 +17,11 @@ import Intro from './components/Intro.vue'
 import Services3 from './components/Services3.vue'
 import Solutions from './components/Solutions.vue'
 import Services6 from './components/Services6.vue'
-import Knowhow from './components/Knowhow.vue'
+import Technical from './components/Technical.vue'
 import Projects from './components/Projects.vue'
 import References from './components/References.vue'
 import Footer from './components/Footer.vue'
+import Footer2 from './components/Footer2.vue'
 
 export default {
   name: 'App',
@@ -29,13 +31,14 @@ export default {
     Services3,
     Solutions,
     Services6,
-    Knowhow,
+    Technical,
     Projects,
     References,
-    Footer
+    Footer,
+    Footer2
   }
 }
 </script>
 
-<style>
+<style scoped>
 </style>

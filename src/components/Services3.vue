@@ -1,5 +1,5 @@
 <template>
-  <section class="container min-h-screen pt-32 pb-32">
+  <section class="container min-h-screen max-w-screen-xl pt-32 pb-32">
     <h4>Hier unterstützen wir</h4>
 
     <div class="grid lg:grid-rows-6 lg:grid-cols-4 grid-flow-col gap-4 grid-rows-4 grid-cols-1">
@@ -44,6 +44,7 @@
         </ul>
       </div>
     </div>
+    <button class="bg-gray-100 rounded-full shadow-md hover:shadow-xl transform scale-101 focus:outline-none transition-all font-semibold px-8 py-3 text-xl text-gray-700 float-right my-4" v-on:click="onClickCta">UNVERBINDLICH ANFRAGEN &raquo;</button>
   </section>
 </template>
 

@@ -1,12 +1,11 @@
 <template>
   <curved class="gradient min-h-screen">
-    <div class="container max-w-screen-lg mx-auto text-white">
+    <div class="container max-w-screen-xl mx-auto text-white">
       <h1 class="mt-8">„Wir haben eine Vision:<br /><span class="smaller">Unser Handwerk und Ihre Software.“</span></h1>
       <p class="my-16">Ahoi! Segel setzen! Anker lichten! Auf zu neuen Ufern...<br />
         Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.<br />
         Wir sind Macher. Ein Zusammenschluss leidenschaftlicher Softwareentwickler.</p>
-      <button class="bg-white hover:bg-grey-200 active:bg-green-700 cursor-pointer
-      rounded-full shadow font-semibold px-8 py-3 inline-block transition text-xl text-gray-800" v-on:click="onClickCta">UNVERBINDLICH ANFRAGEN &raquo;</button>
+      <button class="bg-white rounded-full shadow-md hover:shadow-xl transform scale-101 focus:outline-none transition-all font-semibold px-8 py-3 text-xl text-gray-700" v-on:click="onClickCta">UNVERBINDLICH ANFRAGEN &raquo;</button>
     </div>
   </curved>
 </template>
