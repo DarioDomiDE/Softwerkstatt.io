@@ -1,5 +1,5 @@
 <template>
-  <curved class="gradient" v-bind:skipBorderBottom="true">
+  <curved class="gradient" :skipBorderBottom="true" :fixed="true" id="footer">
     <div class="container max-w-screen-xl flex flex-col md:flex-row px-16 pb-16 z-10">
       
       <div class="flex-1">

@@ -6,18 +6,18 @@
     gap-x-8 sm:gap-x-16 lg:gap-x-32
     gap-y-8 lg:gap-y-16
     mt-16 w-full">
-      <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
-      <img src="./../assets/img/logos/fernsehlotterie.png" alt="Deutsche Fernsehlotterie" />
-      <img src="./../assets/img/logos/fielmann.png" alt="Fielmann" />
-      <img src="./../assets/img/logos/weischer.png" alt="Weischer Media" />
-      <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
-      <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
-      <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
-      <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
-      <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
-      <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
-      <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
-      <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/fernsehlotterie.png" alt="Deutsche Fernsehlotterie" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/fielmann.png" alt="Fielmann" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/weischer.png" alt="Weischer Media" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/elbgoods.png" alt="Elbgoods Internetagentur" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/ergon.png" alt="ERGON Datenprojekte" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/isa.png" alt="ISA Digital Commerce" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/peppermynt.png" alt="Peppermynt" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
     </div>
   </section>
 </template>
@@ -30,12 +30,13 @@ export default {
 <style scoped>
 img {
   max-height: 60px;
-
-  -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(100%); /* FF 35+ */
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  opacity: 0.7;
 }
 img:hover {
-  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
-  filter: grayscale(0%); /* FF 35+ */
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  opacity: 1;
 }
 </style>

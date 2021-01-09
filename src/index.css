@@ -5,11 +5,12 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  margin-bottom: 88px;
-}
-body > div {
+/* body {
+  margin-bottom: 470px;
+} */
+body > div:not(#footer) {
   background-color: #fff;
+  z-index: 10;
 }
 #app {
   font-family: 'Tw Cen MT', Avenir, Helvetica, Arial, sans-serif;

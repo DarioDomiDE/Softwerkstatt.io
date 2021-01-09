@@ -8,7 +8,6 @@
   <Projects />
   <References />
   <Footer />
-  <Footer2 />
 </template>
 
 <script>
@@ -21,7 +20,6 @@ import Technical from './components/Technical.vue'
 import Projects from './components/Projects.vue'
 import References from './components/References.vue'
 import Footer from './components/Footer.vue'
-import Footer2 from './components/Footer2.vue'
 
 export default {
   name: 'App',
@@ -34,8 +32,7 @@ export default {
     Technical,
     Projects,
     References,
-    Footer,
-    Footer2
+    Footer
   }
 }
 </script>
