@@ -1,7 +1,7 @@
 <template>
   <section class="bg-gray-100 relative" :style="{ padding: Math.floor(wantHeight / 2) + 'px 0 ' + (!skipBorderBottom ? Math.floor(wantHeight / 2) : 0) + 'px 0', height: fixed ? '470px' : 'auto' }">
     <div class="myborder myborder-top" :style="{ height: wantHeight + 'px' }"></div>
-    <div class="z-10" :class="fixed ? 'fixed bottom-0' : 'relative'">
+    <div class="z-10" :class="fixed ? 'fixed bottom-0 w-full' : 'relative'">
       <slot>Content here</slot>
     </div>
     <div class="myborder myborder-bottom" v-if="!skipBorderBottom" :style="{ height: wantHeight + 'px' }"></div>

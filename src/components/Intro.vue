@@ -5,7 +5,9 @@
       <p class="my-16">Ahoi! Segel setzen! Anker lichten! Auf zu neuen Ufern...<br />
         Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.<br />
         Wir sind Macher. Ein Zusammenschluss leidenschaftlicher Softwareentwickler.</p>
-      <button class="bg-white rounded-full shadow-md hover:shadow-xl transform scale-101 focus:outline-none transition-all font-semibold px-8 py-3 text-xl text-gray-700" v-on:click="onClickCta">UNVERBINDLICH ANFRAGEN &raquo;</button>
+      <button class="bg-white rounded-full shadow-md hover:shadow-xl transform scale-101 focus:outline-none transition-all font-semibold px-8 py-3 text-xl text-gray-700" v-on:click="onClickCta">
+        UNVERBINDLICH ANFRAGEN <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="20" width="20" class="inline-block align-text-top"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 5l7 7-7 7M5 5l7 7-7 7" /></svg>
+      </button>
     </div>
   </curved>
 </template>
