@@ -1,4 +1,5 @@
 <template>
+  <Menu />
   <Welcome />
   <Intro />
   <Services3 />
@@ -20,6 +21,7 @@ import Technical from './components/Technical.vue'
 import Projects from './components/Projects.vue'
 import References from './components/References.vue'
 import Footer from './components/Footer.vue'
+import Menu from './components/Menu.vue'
 
 export default {
   name: 'App',
@@ -32,7 +34,8 @@ export default {
     Technical,
     Projects,
     References,
-    Footer
+    Footer,
+    Menu
   }
 }
 </script>
