@@ -1,20 +1,20 @@
 <template>
   <section class="container mx-auto max-w-screen-xl min-h-screen pt-16 pb-16 px-4 lg:px-0">
     <h2>Referenzen</h2>
-    <p class="w-full md:max-w-2xl">Ein Dutzend gute Gründe, mit uns zu arbeiten. Dies ist ein Auszug unserer Kunden, bei denen wir stolz sind, sie glücklich gemacht und unterstützt haben zu dürfen.</p>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4
-    gap-x-8 sm:gap-x-16 lg:gap-x-32
+    <p class="w-full md:max-w-2xl">Ein Dutzend gute Gründe, mit uns zu arbeiten. Dies ist ein Auszug unserer Kunden, bei denen wir stolz sind, sie glücklich gemacht und unterstützt zu haben.</p>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 justify-items-center
+    gap-x-8 sm:gap-x-16
     gap-y-8 lg:gap-y-16
     mt-16 w-full">
-      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
-      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/fernsehlotterie.png" alt="Deutsche Fernsehlotterie" />
-      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/fielmann.png" alt="Fielmann" />
-      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/weischer.png" alt="Weischer Media" />
-      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/elbgoods.png" alt="Elbgoods Internetagentur" />
       <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/ergon.png" alt="ERGON Datenprojekte" />
-      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/isa.png" alt="ISA Digital Commerce" />
-      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/peppermynt.png" alt="Peppermynt" />
       <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/fielmann.png" alt="Fielmann" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/peppermynt.png" alt="Peppermynt" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/elbgoods.png" alt="Elbgoods Internetagentur" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/fernsehlotterie.png" alt="Deutsche Fernsehlotterie" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/isa.png" alt="ISA Digital Commerce" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/weischer.png" alt="Weischer Media" />
+      <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/esailors.png" alt="eSailors by ZEAL Network" />
       <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
       <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
       <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
@@ -29,7 +29,7 @@ export default {
 
 <style scoped>
 img {
-  max-height: 60px;
+  max-height: 55px;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.7;
