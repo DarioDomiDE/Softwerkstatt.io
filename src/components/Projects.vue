@@ -1,8 +1,8 @@
 <template>
-  <curved class="bg-gray-100 min-h-screen">
+  <curved class="min-h-screen" id="bg">
     <div class="container max-w-screen-lg 2xl:max-w-screen-xl pb-8 px-4 xl:px-0">
       <h2 class="">Projekte</h2>
-      <p class="mb-12 w-full md:max-w-4xl">Wir begleiten unsere Kunden und schaffen Mehrwert, damit aus Ideen Wirklichkeit wird. Wir verhindern Stillstand, lieben Lösungen, und entwickeln ausschließlich Individualsoftware - echte Unikate eben.</p>
+      <p class="mb-12 w-full md:max-w-4xl">Wir begleiten unsere Kunden langfristig und schaffen Mehrwert, damit aus Ideen Wirklichkeit wird. Wir lieben Lösungen, und entwickeln ausschließlich Individualsoftware - echte Unikate eben.</p>
       
       <div class="flex w-full">
 
@@ -58,6 +58,9 @@ export default {
 </script>
 
 <style scoped>
+#bg {
+  background-color: rgba(243, 244, 246, 1);
+}
 .custom-icon {
   width: 80px;
   max-width: 100%;
