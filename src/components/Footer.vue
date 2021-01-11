@@ -1,6 +1,6 @@
 <template>
   <curved class="gradient" :skipBorderBottom="true" :fixed="true" id="footer">
-    <div class="container max-w-screen-xl flex flex-col md:flex-row px-16 pb-16 z-10">
+    <footer class="container max-w-screen-xl flex flex-col md:flex-row px-16 pb-16 z-10">
       
       <div class="flex-1">
         <h6 class="mb-2">Freunde werden?</h6>
@@ -32,7 +32,7 @@
         </ul>
       </div>
 
-    </div>
+    </footer>
   </curved>
 </template>
 

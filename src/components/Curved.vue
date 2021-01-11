@@ -1,6 +1,6 @@
 <template>
   <section class="bg-gray-100 relative" :style="{ padding: Math.floor(wantHeight / 2) + 'px 0 ' + (!skipBorderBottom ? Math.floor(wantHeight / 2) : 0) + 'px 0', height: fixed ? '470px' : 'auto' }">
-    <div class="myborder myborder-top" :style="{ height: wantHeight + 'px' }"></div>
+    <div :class="'myborder myborder-top' + (borderTopGray ? ' gray' : '')" :style="{ height: wantHeight + 'px' }"></div>
     <div class="z-10" :class="fixed ? 'fixed bottom-0 w-full' : 'relative'">
       <slot>Content here</slot>
     </div>
@@ -13,6 +13,7 @@ export default {
   name: 'test',
   props: {
     skipBorderBottom: Boolean,
+    borderTopGray: Boolean,
     fixed: Boolean
   },
   data: () => {
@@ -59,6 +60,9 @@ export default {
   height: 300px;
   background: url('./../assets/img/border.png') no-repeat center center;
   background-size: cover;
+}
+.gray {
+  background-image: url('./../assets/img/border_gray.png');
 }
 .myborder-top {
   top: 0;
