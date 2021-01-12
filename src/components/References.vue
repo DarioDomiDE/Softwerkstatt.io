@@ -1,10 +1,10 @@
 <template>
-  <section class="container mx-auto max-w-screen-xl min-h-screen pt-16 pb-16 px-4 lg:px-0">
+  <section class="container mx-auto max-w-screen-lg 2xl:max-w-screen-xl min-h-screen pt-16 pb-16 px-4 lg:px-0">
     <h2>Referenzen</h2>
     <p class="w-full md:max-w-2xl">Ein Dutzend gute Gründe, mit uns zu arbeiten. Dies ist ein Auszug unserer Kunden, bei denen wir stolz sind, sie glücklich gemacht und unterstützt zu haben.</p>
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 justify-items-center
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-items-center
     gap-x-8 sm:gap-x-16
-    gap-y-8 lg:gap-y-16
+    gap-y-8 sm:gap-y-16
     mt-16 w-full">
       <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/ergon.png" alt="ERGON Datenprojekte" />
       <img class="transform hover:scale-110 transition-all" src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />

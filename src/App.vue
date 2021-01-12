@@ -3,7 +3,7 @@
   <Welcome />
   <Intro />
   <Services3 />
-  <Solutions />
+  <Howto />
   <Services6 />
   <Technical />
   <Projects />
@@ -15,7 +15,7 @@
 import Welcome from './components/Welcome.vue'
 import Intro from './components/Intro.vue'
 import Services3 from './components/Services3.vue'
-import Solutions from './components/Solutions.vue'
+import Howto from './components/Howto.vue'
 import Services6 from './components/Services6.vue'
 import Technical from './components/Technical.vue'
 import Projects from './components/Projects.vue'
@@ -29,7 +29,7 @@ export default {
     Welcome,
     Intro,
     Services3,
-    Solutions,
+    Howto,
     Services6,
     Technical,
     Projects,

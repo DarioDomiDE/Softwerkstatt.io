@@ -1,8 +1,8 @@
 <template>
-  <section class="container max-w-screen-xl py-16 px-4 xl:px-0">
+  <section class="container max-w-screen-lg 2xl:max-w-screen-xl py-16 px-4 xl:px-0">
     <h2>Handwerk</h2>
     <p class="pb-8 w-full md:max-w-4xl">Jetzt wird‘s technisch; Wir sind auf Full-Stack- und Backend-Entwicklung spezialisiert, programmieren Websites, mobile Apps und Datenbanken. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir bevorzugen "Try early - fail fast", um User-orientiert zu entwickeln.</p>
-    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-7 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-7 gap-4">
       <div class="md:col-span-2">
         <h4>Technologien</h4>
         <ul>
@@ -31,12 +31,17 @@
         <img src="./../assets/img/technologies.jpg" alt="">
       </div>
     </div>
-    <button class="bg-white rounded-full shadow-md hover:shadow-xl transform scale-101 focus:outline-none transition-all font-semibold px-8 py-3 text-xl text-gray-700 mt-8" v-on:click="onClickCta">UNVERBINDLICH ANFRAGEN &raquo;</button>
+    <CtaButton class="mt-8"></CtaButton>
   </section>
 </template>
 
 <script>
+import CtaButton from './CtaButton.vue'
 export default {
+  name: 'Intro',
+  components: {
+    CtaButton
+  }
 }
 </script>
 

@@ -29,17 +29,19 @@
           <p>Das Herztück, warum es uns gibt: Individualentwicklung von Apps, Websites, Backends und Datenbanken: Optimeriung der internen Geschäfts-Prozesse, oder neue Nutzergewinnung durch Neueinführung.</p>
         </article>
       </div>
-      <button class="bg-white rounded-full shadow-md hover:shadow-xl transform scale-101 focus:outline-none transition-all font-semibold px-8 py-3 text-xl text-gray-700 mt-8" v-on:click="onClickCta">UNVERBINDLICH ANFRAGEN &raquo;</button>
+      <CtaButton class="mt-8"></CtaButton>
     </div>
   </curved>
 </template>
 
 <script>
 import Curved from './Curved.vue'
+import CtaButton from './CtaButton.vue'
 export default {
   name: 'Solutions',
   components: {
-    Curved
+    Curved,
+    CtaButton
   }
 }
 </script>

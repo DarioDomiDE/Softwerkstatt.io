@@ -7,23 +7,23 @@
       <div class="flex w-full">
 
         <div class="flex-1 my-auto mr-4">
-          <svg class="custom-icon rounded-full cursor-pointer p-1 md:p-2 border-2 sm:border-3 md:border-4 border-black" v-on:click="clickedLeft" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="custom-icon rounded-full cursor-pointer p-1 md:p-2 border-2 sm:border-3 md:border-4 border-black transform transition-transform hover:scale-105 hover:bg-black hover:text-white" @click="clickedLeft" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
           </svg>
         </div>
 
         <div class="flex-initial px-16 py-4 bg-white rounded shadow-md">
-          <figure class="active">
+          <figure :class="{'active': active == 1}">
             <h5>CRM</h5>
             <img class="img-fluid rounded" src="./../assets/img/project_x.jpg" alt="">
             <figcaption class="text-right">Web-Tool zur Verwaltung von Aufträgen und Kunden<br />Deutsche Fernsehlotterie</figcaption>
           </figure>
-          <figure>
+          <figure :class="{'active': active == 2}">
             <h5>Web-Shop</h5>
             <img class="img-fluid rounded" src="./../assets/img/project_y.jpg" alt="">
             <figcaption class="text-right">Tool zur Littfassseulen Buchung<br />Weischer Media</figcaption>
           </figure>
-          <figure>
+          <figure :class="{'active': active == 3}">
             <h5>Wunderbox</h5>
             <img class="img-fluid rounded" src="./../assets/img/project_y.jpg" alt="">
             <figcaption class="text-right">Casual Mobile Game<br />Peppermynt</figcaption>
@@ -31,7 +31,7 @@
         </div>
         
         <div class="flex-1 my-auto ml-4">
-          <svg class="custom-icon rounded-full cursor-pointer p-1 md:p-2 border-2 sm:border-3 md:border-4 border-black float-right" v-on:click="clickedRight" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <svg class="custom-icon rounded-full cursor-pointer p-1 md:p-2 border-2 sm:border-3 md:border-4 border-black transform transition-transform hover:scale-105 hover:bg-black hover:text-white float-right" @click="clickedRight" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
           </svg>
         </div>
@@ -48,10 +48,25 @@ export default {
   components: {
     Curved
   },
+  data: () => {
+    return {
+      active: 1,
+      max: 3
+    }
+  },
   methods: {
-    clickedLeft: () => {
+    clickedLeft() {
+      console.log(this.active);
+      this.active--;
+      if(this.active == 0) {
+        this.active = this.max;
+      }
     },
-    clickedRight: () => {
+    clickedRight() {
+      this.active++;
+      if(this.active > this.max) {
+        this.active = 1;
+      }
     }
   }
 }

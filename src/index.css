@@ -49,10 +49,6 @@ a {
 a:hover {
   font-weight: bold;
 }
-.scale-101:hover {
-  --tw-scale-x: 1.01;
-  --tw-scale-y: 1.01;
-}
 .scale-103:hover {
   --tw-scale-x: 1.03;
   --tw-scale-y: 1.03;
