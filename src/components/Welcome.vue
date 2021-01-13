@@ -1,15 +1,11 @@
 <template>
-  <section class="container h-screen pt-32 pb-32">
-    <!-- <img class="mx-auto h-full" src="./../assets/img/header_with_bg.png" alt=""> -->
-    <video class="h-full grayscale" id="videoPlayer" poster="./../assets/img/header_with_bg.png" preload="auto" autobuffer="" autoplay="" loop="" playsinline="" muted="">
+  <section class="container max-w-screen-xl h-screen pt-32 pb-32">
+    <video class="h-full mx-auto grayscale object-cover" id="videoPlayer" poster="./../assets/img/header_with_bg.png" preload="auto" autobuffer="" autoplay="" loop="" playsinline="" muted="">
       <source src="./../assets/video/teaser.webm" type='video/webm; codecs="vp8, vorbis"'>
       <source src="./../assets/video/teaser.mp4" type="video/mp4">
     </video>
     <div class="mx-auto w-full h-screen pt-32 pb-32 absolute left-0 top-0">
-      <div class="h-full w-full gradient opacity-70"></div>
-    </div>
-    <div class="mx-auto w-full h-screen pt-32 pb-32 absolute left-0 top-0">
-      <img class="h-full" id="headerImage" src="./../assets/img/header2.png" alt="">
+      <div class="h-full w-full" id="logo"></div>
     </div>
   </section>
 </template>
@@ -30,5 +26,15 @@ export default {
 }
 #videoPlayer {
   filter:brightness(150%);
+}
+#logo {
+  background: url('./../assets/img/header3.png') no-repeat center center;
+  background-size: cover;
+}
+/* 1280/680 + 2x 8rem padding */
+@media (min-aspect-ratio: 1980/936) {
+  #logo {
+    background-size: contain;
+  }
 }
 </style>
