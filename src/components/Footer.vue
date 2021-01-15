@@ -16,9 +16,9 @@
         <p>Wir haben Antworten! Fragen kostet ja nichts. Gerne beraten wir Sie unverbindlich bei Ihren Projekten rund um Softwareentwicklung.</p>
         <ul class="mt-4">
           <li>Ansprechpartner: Dario D. Müller</li>
-          <li>Telefon: 040 123 456 789</li>
-          <li>E-Mail: <a class="" href="mailto:moin@softwerkstatt.io">moin@softwerkstatt.io</a></li>
-          <li>Adresse: Brunckhorstweg 3, 22525 Hamburg</li>
+          <li>040 123 456 789</li>
+          <li><a class="" href="mailto:moin@softwerkstatt.io">dario@softwerkstatt.io</a></li>
+          <li>Brunckhorstweg 3, 22525 Hamburg</li>
         </ul>
       </div>
 

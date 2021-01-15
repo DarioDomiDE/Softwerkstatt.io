@@ -6,9 +6,9 @@
         <p class="part1">Ahoi! Segel setzen... Anker lichten! Auf zu neuen Ufern.<br />
           Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.<br />
           Wir sind Macher. Ein Zusammenschluss leidenschaftlicher Softwareentwickler.</p>
-        <p class="part2">Ahoi! Segel setzen... Wir sind keine klassische Werdeagentur!<br />
+        <p class="part2">Ahoi! Segel setzen... Wir sind keine klassische Digitalagentur!<br />
           Wir sind Techies im Herzen, ein Team von Software-Entwicklern und Freelancern,<br />
-          mit der Mission, gemeinsam unsere Kunden noch besser zu unterstützen.</p>
+          um gemeinsam von der Idee zum Produkt unsere Kunden zu unterstützen.</p>
       </div>
       <CtaButton class="block"></CtaButton>
     </div>
