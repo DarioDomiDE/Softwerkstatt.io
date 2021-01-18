@@ -8,9 +8,9 @@
           Wir sind Macher. Ein Zusammenschluss leidenschaftlicher Softwareentwickler.</p>
         <p class="part2">Ahoi! Segel setzen... Wir sind keine klassische Digitalagentur!<br />
           Wir sind Techies im Herzen, ein Team von Software-Entwicklern und Freelancern,<br />
-          um gemeinsam von der Idee zum Produkt unsere Kunden zu unterstützen.</p>
+          um gemeinsam von der Idee zum Produkt unsere Kunden besser zu unterstützen.</p>
       </div>
-      <CtaButton class="block"></CtaButton>
+      <CtaButton class="block" @clicked="onClickCta"></CtaButton>
     </div>
   </curved>
 </template>
@@ -27,7 +27,7 @@ export default {
   },
   methods: {
     onClickCta() {
-      console.log("clicked");
+      this.$emit('clicked', '')
     }
   }
 }

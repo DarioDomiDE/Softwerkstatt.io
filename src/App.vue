@@ -1,14 +1,15 @@
 <template>
-  <Menu />
+  <Menu ref="menu" />
   <Welcome />
-  <Intro />
-  <Services3 />
-  <Howto />
-  <Services6 />
-  <Technical />
+  <Intro @clicked="onClickCta" />
+  <Services3 @clicked="onClickCta" />
+  <Howto @clicked="onClickCta" />
+  <Services6 @clicked="onClickCta" />
+  <Technical @clicked="onClickCta" />
   <Projects />
   <References />
   <Footer />
+  <Modal ref="modal" @modalClosed="onModalClosed" />
 </template>
 
 <script>
@@ -22,6 +23,7 @@ import Projects from './components/Projects.vue'
 import References from './components/References.vue'
 import Footer from './components/Footer.vue'
 import Menu from './components/Menu.vue'
+import Modal from './components/Modal.vue'
 
 export default {
   name: 'App',
@@ -35,7 +37,17 @@ export default {
     Projects,
     References,
     Footer,
-    Menu
+    Menu,
+    Modal
+  },
+  methods: {
+    onClickCta() {
+      this.$refs.modal.open();
+      this.$refs.menu.close();
+    },
+    onModalClosed() {
+      this.$refs.menu.open();
+    }
   }
 }
 </script>

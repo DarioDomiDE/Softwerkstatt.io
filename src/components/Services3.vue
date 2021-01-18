@@ -1,17 +1,17 @@
 <template>
-  <section class="container min-h-screen max-w-screen-xl pt-32 pb-32">
+  <section class="container min-h-screen max-w-screen-xl pt-32 pb-32 px-4 md:px-8 2xl:px-0">
     <h2 class="mb-8">Hier unterstützen wir.</h2>
 
-    <div class="grid lg:grid-cols-4 grid-flow-col gap-8 grid-cols-1">
-      <div class="lg:row-span-6 row-span-1">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <div class="col-span-1 lg:col-span-1">
         <ul id="tab-navi">
-          <li v-on:click="active = 1" class="transform scale-103 transition-transform" v-bind:class="{'active': active == 1}"><span>Digitale Strategie</span></li>
-          <li v-on:click="active = 2" class="transform scale-103 transition-transform" v-bind:class="{'active': active == 2}"><span>Industrie 4.0</span></li>
-          <li v-on:click="active = 3" class="transform scale-103 transition-transform" v-bind:class="{'active': active == 3}"><span>Prozessoptimierung</span></li>
-          <li v-on:click="active = 4" class="transform scale-103 transition-transform" v-bind:class="{'active': active == 4}"><span>Digitale Transformation</span></li>
+          <li v-on:click="active = 1" class="inline-block lg:block w-6/12 lg:w-full xl:text-2xl" v-bind:class="{'active': active == 1}">Digitale Strategie</li>
+          <li v-on:click="active = 2" class="inline-block lg:block w-6/12 lg:w-full xl:text-2xl" v-bind:class="{'active': active == 2}">Industrie 4.0</li>
+          <li v-on:click="active = 3" class="inline-block lg:block w-6/12 lg:w-full xl:text-2xl" v-bind:class="{'active': active == 3}">Prozessoptimierung</li>
+          <li v-on:click="active = 4" class="inline-block lg:block w-6/12 lg:w-full xl:text-2xl" v-bind:class="{'active': active == 4}">Digitale Transformation</li>
         </ul>
       </div>
-      <div class="lg:row-span-6 lg:col-span-2 row-span-1 col-span-1">
+      <div class="col-span-1 lg:col-span-2">
         <ul>
           <article :class="{'active': active == 1}">
             <h4>Digitale Strategie</h4>
@@ -31,7 +31,7 @@
           </article>
         </ul>
       </div>
-      <div class="lg:row-span-6 col-span-1 row-span-1">
+      <div class="col-span-1 hidden lg:block">
         <ul>
           <li :class="{'active': active == 1}"><img class="rounded-lg" src="./../assets/img/service_1.jpg" alt=""></li>
           <li :class="{'active': active == 2}"><img class="rounded-lg" src="http://placehold.it/300x505" alt=""></li>
@@ -41,7 +41,7 @@
         </ul>
       </div>
     </div>
-    <CtaButton class="bg-gray-100 float-right my-4"></CtaButton>
+    <CtaButton class="bg-gray-100 float-right my-4" @clicked="onClickCta"></CtaButton>
   </section>
 </template>
 
@@ -57,10 +57,12 @@ export default {
       active: 1
     }
   },
-  methos: {
-    onClick: (id) => {
+  methods: {
+    onClick(id) {
       this.active = id; 
-      console.log("Click");
+    },
+    onClickCta() {
+      this.$emit('clicked', '')
     }
   }
 }
@@ -83,38 +85,18 @@ ul:not(#tab-navi) li.active {
     background-color: rgba(243, 244, 246, 1);
     margin-bottom: 5px;
     border-radius: 5px;
-    position: relative;
     cursor: pointer;
+    transition: transform 0.3s;
+    background: url('./../assets/img/button2.png') no-repeat center center transparent;
+    background-size: cover;
+    padding: 7px 0 0 30px;
+    line-height: 95px;
   }
   #tab-navi li.active {
-    background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%);
+    background-image: url('./../assets/img/button1.png');
     color: #fff;
   }
-  #tab-navi li span {
-    display: table-cell;
-    padding: 35px 0 25px 30px;
-    height: 20px;
-    font-size: 1.2em;
-  }
-  #tab-navi li::before,
-  #tab-navi li::after {
-    content: '';
-    position: absolute;
-    width: calc(100% + 2px);
-    height: 64px;
-    background: url('./../assets/img/border.png') no-repeat center center;
-    background-size: cover;
-    left: -1px;
-  }
-  #tab-navi li::before {
-    top: -1px;
-  }
-  #tab-navi li::after {
-    bottom: -1px;
-    -moz-transform: scaleX(-1) scaleY(-1);
-    -o-transform: scaleX(-1) scaleY(-1);
-    -ms-transform: scaleX(-1) scaleY(-1);
-    -webkit-transform: scaleX(-1) scaleY(-1);
-    transform: scaleX(-1) scaleY(-1);
+  #tab-navi li:hover {
+    transform: scale(1.05);
   }
 </style>

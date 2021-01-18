@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="isVisible">
     <div v-if="isOpened" class="fixed top-0 right-0 w-full z-30 h-screen sm:h-auto sm:w-64 p-8 bg-gray-700 text-xl leading-normal text-white">
       <ul>
         <li>Unterstützung</li>
@@ -24,7 +24,16 @@ export default {
   },
   data: () => {
     return {
+      isVisible: true,
       isOpened: false
+    }
+  },
+  methods: {
+    open() {
+      this.isVisible = true; 
+    },
+    close() {
+      this.isVisible = false; 
     }
   }
 }

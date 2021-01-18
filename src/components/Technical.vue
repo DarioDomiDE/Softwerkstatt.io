@@ -31,7 +31,7 @@
         <img src="./../assets/img/technologies.jpg" alt="">
       </div>
     </div>
-    <CtaButton class="mt-8"></CtaButton>
+    <CtaButton class="mt-8" @clicked="onClickCta"></CtaButton>
   </section>
 </template>
 
@@ -41,6 +41,11 @@ export default {
   name: 'Intro',
   components: {
     CtaButton
+  },
+  methods: {
+    onClickCta() {
+      this.$emit('clicked', '')
+    }
   }
 }
 </script>
