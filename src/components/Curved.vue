@@ -1,10 +1,10 @@
 <template>
-  <section class="bg-gray-100 relative" :style="{ padding: Math.floor(wantHeight / 2) + 'px 0 ' + (!skipBorderBottom ? Math.floor(wantHeight / 2) : 0) + 'px 0', height: fixed ? '470px' : 'auto' }">
-    <div :class="'myborder myborder-top' + (borderTopGray ? ' gray' : '')" :style="{ height: wantHeight + 'px' }"></div>
+  <section class="bg-gray-100 relative" :style="{ padding: (!skipBorderTop ? Math.floor(wantHeight / 2) : 0) + 'px 0 ' + (!skipBorderBottom ? Math.floor(wantHeight / 2) : 0) + 'px 0', height: fixed ? '470px' : 'auto' }">
+    <div v-if="!skipBorderTop" :class="'myborder myborder-top' + (borderTopGray ? ' gray' : '')" :style="{ height: wantHeight + 'px' }"></div>
     <div class="z-10" :class="fixed ? 'fixed bottom-0 w-full' : 'relative'">
       <slot>Content here</slot>
     </div>
-    <div class="myborder myborder-bottom" v-if="!skipBorderBottom" :style="{ height: wantHeight + 'px' }"></div>
+    <div v-if="!skipBorderBottom" :class="'myborder myborder-bottom' + (borderBottomGray ? ' gray' : '')" :style="{ height: wantHeight + 'px' }"></div>
   </section>
 </template>
 
@@ -12,8 +12,10 @@
 export default {
   name: 'test',
   props: {
+    skipBorderTop: Boolean,
     skipBorderBottom: Boolean,
     borderTopGray: Boolean,
+    borderBottomGray: Boolean,
     fixed: Boolean
   },
   data: () => {

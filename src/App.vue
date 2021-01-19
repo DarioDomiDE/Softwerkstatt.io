@@ -6,6 +6,7 @@
   <Howto @clicked="onClickCta" />
   <Services6 @clicked="onClickCta" />
   <Technical @clicked="onClickCta" />
+  <Aboutus />
   <Projects />
   <References />
   <Footer />
@@ -19,6 +20,7 @@ import Services3 from './components/Services3.vue'
 import Howto from './components/Howto.vue'
 import Services6 from './components/Services6.vue'
 import Technical from './components/Technical.vue'
+import Aboutus from './components/Aboutus.vue'
 import Projects from './components/Projects.vue'
 import References from './components/References.vue'
 import Footer from './components/Footer.vue'
@@ -34,6 +36,7 @@ export default {
     Howto,
     Services6,
     Technical,
+    Aboutus,
     Projects,
     References,
     Footer,

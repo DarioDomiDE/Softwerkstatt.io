@@ -33,17 +33,12 @@ img {
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
   opacity: 0.7;
-  border: 1px solid transparent;
-  transition: all 0.6s;
+  transition: all 0.2s;
 }
 img:hover {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   opacity: 1;
-  transform: scale(1.5);
-
-  border-color: rgba(107, 212, 197, 1);
-  border-radius: 3px;
-  padding: 5px 30px;
+  transform: scale(1.15);
 }
 </style>

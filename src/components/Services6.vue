@@ -1,5 +1,5 @@
 <template>
-  <curved class="gradient min-h-screen" v-bind:borderTopGray="true">
+  <curved class="gradient min-h-screen" v-bind:borderTopGray="true" v-bind:borderBottomGray="true">
     <div class="container max-w-screen-xl text-white px-4 md:px-8 2xl:px-0">
       <h2>Leistungen.</h2>
       <p class="mb-12 w-full md:max-w-4xl">Unsere Domäne, hierbei haben wir Spaß. Wir sind im Herzen Techies. Und unterstützen unsere Kunden in allen Phasen ihrer Digitalisierung. Eine Auwahl, was uns besonders am Herzen liegt:</p>
@@ -67,7 +67,7 @@ article {
 }
 article:hover {
   border-color: #fff;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 3px;
   margin: -10px -20px;
   padding: 10px 20px;
