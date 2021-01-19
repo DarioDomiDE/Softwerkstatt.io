@@ -1,16 +1,21 @@
 <template>
   <curved class="gradient min-h-screen">
-    <div class="container max-w-screen-xl mx-auto text-white">
-      <h1 class="mt-8">„Wir haben eine Vision:<br /><span class="smaller">Unser Handwerk und Ihre Software.“</span></h1>
-      <div id="introText" class="my-16">
-        <p class="part1">Ahoi! Segel setzen... Anker lichten! Auf zu neuen Ufern.<br />
-          Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.<br />
-          Wir sind Macher. Ein Zusammenschluss leidenschaftlicher Softwareentwickler.</p>
-        <p class="part2">Ahoi! Segel setzen... Wir sind keine klassische Digitalagentur!<br />
-          Wir sind Techies im Herzen, ein Team von Software-Entwicklern und Freelancern,<br />
-          um gemeinsam von der Idee zum Produkt unsere Kunden besser zu unterstützen.</p>
+    <div class="container max-w-screen-2xl mx-auto text-white grid grid-cols-5">
+      <div class="col-span-3 pr-8">
+        <h1 class="mt-8">„Wir haben eine Vision: <span class="smaller">Unser Handwerk und Ihre Software.“</span></h1>
+        <div id="introText" class="my-16">
+          <p class="part1">Ahoi! Segel setzen... Anker lichten! Auf zu neuen Ufern.<br />
+            Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.<br />
+            Wir sind Macher. Ein Zusammenschluss leidenschaftlicher Softwareentwickler.</p>
+          <p class="part2">Ahoi! Segel setzen... Wir sind keine klassische Digitalagentur!<br />
+            Wir sind Techies im Herzen, ein Team von Software-Entwicklern und Freelancern,<br />
+            um gemeinsam von der Idee zum Produkt unsere Kunden besser zu unterstützen.</p>
+        </div>
+        <CtaButton class="block" @clicked="onClickCta"></CtaButton>
       </div>
-      <CtaButton class="block" @clicked="onClickCta"></CtaButton>
+      <div class="col-span-2">
+        <img src="./../assets/img/intro_1.png" alt="" class="right">
+      </div>
     </div>
   </curved>
 </template>
@@ -38,7 +43,7 @@ p {
   font-size: 1.4em;
 }
 h1 {
-  font-size: 4.8em;
+  font-size: 5.8em;
 }
 h1 span.smaller {
   font-size: 0.75em;
