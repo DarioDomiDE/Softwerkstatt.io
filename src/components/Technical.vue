@@ -32,7 +32,7 @@
           <img src="./../assets/img/technologies.jpg" alt="">
         </div>
       </div>
-      <CtaButton class="mt-16" @clicked="onClickCta"></CtaButton>
+      <CtaButton class="mt-16 hover:border-black" @clicked="onClickCta"></CtaButton>
     </div>
   </curved>
 </template>

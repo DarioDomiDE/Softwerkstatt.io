@@ -35,7 +35,7 @@
           <p>Effizient vs effektiv, Lieber Schnell am Markt statt perfektes Handwerk. Wir hinterfragen ständig, was ist <b>dringend</b>, aber was auch <b>wichtig</b> ist. Konzentration auf Core-Features und Kompromisse eingehen.</p>
         </article> -->
       </div>
-      <CtaButton class="mt-8" @clicked="onClickCta"></CtaButton>
+      <CtaButton class="mt-8 hover:text-white" @clicked="onClickCta"></CtaButton>
     </div>
   </curved>
 </template>

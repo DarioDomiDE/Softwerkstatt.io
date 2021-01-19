@@ -1,7 +1,9 @@
 <template>
   <section class="container max-w-screen-lg 2xl:max-w-screen-xl py-16 px-4 xl:px-0">
     <h2>Wer wir sind.</h2>
-    <p class="pb-8 w-full md:max-w-4xl">Wir stellen uns vor. Made with love x3 in Hamburg und im Herzen Techies sind wir ein Zusammenschluss von Softwareentwicklern und ein Netzwerk aus Freiberuflern, um als Consultant on-site oder fully remote das zu tun, was wir am liebsten machen - Software entwickeln.</p>
+    <p class="pb-8 w-full md:max-w-4xl">Wir stellen uns vor. Made with love <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="20" class="inline-block" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+</svg> in Hamburg und im Herzen Techies sind wir ein Zusammenschluss von Softwareentwicklern und ein Netzwerk aus Freiberuflern, um als Consultant on-site oder fully remote das zu tun, was wir am liebsten machen - Software entwickeln.</p>
     <div class="flex">
       <div class="flex-1 relative">
         <img src="./../assets/img/about_us.jpg" alt="">

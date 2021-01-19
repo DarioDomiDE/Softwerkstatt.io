@@ -38,7 +38,7 @@
           </div>
         </div>
       </div>
-      <CtaButton class="my-4" @clicked="onClickCta"></CtaButton>
+      <CtaButton class="my-4 hover:border-black" @clicked="onClickCta"></CtaButton>
     </div>
   </curved>
 </template>

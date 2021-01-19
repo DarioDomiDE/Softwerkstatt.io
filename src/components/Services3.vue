@@ -41,7 +41,7 @@
         </ul>
       </div>
     </div>
-    <CtaButton class="bg-gray-100 float-right my-4" @clicked="onClickCta"></CtaButton>
+    <CtaButton class="bg-gray-100 float-right my-4 border-gray-100 hover:border-black" @clicked="onClickCta"></CtaButton>
   </section>
 </template>
 
