@@ -2,7 +2,7 @@
 # abort on errors
 set -e
 # build
-yarn run build
+npm run build
 # navigate into the build output directory
 cd dist
 # if you are deploying to a custom domain
@@ -11,4 +11,3 @@ git init
 git add -A
 git commit -m 'deploy'
 git push -f git@github.com:DarioDomiDE/Softwerkstatt.io.git master:gh-pages
-cd -
