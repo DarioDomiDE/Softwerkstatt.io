@@ -1,17 +1,13 @@
 <template>
   <curved class="gradient min-h-screen">
     <div class="container max-w-screen-2xl mx-auto text-white grid grid-cols-5">
-      <div class="col-span-3 pr-8">
-        <h1>„Wir haben eine Vision: <span class="smaller">Unser Handwerk und Ihre Software.“</span></h1>
-        <div id="introText" class="my-16">
-          <p class="part1">Ahoi! Segel setzen... Anker lichten! Auf zu neuen Ufern.<br />
-            Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.<br />
-            Wir sind Macher. Ein Zusammenschluss leidenschaftlicher Softwareentwickler.</p>
-          <p class="part2">Ahoi! Segel setzen... Wir sind keine klassische Digitalagentur!<br />
-            Wir sind Techies im Herzen, ein Team von Software-Entwicklern und Freelancern,<br />
-            um gemeinsam von der Idee zum Produkt unsere Kunden besser zu unterstützen.</p>
-        </div>
-        <CtaButton class="block hover:text-white" @clicked="onClickCta"></CtaButton>
+      <div class="col-span-3 pr-32">
+        <h1>Wir haben eine Vision: Unser Handwerk und Ihre Software.</h1>
+        <p class="my-16">
+          Ahoi! Wir setzen Segel und lichten den Anker auf dem Weg zu neuen Ufern!<br />
+          Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.
+        </p>
+        <CtaButton class="block hover:text-white" @clicked="onClickCta">Jetzt Segel setzen für Ihren Kurs</CtaButton>
       </div>
       <div class="col-span-2">
         <img src="./../assets/img/intro_1.png" alt="" class="right">
@@ -40,13 +36,10 @@ export default {
 
 <style scoped>
 p {
-  font-size: 1.4em;
+  font-size: 1.5em;
 }
 h1 {
-  font-size: 5.8em;
-}
-h1 span.smaller {
-  font-size: 0.75em;
+  font-size: 5.0em;
 }
 .gradient {
   background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;

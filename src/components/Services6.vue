@@ -59,7 +59,8 @@ export default {
 
 <style scoped>
 .gradient {
-  background: linear-gradient(45deg, #168cf8 0%, #59dfff 90%) !important;
+  background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;
+  /* background: linear-gradient(45deg, #168cf8 0%, #59dfff 90%) !important; */
 }
 article {
   border: 1px solid transparent;
