@@ -29,10 +29,10 @@
         </div>
         <div class="md:col-span-3">
           <h4>Muttersprachen</h4>
-          <img src="./../assets/img/technologies.jpg" alt="">
+          <img src="./../assets/img/technologies.png" alt="">
         </div>
       </div>
-      <CtaButton class="mt-16 hover:border-black" @clicked="onClickCta"></CtaButton>
+      <CtaButton class="mt-16 hover:border-gray-700" @clicked="onClickCta"></CtaButton>
     </div>
   </curved>
 </template>
