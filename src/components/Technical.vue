@@ -32,7 +32,7 @@
           <img src="./../assets/img/technologies.png" alt="">
         </div>
       </div>
-      <CtaButton class="mt-16 hover:border-gray-700" @clicked="onClickCta">Mit uns handwerkern</CtaButton>
+      <CtaButton class="mt-16 hover:border-gray-700" @clicked="onClickCta">Jetzt Software entwickeln</CtaButton>
     </div>
   </curved>
 </template>

@@ -47,6 +47,13 @@ export default {
 </script>
 
 <style scoped>
+#footer {
+  position: absolute;
+  bottom: -470px;
+  left: 0;
+  width: 100%;
+  z-index: -10;
+}
 h6 {
   color: white;
 }
@@ -56,13 +63,5 @@ p, li {
 }
 .gradient {
   background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;
-}
-</style>
-
-<style>
-section:not(#footer) {
-  position: relative;
-  background-color: #fff;
-  z-index: 20;
 }
 </style>

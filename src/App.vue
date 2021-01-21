@@ -1,16 +1,18 @@
 <template>
   <Menu ref="menu" />
-  <Welcome />
-  <Intro @clicked="onClickCta" />
-  <Services3 @clicked="onClickCta" />
-  <Howto @clicked="onClickCta" />
-  <Services6 @clicked="onClickCta" />
-  <Technical @clicked="onClickCta" />
-  <Aboutus />
-  <Projects />
-  <References />
   <Footer />
-  <Modal ref="modal" @modalClosed="onModalClosed" />
+  <div id="content">
+    <Welcome />
+    <Intro @clicked="onClickCta" />
+    <Services3 @clicked="onClickCta" />
+    <Howto @clicked="onClickCta" />
+    <Services6 @clicked="onClickCta" />
+    <Technical @clicked="onClickCta" />
+    <Aboutus />
+    <Projects />
+    <References />
+    <Modal ref="modal" @modalClosed="onModalClosed" />
+  </div>
 </template>
 
 <script>

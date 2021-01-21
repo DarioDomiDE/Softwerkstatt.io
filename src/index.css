@@ -5,10 +5,15 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  margin-bottom: 470px;
+}
+
 #app {
   font-family: 'Tw Cen MT', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -57,4 +62,11 @@ a:hover {
 .scale-103:hover {
   --tw-scale-x: 1.03;
   --tw-scale-y: 1.03;
+}
+#content {
+  background-color: #fff;
+}
+section:not(#footer) {
+  position: relative;
+  z-index: 20;
 }
