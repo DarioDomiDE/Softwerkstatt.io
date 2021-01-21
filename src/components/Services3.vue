@@ -1,5 +1,5 @@
 <template>
-  <section class="container min-h-screen max-w-screen-xl pt-32 pb-32 px-4 md:px-8 2xl:px-0">
+  <section class="container min-h-0 lg:min-h-screen max-w-screen-xl pt-32 pb-32 px-4 md:px-8 2xl:px-0">
     <h2 class="mb-8">Hier unterstützen wir.</h2>
 
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
@@ -19,15 +19,15 @@
           </article>
           <article :class="{'active': active == 2}">
             <h4>Industrie 4.0</h4>
-            <p>Geschäftsmodelle und Branchen verändern sich, werden digitaler, und Arbeitsabläufe effizienter. Als IT Dienstleister wissen wir aus der Praxis: Für die effizientesten Visionen und Strategien  bedarf es die individuelle Software-Lösung für etablierte und neue Arbeitsabläufe. Um Marktvorsprünge auszubauen, bedarf es nicht weniger als einer 10x Optimierung. Wir möchten Ihre Prozesse und Abläufe optimieren, und bieten Ihnen unverbindlich passgenaue Strategie-Beratung an. Wir verhindern Stillstand, denn solange Ihr Unternehmen wächst, muss Ihre Software mit wachsen.  Mit dem Ziel Arbeitsabläufe zu verbessern und Auslastung zu steigern, um nachhaltiges Wachstum Ihrer Mitarbeiter, Kollegen und Abteilungen zu verwirklichen.</p>
+            <p>Geschäftsmodelle und Branchen verändern sich, werden digitaler und Arbeitsabläufe effizienter. Als IT-Dienstleister wissen wir aus der Praxis: Individuelle Software-Lösungen für etablierte und neue Arbeitsprozesse bringen die effizientesten Strategien im Einklang mit Ihrer Vision hervor. Um als Unternehmen Marktvorsprünge auszubauen, braucht es vor allem das grundlegende Commitment zur Optimierung. Wir möchten Ihre Prozesse und Abläufe optimieren, und bieten Ihnen dafür unverbindlich eine passgenaue Strategie-Beratung an. Unser Ziel ist es, Arbeitsabläufe zu verbessern und so die Auslastung zu steigern, um Produktivität Ihrer Mitarbeiter, Kollegen durch intelligente Software-Lösungen nachhaltig zu verbessern.</p>
           </article>
           <article :class="{'active': active == 3}">
             <h4>Prozessoptimierung</h4>
-            <p>Wie optimieren Sie Ihr Geschäftsmodell im digitalen Raum? Es bedarf kreativer Lösungen für Geschäftsmodelle und komplexe Aufgaben, und um aufwändige Arbeitsschritte und deren Bottlenecks zu entfernen. Auf Basis einer Bewertung von Arbeitsabläufen und Prozessen Ihres Unternehmens bringen wir neue Blickwinkel mit ein, um mit der Entwicklung eigener Tools und Plattformen Prozesse zu digitalisieren und Abläufe zu automatisieren. Wir möchten Sie mit nötigem Fachwissen und Tools ausschalten, und Ihre Software für langfristige Erweiterbarkeit konzipieren, um das Potenzial auch in einem veränderndem Marktumfeld voll auszuschöpfen. Dabei begleiten wir unsere Kunden von der Konzeption, über Programmierung bis zur Skalierung. Um schneller wachsen zu können, Mitarbeiter zu entlasten oder besser neue Kunden zu gewinnen. Denn wir lieben Automatisierung, die das (Business-) Leben vereinfacht.</p>
+            <p>Wie optimieren Sie Ihr Geschäftsmodell im digitalen Raum? Es bedarf kreativer Lösungen für die komplexen Aufgaben moderner Geschäftsmodelle. Hierbei ist es von besonderer Bedeutung, Arbeitsschritte zu vereinfachen und Bottlenecks zu entfernen. Auf Grundlage einer Bewertung der Arbeitsabläufe Ihres Unternehmens bringen wir neue Blickwinkel ein, um mit Software teure Abläufe zu automatisieren und so Mitarbeiter zu entlasten. Um zukunftssicher für die stetigen Veränderungen Ihres Marktumfeldes zu sein, möchten wir Sie mit dem nötigen Fachwissen und Tools ausstatten, um das langfristige Potenzial Ihrer Software sicherstellen. Wir begleiten unsere Kunden in allen Schritten der Prozessoptimierung: Von der Konzeption, über Entwicklung von Algorithmen bis zur Programmierung. Denn wir lieben Automatisierung, um schneller wachsen können, Ihre Mitarbeiter zu entlasten und besser neue Kunden gewinnen zu können! Software, die das Leben vereinfacht.</p>
           </article>
           <article :class="{'active': active == 4}">
             <h4>Digitale Transformation</h4>
-            <p>Technologie hat die Welt radikal verändert. Daten sind das neue Gold. Und disruptive Technologien bringen fundamentale Veränderungen in etablierte Geschäftsmodelle. Herausforderungen wie diese sollten Sie als Chancen statt als Probleme sehen: Digitalisierung und Daten bieten Vorteile, um dauerhaft besser und effektiver zu arbeiten, flexibel auf Marktveränderungen zu reagieren sowie Trends frühzeitig zu erkennen. Technologie ist die beste Schnittstelle zwischen Ihren Geschäftsmodellen, Mitarbeitern und neuen Kunden. Maßgeschneiderte Software-Lösungen unterstützen dabei unternehmenskritische Anwendungen. Unser Ziel ist es, strategische und innovative Weitsicht auf Basis dieser digitalen Möglichkeiten zu integrieren und unseren Kunden die digitale Zukunft zu erleichtern. Wir entwickeln ausschließlich Software, in der Unternehmensprozesse wachsen können, um nachhaltig erfolgreich zu sein.</p>
+            <p>Technologie hat die Welt radikal verändert, Daten sind das neue Gold und disruptive Technologien bringen fundamentale Veränderungen in etablierten Geschäftsmodellen. Ständige Veränderung ist Teil unserer Welt und Herausforderungen wie diese als Chancen statt Probleme zu sehen, bietet neue Umsatzpotenziale für etablierte Geschäftsmodelle: Digitalisierung und Data-Mining ermöglichen es, dauerhaft effektiver zu arbeiten, flexibel auf Marktveränderungen zu reagieren und neue Trends frühzeitig zu erkennen. Technologie ist die beste Schnittstelle zwischen Geschäftsmodellen, Mitarbeitern und neuen und alten Kunden. Maßgeschneiderte Software-Lösungen unterstützen dabei Ihre unternehmenskritischen Anwendungen. Unser Ziel ist es, innovative und strategische Weitsicht auf Grundlage dieser digitalen Möglichkeiten für unsere Kunden zu integrieren. Wir möchten damit Ihren Weg in die digitale Zukunft ermöglichen und nachhaltig erleichtern.</p>
           </article>
         </ul>
       </div>
@@ -41,7 +41,7 @@
         </ul>
       </div>
     </div>
-    <CtaButton class="bg-gray-100 float-right my-4 border-gray-100 hover:border-gray-500" @clicked="onClickCta"></CtaButton>
+    <CtaButton class="float-right my-4 bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Jetzt Prozesse optimieren</CtaButton>
   </section>
 </template>
 

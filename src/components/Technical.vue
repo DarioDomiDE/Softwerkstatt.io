@@ -3,8 +3,8 @@
     <div class="container max-w-screen-lg 2xl:max-w-screen-xl pt-16 px-4 xl:px-0">
       <h2>Handwerk.</h2>
       <p class="pb-8 w-full md:max-w-4xl">Jetzt wird‘s technisch; Wir sind auf Full-Stack- und Backend-Entwicklung spezialisiert, programmieren Websites, mobile Apps und Datenbanken. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir bevorzugen "Try early - fail fast", um User-orientiert zu entwickeln.</p>
-      <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-7 gap-4">
-        <div class="md:col-span-2">
+      <div class="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-7 gap-4">
+        <div class="sm:col-span-2">
           <h4>Technologien</h4>
           <ul>
             <li>Responsive Websites &amp; SPA</li>
@@ -16,7 +16,7 @@
             <li>Clean Code, DRY, KISS</li>
           </ul>
         </div>
-        <div class="md:col-span-2">
+        <div class="sm:col-span-2">
           <h4>Werkzeuge</h4>
           <ul>
             <li>Vue.js &amp; Angular</li>
@@ -27,12 +27,12 @@
             <li>Unit Tests &amp; UI-Tests</li>
           </ul>
         </div>
-        <div class="md:col-span-3">
+        <div class="sm:col-span-3">
           <h4>Muttersprachen</h4>
           <img src="./../assets/img/technologies.png" alt="">
         </div>
       </div>
-      <CtaButton class="mt-16 hover:border-gray-700" @clicked="onClickCta"></CtaButton>
+      <CtaButton class="mt-16 hover:border-gray-700" @clicked="onClickCta">Mit uns handwerkern</CtaButton>
     </div>
   </curved>
 </template>

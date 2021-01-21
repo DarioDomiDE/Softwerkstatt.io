@@ -1,16 +1,14 @@
 <template>
-  <curved class="gradient min-h-screen">
-    <div class="container max-w-screen-2xl mx-auto text-white grid grid-cols-5">
-      <div class="col-span-3 pr-32">
-        <h1>Wir haben eine Vision: Unser Handwerk und Ihre Software.</h1>
-        <p class="my-16">
-          Ahoi! Wir setzen Segel und lichten den Anker auf dem Weg zu neuen Ufern!<br />
-          Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.
-        </p>
-        <CtaButton class="block hover:text-white" @clicked="onClickCta">Jetzt Segel setzen für Ihren Kurs</CtaButton>
+  <curved class="gradient min-h-0 lg:min-h-screen">
+    <div class="container max-w-screen-2xl mx-auto text-white">
+      <div class="float-none lg:float-right w-full lg:w-2/5 text-center">
+        <img src="./../assets/img/intro_1.png" alt="" class="mx-auto max-w-sm md:max-w-md lg:max-w-full">
       </div>
-      <div class="col-span-2">
-        <img src="./../assets/img/intro_1.png" alt="" class="right">
+      <div class="float-none lg:float-left w-full lg:w-3/5 px-4 md:px-0">
+        <h1 class="mb-8 lg:mb-16 text-5xl md:text-6xl lg:text-7xl pr-0 lg:pr-32">Wir haben eine Vision: Unser Handwerk und Ihre Software.</h1>
+        <span class="inline xl:block">Ahoi! Wir setzen Segel und lichten den Anker auf dem Weg zu neuen Ufern! </span>
+        <span class="inline xl:block">Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.</span>
+        <CtaButton class="mt-8 lg:mt-16 block hover:text-white" @clicked="onClickCta">Jetzt Segel setzen für neuen Kurs</CtaButton>
       </div>
     </div>
   </curved>
@@ -35,12 +33,12 @@ export default {
 </script>
 
 <style scoped>
-p {
+span {
   font-size: 1.5em;
 }
-h1 {
+/* h1 {
   font-size: 5.0em;
-}
+} */
 .gradient {
   background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;
 }

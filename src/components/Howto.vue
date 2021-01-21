@@ -1,10 +1,10 @@
 <template>
-  <curved class="min-h-screen bg" :skipBorderBottom="true" id="bg2">
+  <curved class="min-h-0 lg:min-h-screen bg" :skipBorderBottom="true" id="bg2">
     <div class="container max-w-screen-xl pb-4 px-4 md:px-8 2xl:px-0">
       <h2>Wie wir arbeiten.</h2>
       <div id="content">
         <img class="mx-auto" src="./../assets/img/howto2.png" alt="">
-        <div id="desc">
+        <div id="desc" class="hidden lg:block">
           <div id="step1" class="step">
             <h6>Analyse</h6>
             <div class="popup">
@@ -56,7 +56,7 @@
           </div>
         </div>
       </div>
-      <CtaButton class="my-4 hover:border-gray-700" @clicked="onClickCta"></CtaButton>
+      <CtaButton class="my-4 hover:border-gray-700" @clicked="onClickCta">Jetzt Chancen ergreifen</CtaButton>
     </div>
   </curved>
 </template>

@@ -1,7 +1,7 @@
 <template>
-  <section class="container mx-auto max-w-screen-lg 2xl:max-w-screen-xl pt-16 pb-32 px-4 lg:px-0">
-    <h2>Referenzen.</h2>
-    <p class="w-full md:max-w-2xl">Ein Dutzend gute Gründe, mit uns zu arbeiten. Dies ist ein Auszug unserer Kunden, bei denen wir stolz sind, sie glücklich gemacht und unterstützt zu haben.</p>
+  <section class="container mx-auto max-w-screen-lg 2xl:max-w-screen-xl pt-16 pb-16 px-4 lg:px-0 text-center">
+    <h2 class="text-left">Referenzen.</h2>
+    <p class="w-full md:max-w-2xl text-left">Ein Dutzend gute Gründe, mit uns zu arbeiten. Dies ist ein Auszug unserer Kunden, bei denen wir stolz sind, sie glücklich gemacht und unterstützt zu haben.</p>
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-items-center
     gap-x-8 sm:gap-x-16
     gap-y-8 sm:gap-y-16
@@ -19,11 +19,23 @@
       <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
       <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
     </div>
+    <span class="mt-32 mb-2 text-center block text-gray-600">Wie können wir auch Ihnen helfen, Ihre Software zu verbessern?</span>
+    <CtaButton class="mx-auto bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Jetzt Kontakt aufnehmen</CtaButton>
   </section>
 </template>
 
 <script>
+import CtaButton from './CtaButton.vue'
 export default {
+  name: 'References',
+  components: {
+    CtaButton
+  },
+  methods: {
+    onClickCta() {
+      this.$emit('clicked', '')
+    }
+  }
 }
 </script>
 
