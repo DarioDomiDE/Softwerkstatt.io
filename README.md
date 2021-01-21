@@ -17,8 +17,7 @@ sh deploy.sh
 If Public Key issues:
 
 ```
-cd ~/.ssh
-cat keyname.pub | xclip
+cat ~/.ssh/keyname.pub | clip
 eval $(ssh-agent -s)
 ssh-add ~/.ssh/keyname
 ```
