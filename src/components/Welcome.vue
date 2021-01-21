@@ -1,10 +1,10 @@
 <template>
-  <section class="container max-w-screen-xl h-screen pt-32 pb-32">
+  <section class="container max-w-screen-xl h-screen pt-32 pb-32 overflow-hidden">
     <video class="h-full mx-auto grayscale object-cover" id="videoPlayer" poster="./../assets/img/header_with_bg.png" preload="auto" autobuffer="" autoplay="" loop="" playsinline="" muted="">
       <source src="./../assets/video/teaser.webm" type='video/webm; codecs="vp8, vorbis"'>
       <source src="./../assets/video/teaser.mp4" type="video/mp4">
     </video>
-    <div class="mx-auto w-full h-screen pt-32 pb-32 absolute left-0 top-0">
+    <div class="mx-auto w-full h-screen pt-32 pb-32 absolute left-0 top-0" id="logoContainer">
       <div class="h-full w-full" id="logo"></div>
     </div>
   </section>
@@ -33,6 +33,18 @@ export default {
 }
 /* 1280/680 + 2x 8rem padding */
 @media (min-aspect-ratio: 1980/936) {
+  #logo {
+    background-size: contain;
+  }
+}
+@media (max-width: 800px) {
+  video {
+    transform: scale(1.5  );
+    object-fit: contain;
+  }
+  #logoContainer {
+    transform: scale(1.7);
+  }
   #logo {
     background-size: contain;
   }

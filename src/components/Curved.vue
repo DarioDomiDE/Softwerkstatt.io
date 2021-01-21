@@ -30,16 +30,16 @@ export default {
     onResize() {
       this.windowHeight = window.innerHeight
       this.windowWidth = window.innerWidth
-      this.refresh();
+      this.refresh()
     },
     refresh() {
       var borderWidth = 1920
       var borderHeight = 400
       var newAspectRatio = this.windowWidth / this.windowHeight
       if(this.aspectRatio != newAspectRatio) {
-        this.aspectRatio = newAspectRatio;
+        this.aspectRatio = newAspectRatio
         var wantAspectRatio = borderWidth / borderHeight
-        this.wantHeight = Math.floor(this.windowWidth / wantAspectRatio);
+        this.wantHeight = Math.floor(this.windowWidth / wantAspectRatio)
       }
     }
   },
@@ -60,7 +60,7 @@ export default {
   position: absolute;
   width: 100%;
   height: 300px;
-  background: url('./../assets/img/border.png') no-repeat center center;
+  background: url('./../assets/img/border.png') no-repeat left center;
   background-size: cover;
 }
 .gray {
