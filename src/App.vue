@@ -1,6 +1,5 @@
 <template>
   <Menu ref="menu" />
-  <Footer />
   <div id="content">
     <Welcome />
     <Intro @clicked="onClickCta" />
@@ -13,6 +12,7 @@
     <References />
     <Modal ref="modal" @modalClosed="onModalClosed" />
   </div>
+  <Footer />
 </template>
 
 <script>

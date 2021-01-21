@@ -65,8 +65,9 @@ a:hover {
 }
 #content {
   background-color: #fff;
+  z-index: 20;
 }
-section:not(#footer) {
+#content section {
   position: relative;
   z-index: 20;
 }
