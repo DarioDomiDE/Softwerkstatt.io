@@ -39,7 +39,7 @@ export default {
 }
 @media (max-width: 800px) {
   video {
-    transform: scale(1.5  );
+    transform: scale(1.5);
     object-fit: contain;
   }
   #logoContainer {

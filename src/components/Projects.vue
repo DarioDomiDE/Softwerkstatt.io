@@ -87,7 +87,4 @@ figure {
 figure.active {
   display: block;
 }
-h5 {
-  font-size: 2.4em;
-}
 </style>
