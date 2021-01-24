@@ -9,7 +9,7 @@
     <Technical @clicked="onClickCta" />
     <Aboutus />
     <Projects />
-    <References />
+    <References @clicked="onClickCta" />
     <Modal ref="modal" @modalClosed="onModalClosed" />
   </div>
   <Footer />

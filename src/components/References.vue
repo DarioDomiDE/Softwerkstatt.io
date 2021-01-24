@@ -19,7 +19,7 @@
       <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
       <img src="./../assets/img/logos/kalypso.png" alt="Kalypso Media Mobile" />
     </div>
-    <span class="mt-32 mb-2 text-center block text-gray-600">Wie können wir auch Ihnen helfen, Ihre Software zu verbessern?</span>
+    <span class="mt-32 mb-2 text-center block text-gray-600">Wie können wir Ihnen helfen, Ihre Software zu verbessern?</span>
     <CtaButton class="mx-auto bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Jetzt Kontakt aufnehmen</CtaButton>
   </section>
 </template>

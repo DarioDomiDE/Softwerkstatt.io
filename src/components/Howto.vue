@@ -60,13 +60,15 @@
           <div class="line line-left lg:hidden"></div>
           <div class="line line-bottom"></div>
         </div>
-        <div id="step7" class="step order-7">
+        <div id="step7" class="step order-8 lg:order-7 sm-margin-left">
           <h6>Potential</h6>
           <img class="mx-austo" src="./../assets/img/howto_step7.png" alt="">
           <div class="popup">
             <img class="mx-auto" src="./../assets/img/howto_step7.png" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
+        </div>
+        <div id="step8" class="step order-7 lg:order-8 empty">
         </div>
       </div>
       <CtaButton class="my-4 hover:border-gray-700" @clicked="onClickCta">Jetzt Chancen ergreifen</CtaButton>
@@ -97,7 +99,6 @@ export default {
 }
 #howtoContainer {
   position: relative;
-  /* text-align: right; */
   display: flex;
   flex-flow: wrap;
 }
@@ -106,11 +107,13 @@ export default {
   width: 44%;
   padding-top: 44%;
   display: inline-block;
-  border: 1px solid #000;
   border-radius: 100%;
-  background: #fff;
   text-align: center;
   margin-bottom: 12%;
+}
+.step:not(.empty) {
+  border: 1px solid #000;
+  background: #fff;
 }
 .margin-left,
 .sm-margin-left {
@@ -140,6 +143,9 @@ export default {
     bottom: 0;
     right: 0;
   }
+  h6 {
+    top: 5%;
+  }
   img {
     height: 100%;
     max-height: calc(100% - 50px - 20px);
@@ -148,7 +154,7 @@ export default {
   }
   .line {
     position: absolute;
-    background-color: aqua;
+    background-color: #C1DDF3;
   }
   .line-left {
     left: calc(-27% - 1px);

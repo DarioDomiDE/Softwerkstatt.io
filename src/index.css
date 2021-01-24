@@ -36,7 +36,7 @@ h5 {
   font-size: 2.4em;
 }
 h6 {
-  font-size: 2.0em;
+  font-size: 2.2em;
 }
 p, span, li {
   font-size: 1.3em;
@@ -46,13 +46,33 @@ p, span, li {
   p, span, li {
     font-size: 1.2em;
   }
+  h2 {
+    font-size: 3.0em;
+  }
+  h4 {
+    font-size: 2.0em;
+  }
 }
 @media (max-width: 768px) {
+  body {
+    margin-bottom: 670px;
+  }
   p, span, li {
     font-size: 1.1em;
   }
   h2 {
-    font-size: 3.0em;
+    font-size: 2.6em;
+  }
+  h4 {
+    font-size: 1.8em;
+  }
+  h6 {
+    font-size: 4.8vw;
+  }
+}
+@media (max-width: 640px) {
+  p, span, li {
+    font-size: 1.0em;
   }
 }
 

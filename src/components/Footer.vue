@@ -1,6 +1,6 @@
 <template>
-  <curved class="gradient absolute-important left-0 w-full z--10 bottom--470" :skipBorderBottom="true" :fixed="true">
-    <footer class="container max-w-screen-xl flex flex-col md:flex-row px-16 pb-16 z-10">
+  <curved class="gradient absolute-important left-0 w-full -z-10 -bottom-470" :skipBorderBottom="true" :fixed="true">
+    <footer class="container max-w-screen-xl flex flex-col md:flex-row px-16 pb-4 md:pb-16 z-10">
       
       <div class="flex-1">
         <h6 class="mb-2">Freunde werden?</h6>
@@ -47,11 +47,16 @@ export default {
 </script>
 
 <style scoped>
-.z--10 {
+.-z-10 {
   z-index: -10;
 }
-.bottom--470 {
+.-bottom-470 {
   bottom: -470px;
+}
+@media (max-width: 768px) {
+  .-bottom-470 {
+    bottom: -670px;
+  }
 }
 .absolute-important {
   position: absolute !important;
