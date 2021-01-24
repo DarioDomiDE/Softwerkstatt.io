@@ -5,7 +5,7 @@
         <li>Unterstützung</li>
         <li>How-To</li>
         <li>Leistungen</li>
-        <li>Handwerk</li>
+        <li>Maschinenraum</li>
         <li>Projekte</li>
         <li>Referenzen</li>
       </ul>
