@@ -35,7 +35,7 @@
           <p>Effizient vs effektiv, Lieber Schnell am Markt statt perfektes Handwerk. Wir hinterfragen ständig, was ist <b>dringend</b>, aber was auch <b>wichtig</b> ist. Konzentration auf Core-Features und Kompromisse eingehen.</p>
         </article> -->
       </div>
-      <CtaButton class="mt-8 hover:text-white" @clicked="onClickCta">Jetzt beraten lassen</CtaButton>
+      <CtaButton class="mt-8 hover:text-white" @clicked="onClickCta">Jetzt Potential nutzen</CtaButton>
     </div>
   </curved>
 </template>
@@ -51,7 +51,7 @@ export default {
   },
   methods: {
     onClickCta() {
-      this.$emit('clicked', '')
+      this.$emit('clicked', 'Potential nutzen')
     }
   }
 }

@@ -62,7 +62,7 @@ export default {
       this.active = id; 
     },
     onClickCta() {
-      this.$emit('clicked', '')
+      this.$emit('clicked', 'Prozesse optimieren')
     }
   }
 }
@@ -77,20 +77,29 @@ ul:not(#tab-navi) article.active,
 ul:not(#tab-navi) li.active {
   display: block;
 }
-#tab-navi {
+#tab-navi li {
+  cursor: pointer;
 }
-  #tab-navi ul {
+@media (max-width: 768px) {
+  #tab-navi li {
+    border:  1px solid rgba(0,0,0,1);
+    line-height: 3.0em;
+    padding: 0 10px;
   }
+  #tab-navi li.active {
+    background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;
+  }
+}
+@media (min-width: 768px) {
   #tab-navi li {
     background-color: rgba(243, 244, 246, 1);
-    margin-bottom: 5px;
     border-radius: 5px;
-    cursor: pointer;
     transition: transform 0.3s;
     background: url('./../assets/img/button2.png') no-repeat center center transparent;
     background-size: cover;
     padding: 7px 0 0 30px;
     line-height: 95px;
+    margin-bottom: 5px;
   }
   #tab-navi li.active {
     background-image: url('./../assets/img/button1.png');
@@ -99,4 +108,5 @@ ul:not(#tab-navi) li.active {
   #tab-navi li:hover {
     transform: scale(1.05);
   }
+}
 </style>

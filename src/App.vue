@@ -46,8 +46,8 @@ export default {
     Modal
   },
   methods: {
-    onClickCta() {
-      this.$refs.modal.open();
+    onClickCta(value) {
+      this.$refs.modal.open(value);
       this.$refs.menu.close();
     },
     onModalClosed() {

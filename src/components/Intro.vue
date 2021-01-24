@@ -26,7 +26,7 @@ export default {
   },
   methods: {
     onClickCta() {
-      this.$emit('clicked', '')
+      this.$emit('clicked', 'Segel setzen')
     }
   }
 }
@@ -36,29 +36,4 @@ export default {
 .gradient {
   background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;
 }
-#introText .part1,
-#introText:hover .part2 {
-  display: block;
-}
-#introText .part2,
-#introText:hover .part1 {
-  display: none;
-}
-
-#introText {
-  border: 1px solid transparent;
-  transition: all 0.6s;
-  display: inline-block;
-}
-
-#introText:hover {
-  border-color: #fff;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 3px;
-  margin: calc(4rem - 10px) 0 calc(4rem - 10px) -20px;
-  padding: 10px 20px;
-}
-#introText .part2 {
-}
-
 </style>

@@ -33,7 +33,7 @@ export default {
   },
   methods: {
     onClickCta() {
-      this.$emit('clicked', '')
+      this.$emit('clicked', 'Kontakt aufnehmen')
     }
   }
 }

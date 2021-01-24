@@ -87,7 +87,7 @@ export default {
   },
   methods: {
     onClickCta() {
-      this.$emit('clicked', '')
+      this.$emit('clicked', 'Changen ergreifen')
     }
   }
 }
@@ -148,8 +148,8 @@ export default {
   }
   img {
     height: 100%;
-    max-height: calc(100% - 50px - 20px);
-    top: 50px;
+    max-height: calc(100% - 50px);
+    top: calc(25px + 10%);
     object-fit: contain;
   }
   .line {
@@ -157,16 +157,16 @@ export default {
     background-color: #C1DDF3;
   }
   .line-left {
-    left: calc(-27% - 1px);
+    left: calc(-28.5% - 1px);
     top: calc(50% - 10px);
-    width: 27%;
+    width: 28.5%;
     height: 20px;
   }
   .line-bottom {
     left: calc(50% - 10px);
-    bottom: calc(-27% - 1px);
+    bottom: calc(-28.5% - 1px);
     width: 20px;
-    height: 27%;
+    height: 28.5%;
   }
 
 /* #desc {
