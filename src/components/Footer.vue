@@ -1,8 +1,8 @@
 <template>
   <curved class="gradient absolute-important left-0 w-full -z-10 -bottom-470" :skipBorderBottom="true" :fixed="true">
-    <footer class="container max-w-screen-xl flex flex-col md:flex-row px-16 pb-4 md:pb-16 z-10">
+    <footer class="container max-w-screen-xl flex flex-col md:flex-row px-16 pb-4 md:pb-12 z-10 text-sm">
       
-      <div class="flex-1">
+      <div class="flex-1 pb-4">
         <h6 class="mb-2">Freunde werden?</h6>
         <p>Wenn wir Ihre Vorstellungen, gemeinsam die (Software-) Welt zu erobern, teilen, dann lass uns Freunde werden und kennen lernen.</p>
         <ul class="mt-4">
@@ -11,7 +11,7 @@
         </ul>
       </div>
 
-      <div class="flex-1 md:pl-8 lg:pl-16">
+      <div class="flex-1 md:pl-8 lg:pl-16 pb-4">
         <h6 class="mb-2">Sie haben Fragen?</h6>
         <p>Wir haben Antworten! Fragen kostet ja nichts. Gerne beraten wir Sie unverbindlich bei Ihren Projekten rund um Softwareentwicklung.</p>
         <ul class="mt-4">
@@ -22,7 +22,7 @@
         </ul>
       </div>
 
-      <div class="flex-1 md:pl-8 lg:pl-16">
+      <div class="flex-1 md:pl-8 lg:pl-16 pb-4">
         <h6 class="mb-2">Interesse geweckt?</h6>
         <p>Schön, dass wir Ihr Interesse wecken konnten. Senden Sie uns doch sehr gerne eine E-Mail oder rufen Sie uns an. Wir freuen uns drauf!</p>
         <ul class="mt-4">
@@ -66,7 +66,6 @@ h6 {
 }
 p, li {
   color: white;
-  font-size: 1.1em;
 }
 .gradient {
   background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;

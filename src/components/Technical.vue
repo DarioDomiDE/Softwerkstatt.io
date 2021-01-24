@@ -2,37 +2,38 @@
   <curved class="bg" :skipBorderTop="true" id="bg3">
     <div class="container max-w-screen-lg 2xl:max-w-screen-xl pt-16 px-4 xl:px-0">
       <h2>Maschinenraum.</h2>
-      <p class="pb-8 w-full md:max-w-4xl">Jetzt wird‘s technisch. Unser Handwerk: Wir sind auf Full-Stack- und Backend-Entwicklung spezialisiert, programmieren Websites, mobile Apps und Datenbanken. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir bevorzugen "Try early - fail fast", um User-orientiert zu entwickeln.</p>
-      <div class="grid grid-cols-1 sm:grid-cols-4 md:grid-cols-7 gap-4">
-        <div class="sm:col-span-2">
+      <p class="pb-8 w-full md:max-w-4xl">Unser Handwerk: Wir sind auf Full-Stack- und Backend-Entwicklung spezialisiert, programmieren Websites, mobile Apps und Datenbanken. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir bevorzugen "Try early - fail fast", um User-orientiert zu entwickeln.</p>
+      <div class="grid grid-cols-4 md:grid-cols-7 gap-4">
+        <div class="col-span-2">
           <h4>Technologien</h4>
           <ul>
-            <li>Responsive Websites &amp; SPA</li>
+            <li>Responsive Websites &amp; SPAs</li>
             <li>Mobile Apps</li>
             <li>Backend-Anwendungen</li>
             <li>Datenbanken</li>
             <li>Cloud-Hosting</li>
-            <li>Agile nach Scrum &amp; Kanban</li>
             <li>Clean Code, DRY, KISS</li>
+            <li>Agile Softwareentwicklung</li>
           </ul>
         </div>
-        <div class="sm:col-span-2">
+        <div class="col-span-2">
           <h4>Werkzeuge</h4>
           <ul>
             <li>Vue.js &amp; Angular</li>
             <li>React Native, Flutter, Unity</li>
-            <li>.Net 5</li>
+            <li>.Net Core &amp; .Net 5</li>
             <li>MySQL, SQL Server, NoSQL</li>
             <li>Azure &amp; AWS</li>
             <li>Unit Tests &amp; UI-Tests</li>
+            <li>Scrum &amp; Kanban</li>
           </ul>
         </div>
-        <div class="sm:col-span-3">
+        <div class="col-span-3">
           <h4>Muttersprachen</h4>
           <img src="./../assets/img/technologies.png" alt="">
         </div>
       </div>
-      <CtaButton class="mt-16 hover:border-gray-700" @clicked="onClickCta">Jetzt gemeinsam Software entwickeln</CtaButton>
+      <CtaButton class="mt-16 hover:border-gray-700" @clicked="onClickCta">Jetzt Werkstatt betreten</CtaButton>
     </div>
   </curved>
 </template>
@@ -48,7 +49,7 @@ export default {
   },
   methods: {
     onClickCta() {
-      this.$emit('clicked', 'Gemeinsam Software entwickeln')
+      this.$emit('clicked', 'Werkstatt betreten')
     }
   }
 }
@@ -57,5 +58,9 @@ export default {
 <style scoped>
 #bg3 {
   background-color: rgba(243, 244, 246, 1);
+}
+ul li {
+  list-style: circle;
+  margin-left: 20px;
 }
 </style>
