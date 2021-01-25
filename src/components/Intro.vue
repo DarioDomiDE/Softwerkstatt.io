@@ -5,7 +5,7 @@
         <img src="./../assets/img/intro_1.png" alt="" class="mx-auto sm:max-w-sm md:max-w-md lg:max-w-full">
       </div>
       <div class="float-none lg:float-left w-full lg:w-3/5 px-4 md:px-0">
-        <h1 class="mb-8 lg:mb-16 text-4xl sm:text-5xl md:text-6xl lg:text-7xl pr-0 lg:pr-32">Wir haben eine Vision: Unser Handwerk und Ihre Software.</h1>
+        <h1 class="mb-8 lg:mb-16 text-4xl sm:text-5xl md:text-6xl lg:text-7xl pr-0 lg:pr-32 text-white">Wir haben eine Vision: Unser Handwerk und Ihre Software.</h1>
         <span class="inline md:block text-lg lg:text-xl lg:text-2xl">Ahoi! Wir setzen Segel und lichten den Anker auf dem Weg zu neuen Ufern! </span>
         <span class="inline md:block text-lg lg:text-xl lg:text-2xl ">Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.</span>
         <CtaButton class="mt-8 lg:mt-16 block hover:text-white" @clicked="onClickCta">Jetzt Segel setzen für neuen Kurs</CtaButton>

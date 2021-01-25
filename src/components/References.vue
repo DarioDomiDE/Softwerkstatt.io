@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto max-w-screen-lg 2xl:max-w-screen-xl pt-16 pb-16 px-4 lg:px-0 text-center">
-    <h2 class="text-left">Referenzen</h2>
-    <p class="w-full md:max-w-2xl text-left">Ein Dutzend gute Gründe, mit uns zu arbeiten. Dies ist ein Auszug unserer Kunden, bei denen wir stolz sind, sie glücklich gemacht und unterstützt zu haben.</p>
+    <h2>Referenzen</h2>
+    <p class="w-full md:max-w-2xl mx-auto">Ein Dutzend gute Gründe, mit uns zu arbeiten. Dies ist ein Auszug unserer Kunden, bei denen wir stolz sind, sie glücklich gemacht und unterstützt zu haben.</p>
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-items-center
     gap-x-8 sm:gap-x-16
     gap-y-8 sm:gap-y-16

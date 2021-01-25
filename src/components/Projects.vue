@@ -1,8 +1,8 @@
 <template>
   <curved class="min-h-0 lg:min-h-screen" id="bg">
-    <div class="container max-w-screen-lg 2xl:max-w-screen-xl px-4 xl:px-0 pb-16">
+    <div class="container max-w-screen-lg 2xl:max-w-screen-xl px-4 xl:px-0 pb-8 text-center">
       <h2>Projekte</h2>
-      <p class="mb-12 w-full md:max-w-4xl">Wir begleiten unsere Kunden langfristig und schaffen Mehrwert, damit aus Ideen Wirklichkeit wird. Wir lieben Lösungen, und entwickeln ausschließlich Individualsoftware - echte Unikate eben.</p>
+      <p class="mb-12 w-full md:max-w-4xl mx-auto">Wir begleiten unsere Kunden langfristig und schaffen Mehrwert, damit aus Ideen Wirklichkeit wird. Wir lieben Lösungen, und entwickeln ausschließlich Individualsoftware - echte Unikate eben.</p>
       
       <div class="flex w-full">
 
@@ -14,17 +14,17 @@
 
         <div class="flex-initial px-2 lg:px-16 py-4 bg-white rounded shadow-md">
           <figure :class="{'active': active == 1}">
-            <h5>CRM</h5>
+            <h3>CRM</h3>
             <img class="img-fluid rounded" src="./../assets/img/project_x.jpg" alt="">
             <figcaption class="text-right">Web-Tool zur Verwaltung von Aufträgen und Kunden<br />Deutsche Fernsehlotterie</figcaption>
           </figure>
           <figure :class="{'active': active == 2}">
-            <h5>Web-Shop</h5>
+            <h3>Web-Shop</h3>
             <img class="img-fluid rounded" src="./../assets/img/project_y.jpg" alt="">
             <figcaption class="text-right">Tool zur Littfassseulen Buchung<br />Weischer Media</figcaption>
           </figure>
           <figure :class="{'active': active == 3}">
-            <h5>Wunderbox</h5>
+            <h3>Wunderbox</h3>
             <img class="img-fluid rounded" src="./../assets/img/project_y.jpg" alt="">
             <figcaption class="text-right">Casual Mobile Game<br />Peppermynt</figcaption>
           </figure>

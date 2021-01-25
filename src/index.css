@@ -1,4 +1,4 @@
-@import './font.css';
+@import './fonts.css';
 
 /*! @import */
 @tailwind base;
@@ -7,6 +7,7 @@
 
 body {
   margin-bottom: 470px;
+  color: #555;
 }
 
 #app {
@@ -19,21 +20,23 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
   margin-bottom: 0.5rem;
+  color: rgb(59,60,66);
 }
 h1 {
   font-size: 4.8em;
   line-height: 1.0;
 }
 h2 {
-  font-size: 3.8em;
+  font-weight: normal;
+  text-align: center;
+  font-size: 3.0em;
+  font-family: "Playfair Display";
+  margin-bottom: 3rem;
 }
 h3 {
-  font-size: 2.2em;
+  font-size: 2.0em;
 }
-h5 {
-  font-size: 2.4em;
-}
-h6 {
+h4 {
   font-size: 2.2em;
   line-height: 1.2em;
 }
@@ -67,7 +70,7 @@ p, span, li {
   h3 {
     font-size: 1.8em;
   }
-  h6 {
+  h4 {
     font-size: 4.8vw;
   }
 }
@@ -80,9 +83,6 @@ p, span, li {
   }
 }
 
-h1, h2, h3, h4, h5, h6, p, span, li {
-  font-family: 'Tw Cen MT', sans-serif;
-}
 a {
   text-decoration: underline;
 }

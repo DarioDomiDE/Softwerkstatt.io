@@ -1,6 +1,6 @@
 <template>
-  <section class="container min-h-0 lg:min-h-screen max-w-screen-xl pt-32 pb-32 px-4 md:px-8 2xl:px-0">
-    <h2 class="mb-8">Hier unterstützen wir</h2>
+  <section class="container min-h-0 max-w-screen-xl pt-8 pb-8 px-4 md:px-8 2xl:px-0">
+    <h2>Hier unterstützen wir</h2>
 
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
       <div class="col-span-1 lg:col-span-1 hidden md:block">
@@ -41,7 +41,7 @@
         </ul>
       </div>
     </div>
-    <CtaButton class="float-right my-4 bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Jetzt Prozesse optimieren</CtaButton>
+    <CtaButton class="mt-8 bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Jetzt Prozesse optimieren</CtaButton>
   </section>
 </template>
 

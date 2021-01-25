@@ -1,6 +1,6 @@
 <template>
   <curved class="gradient min-h-0 lg:min-h-screen" v-bind:borderTopGray="true" v-bind:borderBottomGray="true">
-    <div class="container max-w-screen-xl text-white px-4 md:px-8 2xl:px-0">
+    <div class="container max-w-screen-xl px-4 md:px-8 2xl:px-0" id="services6">
       <h2>Leistungen</h2>
       <p class="mb-12 w-full md:max-w-4xl">Unsere Domäne, hierbei haben wir Spaß. Wir sind im Herzen Techies. Und unterstützen unsere Kunden in allen Phasen ihrer Digitalisierung. Eine Auwahl, was uns besonders am Herzen liegt:</p>
       <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8">
@@ -52,6 +52,11 @@ export default {
 </script>
 
 <style scoped>
+#services6,
+#services6 h2,
+#services6 h3 {
+  color: #fff;
+}
 .gradient {
   background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;
 }

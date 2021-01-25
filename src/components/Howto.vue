@@ -4,7 +4,7 @@
       <h2>Wie wir arbeiten</h2>
       <div id="howtoContainer">
         <div id="step1" class="step order-1">
-          <h6>Analyse</h6>
+          <h4>Analyse</h4>
           <img class="mx-auto" src="./../assets/img/howto_step1.png" alt="">
           <div class="popup">
             <img class="mx-auto" src="./../assets/img/howto_step1.png" alt="">
@@ -12,7 +12,7 @@
           </div>
         </div>
         <div id="step2" class="step order-2 margin-left">
-          <h6>Beratung</h6>
+          <h4>Beratung</h4>
           <img class="mx-auto" src="./../assets/img/howto_step2.png" alt="">
           <div class="popup">
             <img class="mx-auto" src="./../assets/img/howto_step2.png" alt="">
@@ -22,7 +22,7 @@
           <div class="line line-bottom block lg:hidden"></div>
         </div>
         <div id="step3" class="step order-4 lg:order-3 margin-left">
-          <h6>Prototyping</h6>
+          <h4>Prototyping</h4>
           <img class="mx-auto" src="./../assets/img/howto_step3.png" alt="">
           <div class="popup">
             <img class="mx-auto" src="./../assets/img/howto_step3.png" alt="">
@@ -32,7 +32,7 @@
           <div class="line line-bottom hidden lg:block"></div>
         </div>
         <div id="step4" class="step order-3 lg:order-6 lg-margin-left">
-          <h6>Sicherheit</h6>
+          <h4>Sicherheit</h4>
           <img class="mx-auto" src="./../assets/img/howto_step4.png" alt="">
           <div class="popup">
             <img class="mx-auto" src="./../assets/img/howto_step4.png" alt="">
@@ -42,7 +42,7 @@
           <div class="line line-bottom lg:hidden"></div>
         </div>
         <div id="step5" class="step order-5 lg:order-5 lg-margin-left">
-          <h6>Algorithmen</h6>
+          <h4>Algorithmen</h4>
           <img class="mx-auto" src="./../assets/img/howto_step5.png" alt="">
           <div class="popup">
             <img class="mx-auto" src="./../assets/img/howto_step5.png" alt="">
@@ -51,7 +51,7 @@
           <div class="line line-left hidden lg:block"></div>
         </div>
         <div id="step6" class="step order-6 lg:order-4 sm-margin-left">
-          <h6>Benutzer</h6>
+          <h4>Benutzer</h4>
           <img class="mx-auto" src="./../assets/img/howto_step6.png" alt="">
           <div class="popup">
             <img class="mx-auto" src="./../assets/img/howto_step6.png" alt="">
@@ -61,7 +61,7 @@
           <div class="line line-bottom"></div>
         </div>
         <div id="step7" class="step order-8 lg:order-7 sm-margin-left">
-          <h6>Potential</h6>
+          <h4>Potential</h4>
           <img class="mx-austo" src="./../assets/img/howto_step7.png" alt="">
           <div class="popup">
             <img class="mx-auto" src="./../assets/img/howto_step7.png" alt="">
@@ -136,14 +136,14 @@ export default {
 .popup {
   display: none;
 }
-  h6, img {
+  h4, img {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
   }
-  h6 {
+  h4 {
     top: 5%;
   }
   img {
