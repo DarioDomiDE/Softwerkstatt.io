@@ -1,9 +1,9 @@
 <template>
   <curved class="bg" :skipBorderTop="true" id="bg3">
-    <div class="container max-w-screen-lg 2xl:max-w-screen-xl pt-16 px-4 xl:px-0">
+    <div class="container max-w-screen-lg 2xl:max-w-screen-xl pt-8 px-4 xl:px-0 text-center">
       <h2>Maschinenraum</h2>
-      <p class="pb-12 w-full md:max-w-4xl text-center mx-auto">Unser Handwerk: Wir sind auf Full-Stack- und Backend-Entwicklung spezialisiert, programmieren Websites, mobile Apps und Datenbanken. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir bevorzugen "Try early - fail fast", um User-orientiert zu entwickeln.</p>
-      <div class="grid grid-cols-4 lg:grid-cols-7 gap-4">
+      <p class="pb-12 w-full md:max-w-4xl mx-auto">Unser Handwerk: Wir sind auf Full-Stack- und Backend-Entwicklung spezialisiert. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir bevorzugen "Try early - fail fast".</p>
+      <div class="grid grid-cols-4 lg:grid-cols-7 gap-4 text-left">
         <div class="col-span-2">
           <h3>Technologien</h3>
           <ul>

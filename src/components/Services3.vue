@@ -1,8 +1,7 @@
 <template>
-  <section class="container min-h-0 max-w-screen-xl pt-8 pb-8 px-4 md:px-8 2xl:px-0">
+  <section class="container min-h-0 max-w-screen-xl pt-8 pb-8 px-4 md:px-8 2xl:px-0 text-center">
     <h2>Hier unterstützen wir</h2>
-
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 text-left">
       <div class="col-span-1 lg:col-span-1 hidden md:block">
         <ul id="tab-navi">
           <li v-on:click="active = 1" class="inline-block lg:block w-6/12 lg:w-full xl:text-2xl" v-bind:class="{'active': active == 1}">Digitale Strategie</li>

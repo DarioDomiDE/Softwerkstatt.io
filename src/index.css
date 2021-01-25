@@ -76,7 +76,7 @@ p, span, li {
 }
 @media (max-width: 640px) {
   p, span, li {
-    font-size: 1.0em;
+    font-size: 0.9em;
   }
   h2 {
     font-size: 1.8em;
