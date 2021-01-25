@@ -1,11 +1,11 @@
 <template>
   <curved class="bg" :skipBorderTop="true" id="bg3">
     <div class="container max-w-screen-lg 2xl:max-w-screen-xl pt-16 px-4 xl:px-0">
-      <h2>Maschinenraum.</h2>
+      <h2>Maschinenraum</h2>
       <p class="pb-8 w-full md:max-w-4xl">Unser Handwerk: Wir sind auf Full-Stack- und Backend-Entwicklung spezialisiert, programmieren Websites, mobile Apps und Datenbanken. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir bevorzugen "Try early - fail fast", um User-orientiert zu entwickeln.</p>
-      <div class="grid grid-cols-4 md:grid-cols-7 gap-4">
+      <div class="grid grid-cols-4 lg:grid-cols-7 gap-4">
         <div class="col-span-2">
-          <h4>Technologien</h4>
+          <h3>Technologien</h3>
           <ul>
             <li>Responsive Websites &amp; SPAs</li>
             <li>Mobile Apps</li>
@@ -17,8 +17,8 @@
           </ul>
         </div>
         <div class="col-span-2">
-          <h4>Werkzeuge</h4>
-          <ul>
+          <h3 class="hidden sm:block">Werkzeuge</h3>
+          <ul class="mt-10 sm:mt-0 pl-4 border-l border-black sm:pl-0 sm:border-0">
             <li>Vue.js &amp; Angular</li>
             <li>React Native, Flutter, Unity</li>
             <li>.Net Core &amp; .Net 5</li>
@@ -28,9 +28,9 @@
             <li>Scrum &amp; Kanban</li>
           </ul>
         </div>
-        <div class="col-span-3">
-          <h4>Muttersprachen</h4>
-          <img src="./../assets/img/technologies.png" alt="">
+        <div class="col-span-4 lg:col-span-3">
+          <h3>Muttersprachen</h3>
+          <img src="./../assets/img/technologies.png" alt="Technologien Softwerkstatt">
         </div>
       </div>
       <CtaButton class="mt-16 hover:border-gray-700" @clicked="onClickCta">Jetzt Werkstatt betreten</CtaButton>

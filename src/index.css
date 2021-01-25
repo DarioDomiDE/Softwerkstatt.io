@@ -18,6 +18,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 h1 {
   font-size: 4.8em;
@@ -27,9 +28,6 @@ h2 {
   font-size: 3.8em;
 }
 h3 {
-  font-size: 3.0em;
-}
-h4 {
   font-size: 2.2em;
 }
 h5 {
@@ -46,25 +44,27 @@ p, span, li {
 @media (max-width: 1024px) {
   p, span, li {
     font-size: 1.2em;
+    line-height: 1.7em;
   }
   h2 {
     font-size: 3.0em;
   }
-  h4 {
+  h3 {
     font-size: 2.0em;
   }
 }
 @media (max-width: 768px) {
   body {
-    margin-bottom: 670px;
+    margin-bottom: 520px;
   }
   p, span, li {
     font-size: 1.1em;
+    line-height: 1.9em;
   }
   h2 {
     font-size: 2.6em;
   }
-  h4 {
+  h3 {
     font-size: 1.8em;
   }
   h6 {
@@ -76,7 +76,7 @@ p, span, li {
     font-size: 1.0em;
   }
   h2 {
-    font-size: 2.0em;
+    font-size: 1.8em;
   }
 }
 

@@ -1,7 +1,7 @@
 <template>
   <curved class="min-h-0 lg:min-h-screen" id="bg">
     <div class="container max-w-screen-lg 2xl:max-w-screen-xl px-4 xl:px-0 pb-16">
-      <h2 class="">Projekte.</h2>
+      <h2>Projekte</h2>
       <p class="mb-12 w-full md:max-w-4xl">Wir begleiten unsere Kunden langfristig und schaffen Mehrwert, damit aus Ideen Wirklichkeit wird. Wir lieben Lösungen, und entwickeln ausschließlich Individualsoftware - echte Unikate eben.</p>
       
       <div class="flex w-full">

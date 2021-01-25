@@ -1,19 +1,19 @@
 <template>
   <curved class="gradient absolute-important left-0 w-full -z-10 -bottom-470" :skipBorderBottom="true" :fixed="true">
-    <footer class="container max-w-screen-xl flex flex-col md:flex-row px-16 pb-4 md:pb-12 z-10 text-sm">
+    <footer class="container max-w-screen-xl flex flex-col md:flex-row px-16 pb-12 z-10 text-sm">
       
       <div class="flex-1 pb-4">
         <h6 class="mb-2">Freunde werden?</h6>
-        <p>Wenn wir Ihre Vorstellungen, gemeinsam die (Software-) Welt zu erobern, teilen, dann lass uns Freunde werden und kennen lernen.</p>
+        <p class="hidden md:block">Wenn wir Ihre Vorstellungen, gemeinsam die (Software-) Welt zu erobern, teilen, dann lass uns Freunde werden und kennen lernen.</p>
         <ul class="mt-4">
           <li><a href="https://xing.de/">Xing</a></li>
           <li><a href="https://linkedin.com/">LinkedIn</a></li>
         </ul>
       </div>
 
-      <div class="flex-1 md:pl-8 lg:pl-16 pb-4">
+      <div class="flex-1 md:pl-8 lg:pl-16 pb-4 border-t sm:border-none border-white">
         <h6 class="mb-2">Sie haben Fragen?</h6>
-        <p>Wir haben Antworten! Fragen kostet ja nichts. Gerne beraten wir Sie unverbindlich bei Ihren Projekten rund um Softwareentwicklung.</p>
+        <p class="hidden md:block">Wir haben Antworten! Fragen kostet ja nichts. Gerne beraten wir Sie unverbindlich bei Ihren Projekten rund um Softwareentwicklung.</p>
         <ul class="mt-4">
           <li>Ansprechpartner: Dario D. Müller</li>
           <li>040 123 456 789</li>
@@ -22,9 +22,9 @@
         </ul>
       </div>
 
-      <div class="flex-1 md:pl-8 lg:pl-16 pb-4">
-        <h6 class="mb-2">Interesse geweckt?</h6>
-        <p>Schön, dass wir Ihr Interesse wecken konnten. Senden Sie uns doch sehr gerne eine E-Mail oder rufen Sie uns an. Wir freuen uns drauf!</p>
+      <div class="flex-1 md:pl-8 lg:pl-16 pb-4 border-t sm:border-none border-white">
+        <h6 class="mb-2 hidden md:block">Interesse geweckt?</h6>
+        <p class="hidden md:block">Schön, dass wir Ihr Interesse wecken konnten. Senden Sie uns doch sehr gerne eine E-Mail oder rufen Sie uns an. Wir freuen uns drauf!</p>
         <ul class="mt-4">
           <li><a href="#">Impressum</a></li>
           <li><a href="#">Datenschutzerklärung</a></li>
@@ -55,7 +55,7 @@ export default {
 }
 @media (max-width: 768px) {
   .-bottom-470 {
-    bottom: -670px;
+    bottom: -520px;
   }
 }
 .absolute-important {
