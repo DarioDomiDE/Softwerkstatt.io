@@ -1,7 +1,7 @@
 <template>
   <Menu ref="menu" />
+  <Welcome />
   <div id="content">
-    <Welcome />
     <Intro @clicked="onClickCta" />
     <Services3 @clicked="onClickCta" />
     <Howto @clicked="onClickCta" />

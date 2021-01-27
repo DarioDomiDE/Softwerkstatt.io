@@ -1,5 +1,5 @@
 <template>
-  <curved class="gradient min-h-0 lg:min-h-screen">
+  <curved class="gradient min-h-0 lg:min-h-screen" v-bind:skipBorderTop="true" v-bind:usePaddingTop="true" id="intro">
     <div class="container max-w-screen-2xl mx-auto text-white">
       <div class="float-none lg:float-right w-full lg:w-2/5 text-center">
         <img src="./../assets/img/intro_1.png" alt="" class="mx-auto sm:max-w-sm md:max-w-md lg:max-w-full">
@@ -33,7 +33,12 @@ export default {
 </script>
 
 <style scoped>
+#intro {
+  margin-top: 100vh;
+}
 .gradient {
   background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;
+  mask-image: url('./../assets/img/border_black2.png');
+  mask-size: cover;
 }
 </style>

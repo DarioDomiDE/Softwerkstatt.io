@@ -1,5 +1,5 @@
 <template>
-  <section :class="'bg-gray-100 relative ' + (fixed ? 'larger-height' : '')" :style="{ padding: (!skipBorderTop ? Math.floor(wantHeight / 2) : 0) + 'px 0 ' + (!skipBorderBottom ? Math.floor(wantHeight / 2) : 0) + 'px 0' }">
+  <section :class="'bg-gray-100 relative ' + (fixed ? 'larger-height' : '')" :style="{ padding: (!skipBorderTop || usePaddingTop ? Math.floor(wantHeight / 2) : 0) + 'px 0 ' + (!skipBorderBottom ? Math.floor(wantHeight / 2) : 0) + 'px 0' }">
     <div v-if="!skipBorderTop" :class="'myborder myborder-top' + (borderTopGray ? ' gray' : '')" :style="{ height: wantHeight + 'px' }"></div>
     <div class="z-10" :class="fixed ? 'fixed bottom-0 w-full' : 'relative'">
       <slot>Content here</slot>
@@ -16,7 +16,8 @@ export default {
     skipBorderBottom: Boolean,
     borderTopGray: Boolean,
     borderBottomGray: Boolean,
-    fixed: Boolean
+    fixed: Boolean,
+    usePaddingTop: Boolean
   },
   data: () => {
     return {
@@ -78,11 +79,11 @@ export default {
   transform: scaleX(-1) scaleY(-1);
 }
 .larger-height {
-  height: 470px;
+  height: 520px;
 }
 @media (max-width: 768px) {
   .larger-height {
-    height: 520px;
+    height: 570px;
   }
 }
 </style>
