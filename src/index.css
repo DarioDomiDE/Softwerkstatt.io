@@ -23,8 +23,8 @@ h1, h2, h3, h4, h5, h6 {
   color: rgb(59,60,66);
 }
 h1 {
-  font-size: 4.8em;
-  line-height: 1.0em;
+  /* font-size: 4.8em; */
+  /* line-height: 1.0em; */
 }
 h2 {
   font-weight: normal;
@@ -43,6 +43,23 @@ h4 {
 }
 p, span, li {
   font-size: 1.3em;
+}
+.pre-headline {
+  font-size: 1.05rem;
+  line-height: 1.0em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1.9px;
+  color: #55b49b;
+}
+.pre-headline.text-white {
+  color: #fff;
+}
+.pre-headline.color2 {
+  color: #d95959;
+}
+.pre-headline.color3 {
+  color: #f79d26;
 }
 
 @media (max-width: 1024px) {

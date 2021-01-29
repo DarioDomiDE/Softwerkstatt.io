@@ -1,6 +1,7 @@
 <template>
   <curved class="min-h-0 bg text-center" :skipBorderBottom="true" id="bg2">
     <div class="container max-w-screen-xl pb-4 px-4 md:px-8 2xl:px-0">
+      <span class="pre-headline color2">Abwicklung</span>
       <h2>Wie wir arbeiten</h2>
       <div id="howtoContainer">
         <div id="step1" class="step order-1">

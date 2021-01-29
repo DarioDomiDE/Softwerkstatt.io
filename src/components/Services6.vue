@@ -1,6 +1,7 @@
 <template>
   <curved class="gradient min-h-0" v-bind:borderTopGray="true" v-bind:borderBottomGray="true">
     <div class="container max-w-screen-xl px-4 md:px-8 2xl:px-0 text-center" id="services6">
+      <span class="pre-headline color-white">Services</span>
       <h2>Leistungen</h2>
       <p class="mb-12 mx-auto w-full md:max-w-4xl">Unsere Domäne, hierbei haben wir Spaß. Wir sind im Herzen Techies. Und unterstützen unsere Kunden in allen Phasen ihrer Digitalisierung. Eine Auwahl, was uns besonders am Herzen liegt:</p>
       <div id="articlesContainer">
@@ -98,12 +99,39 @@ export default {
   },
   methods: {
     onClickActive(id) {
-      var index = this.active.indexOf(id)
-      if(index === -1) {
-        this.active.push(id)
+      if(!this.isActive(id)) {
+        this.enableActive(id)
+        if(id >= 3) {
+          if(this.isActive(0)) {
+            this.disableActive(0);
+          }
+          if(this.isActive(1)) {
+            this.disableActive(1);
+          }
+          if(this.isActive(2)) {
+            this.disableActive(2);
+          }
+        } else {
+          if(this.isActive(3)) {
+            this.disableActive(3);
+          }
+          if(this.isActive(4)) {
+            this.disableActive(4);
+          }
+          if(this.isActive(5)) {
+            this.disableActive(5);
+          }
+        }
       } else {
-        this.active.splice(index, 1)
+        this.disableActive(id);
       }
+    },
+    disableActive(id) {
+      var index = this.active.indexOf(id)
+      this.active.splice(index, 1)
+    },
+    enableActive(id) {
+        this.active.push(id)
     },
     isActive(id) {
       return this.active.indexOf(id) !== -1
@@ -161,11 +189,22 @@ article.active .icon {
 }
 h3 {
   position: relative;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.active h3 {
+  border: 1px solid #fff;
+  border-bottom: none;
 }
 h3 span {
   font-size: 1.0em;
   line-height: 1.0em;
   padding-left: 10px;
+}
+article p {
+  border: 1px solid #fff;
+  border-top: none;
+  padding: 0 10px 10px 10px;
 }
 /* h3 span::after {
   content: '';
@@ -240,7 +279,7 @@ article:hover .effect span::after {
 } */
 .icon {
   float: right;
-  margin: -47px 25px 0 0;
+  margin: -40px 25px 0 0;
   width: 30px;
   height: 30px;
 }

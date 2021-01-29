@@ -1,6 +1,7 @@
 <template>
   <curved class="bg" :skipBorderTop="true" id="bg3">
     <div class="container max-w-screen-lg 2xl:max-w-screen-xl pt-8 px-4 xl:px-0 text-center">
+      <span class="pre-headline color3">Handwerk</span>
       <h2>Maschinenraum</h2>
       <p class="pb-12 w-full md:max-w-4xl mx-auto">Unser Handwerk: Wir sind auf Web- und Backend-Entwicklung spezialisiert. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir agieren nach "Try early - fail fast".</p>
       <div class="grid grid-cols-2 gap-4 text-left">
