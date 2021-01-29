@@ -3,37 +3,76 @@
     <div class="container max-w-screen-xl px-4 md:px-8 2xl:px-0 text-center" id="services6">
       <h2>Leistungen</h2>
       <p class="mb-12 mx-auto w-full md:max-w-4xl">Unsere Domäne, hierbei haben wir Spaß. Wir sind im Herzen Techies. Und unterstützen unsere Kunden in allen Phasen ihrer Digitalisierung. Eine Auwahl, was uns besonders am Herzen liegt:</p>
-      <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8 text-left">
-        <article :class="isActive(1) ? 'active' : ''" v-on:click="onClickActive(1)">
-          <h3>Strategie Analyse</h3>
-          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-          <p>Unsere Expertise für neue Strategien und Blickwinkel: Wir helfen Ihnen, Ideen und Anforderungen zu analyiseren und Lösungen zu konzipieren, um mit innovativer Software langfristige Chancen zu nutzen.</p>
-        </article>
-        <article :class="isActive(2) ? 'active' : ''" v-on:click="onClickActive(2)">
-          <h3>Technical Consulting</h3>
-          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-          <p>Schnell am Markt sein oder perfektes Handwerk? Wir beraten Sie rund um Technologien und Frameworks und hinterfragen, was wirklich wichtig statt nur dringend ist - effektiv oder nur effizient.</p>
-        </article>
-        <article :class="isActive(3) ? 'active' : ''" v-on:click="onClickActive(3)">
-          <h3>Programmierung</h3>
-          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-          <p>Unser Herzstück: Programmierung maßgeschneiderter Tools, Backends und Datenbanken: Wir lieben Open-Source, plattformübergreifende Entwickelung und das Microsoft Ökosystem.</p>
-        </article>
-        <article :class="isActive(4) ? 'active' : ''" v-on:click="onClickActive(4)">
-          <h3>Prototyping</h3>
-          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-          <p>Validierung vom Look &amp; Feel mithilfe und Mockups, Feedback-Loops und A/B-Tests direkt am User. Nutzung von Konzepten wie Design Thinking und Design Concepts, um ab Tag 1 Feedback-getrieben die User Experience zu verbessern.</p>
-        </article>
-        <article :class="isActive(5) ? 'active' : ''" v-on:click="onClickActive(5)">
-          <h3>Künstliche Intelligenz</h3>
-          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-          <p>Entscheidungen durch Auswertung großer Datenmengen Auswertung erleichtern. Wir analysieren und evalusieren, um das Potential von Daten zu nutzen.</p>
-        </article>
-        <article :class="isActive(6) ? 'active' : ''" v-on:click="onClickActive(6)">
-          <h3>Cyber Security</h3>
-          <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-          <p>Schutz, Stabilität und Sicherheit der Daten Ihrer Software und Kunden ist für uns selbstverständlich – gerne beraten wir umfassend und bieten dies in unseren Leistungen mit an.</p>
-        </article>
+      <div id="articlesContainer">
+        <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8 text-left">
+          <article :class="isActive(0) ? 'active' : '' + isEffect == 0 ? 'is-effect' : afterEffect == 0 ? 'after-effect' : ''" @mouseover="isEffect = 0" v-on:click="onClickActive(0)">
+            <h3>
+              <span>Strategie Analyse</span>
+              <div class="effect" :class="orientations[0] == 1 ? 'top' : orientations[0] == 2 ? 'right' : orientations[0] == 3 ? 'bottom' : 'left'">
+                <span class="text">Strategie Analyse</span>
+              </div>
+            </h3>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
+            <p>Unsere Expertise für neue Strategien und Blickwinkel: Wir helfen Ihnen, Ideen und Anforderungen zu analyiseren und Lösungen zu konzipieren, um mit innovativer Software langfristige Chancen zu nutzen.</p>
+          </article>
+          <article :class="isActive(1) ? 'active' : '' + isEffect == 1 ? 'is-effect' : ''" @mouseover="isEffect = 1" v-on:click="onClickActive(1)">
+            <h3>
+              <span>Technical Consulting</span>
+              <div class="effect" :class="orientations[1] == 1 ? 'top' : orientations[1] == 2 ? 'right' : orientations[1] == 3 ? 'bottom' : 'left'">
+                <span class="text">Technical Consulting</span>
+              </div>
+            </h3>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
+            <p>Schnell am Markt sein oder perfektes Handwerk? Wir beraten Sie rund um Technologien und Frameworks und hinterfragen, was wirklich wichtig statt nur dringend ist - effektiv oder nur effizient.</p>
+          </article>
+          <article :class="isActive(2) ? 'active' : '' + isEffect == 2 ? 'is-effect' : ''" @mouseover="isEffect = 2" v-on:click="onClickActive(2)">
+            <h3>
+              <span>Programmierung</span>
+              <div class="effect" :class="orientations[2] == 1 ? 'top' : orientations[2] == 2 ? 'right' : orientations[2] == 3 ? 'bottom' : 'left'">
+                <span class="text">Programmierung</span>
+              </div>
+            </h3>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
+            <p>Unser Herzstück: Programmierung maßgeschneiderter Tools, Backends und Datenbanken: Wir lieben Open-Source, plattformübergreifende Entwickelung und das Microsoft Ökosystem.</p>
+          </article>
+          <article :class="isActive(3) ? 'active' : '' + isEffect == 3 ? 'is-effect' : ''" @mouseover="isEffect = 3" v-on:click="onClickActive(3)">
+            <h3>
+              <span>Prototyping</span>
+              <div class="effect" :class="orientations[3] == 1 ? 'top' : orientations[3] == 2 ? 'right' : orientations[3] == 3 ? 'bottom' : 'left'">
+                <span class="text">Prototyping</span>
+              </div>
+            </h3>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
+            <p>Validierung vom Look &amp; Feel mithilfe und Mockups, Feedback-Loops und A/B-Tests direkt am User. Nutzung von Konzepten wie Design Thinking und Design Concepts, um ab Tag 1 Feedback-getrieben die User Experience zu verbessern.</p>
+          </article>
+          <article :class="isActive(4) ? 'active' : '' + isEffect == 4 ? 'is-effect' : ''" @mouseover="isEffect = 4" v-on:click="onClickActive(4)">
+            <h3>
+              <span>Künstliche Intelligenz</span>
+              <div class="effect" :class="orientations[4] == 1 ? 'top' : orientations[4] == 2 ? 'right' : orientations[4] == 3 ? 'bottom' : 'left'">
+                <span class="text">Künstliche Intelligenz</span>
+              </div>
+            </h3>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
+            <p>Entscheidungen durch Auswertung großer Datenmengen Auswertung erleichtern. Wir analysieren und evalusieren, um das Potential von Daten zu nutzen.</p>
+          </article>
+          <article :class="isActive(5) ? 'active' : '' + isEffect == 5 ? 'is-effect' : ''" @mouseover="isEffect = 5" v-on:click="onClickActive(5)">
+            <h3>
+              <span>Cyber Security</span>
+              <div class="effect" :class="orientations[5] == 1 ? 'top' : orientations[5] == 2 ? 'right' : orientations[5] == 3 ? 'bottom' : 'left'">
+                <span class="text">Cyber Security</span>
+              </div>
+            </h3>
+            <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
+            <p>Schutz, Stabilität und Sicherheit der Daten Ihrer Software und Kunden ist für uns selbstverständlich – gerne beraten wir umfassend und bieten dies in unseren Leistungen mit an.</p>
+          </article>
+        </div>
+        <div class="area area-y area-left" @mouseover="disableEffect(), left(1), left(4)"></div>
+        <div class="area area-y area-center1" @mouseover="disableEffect(), right(1), right(4), left(2), left(5)"></div>
+        <div class="area area-y area-center2" @mouseover="disableEffect(), right(2), right(5), left(3), left(6)"></div>
+        <div class="area area-y area-right" @mouseover="disableEffect(), right(3), right(6)"></div>
+        <div class="area area-x area-top" @mouseover="disableEffect(), top(1), top(2), top(3)"></div>
+        <div class="area area-x area-middle" @mouseover="disableEffect(), bottom(1), bottom(2), bottom(3), top(4), top(5), top(6)"></div>
+        <div class="area area-x area-bottom" @mouseover="disableEffect(), bottom(4), bottom(5), bottom(6)"></div>
       </div>
       <CtaButton class="mt-16 mb-8 hover:text-white" @clicked="onClickCta">Jetzt Potential nutzen</CtaButton>
     </div>
@@ -51,7 +90,10 @@ export default {
   },
   data: () => {
     return {
-      active: []
+      active: [],
+      orientations: [4,4,4,4,4,4], // 1,2,3,4 => top,right,bottom,left
+      isEffect: -1,
+      afterEffect: -1
     }
   },
   methods: {
@@ -68,6 +110,25 @@ export default {
     },
     onClickCta() {
       this.$emit('clicked', 'Potential nutzen')
+    },
+    disableEffect() {
+      if(this.isEffect != -1) {
+        setTimeout(() => {
+          this.isEffect = -1;
+        }, 400);
+      }
+    },
+    left(id) {
+      this.orientations[id-1] = 4;
+    },
+    right(id) {
+      this.orientations[id-1] = 2;
+    },
+    top(id) {
+      this.orientations[id-1] = 1;
+    },
+    bottom(id) {
+      this.orientations[id-1] = 3;
     }
   }
 }
@@ -82,6 +143,9 @@ export default {
 .gradient {
   background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;
 }
+#articlesContainer {
+  position: relative;
+}
 article {
   border: 1px solid transparent;
   transition: all 0.6s;
@@ -89,24 +153,139 @@ article {
   overflow: hidden;
   cursor: pointer;
 }
-article:hover {
-  border-color: #fff;
-  background-color: rgba(255, 255, 255, 0.05);
-  border-radius: 3px;
-  margin: -10px -20px;
-  padding: 10px 20px;
-  height: 70px;
-}
 article.active {
   height: auto;
 }
+article.active .icon {
+  transform: rotate(180deg);
+}
+h3 {
+  position: relative;
+}
+h3 span {
+  font-size: 1.0em;
+  line-height: 1.0em;
+  padding-left: 10px;
+}
+/* h3 span::after {
+  content: '';
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>');
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  background-color: #fff;
+} */
+.effect {
+  position: absolute;
+  left: -100%;
+  top: 0;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+article .effect.right {
+  left: 100%;
+}
+article .effect.top {
+  left: 0;
+  top: -100%;
+}
+article .effect.bottom {
+  left: 0;
+  top: 100%;
+}
+article:hover .effect {
+  left: 0;
+  top: 0;
+}
+article.is-effect .effect {
+  transition: all 0.4s ease 0s;
+}
+article .effect .text {
+  position: relative;
+  color: #5FCCC7;
+  transition: all 0.4s ease 0s;
+}
+article .effect.left .text {
+  left: 100%;
+  top: 0;
+}
+article .effect.right .text {
+  left: -100%;
+  top: 0;
+}
+article .effect.top .text {
+  left: 0;
+  top: 100%;
+}
+article .effect.bottom .text {
+  left: 0;
+  top: -100%;
+}
+article:hover .effect .text {
+  left: 0;
+  top: 0;
+}
+/* article .effect span::after {
+  background-color: #5FCCC7;
+  margin-left: 100%;
+}
+article:hover .effect span::after {
+  margin-left: 0;
+} */
 .icon {
   float: right;
   margin: -47px 25px 0 0;
   width: 30px;
   height: 30px;
 }
-article.active .icon {
-  transform: rotate(180deg);
+/* article .effect .icon {
+  color: #5FCCC7;
+  color: red;
+  margin-left: 100%;
 }
+article:hover .effect .icon {
+  margin-left: 0;
+} */
+.area {
+  position: absolute;
+}
+  .area-y {
+    top: -30px;
+    width: 30px;
+    height: calc(100% + 2 * 30px);
+  }
+  .area-left {
+    left: -30px;
+  }
+  .area-center1 {
+    left: calc((100% - 2 * 4rem) / 3);
+    width: 60px;
+  }
+  .area-center2 {
+    left: calc((100% - 2 * 4rem) / 3 * 2 + 4rem);
+    width: 60px;
+  }
+  .area-right {
+    right: -30px;
+  }
+  .area-x {
+    left: -30px;
+    width: calc(100% + 2 * 30px);
+    height: 30px;
+  }
+  .area-top {
+    top: -30px;
+  }
+  .area-middle {
+    top: calc(50% - 30px / 2);
+  }
+  .area-bottom {
+    bottom: -30px;
+  }
 </style>
