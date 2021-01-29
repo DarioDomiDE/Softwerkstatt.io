@@ -1,10 +1,10 @@
 <template>
   <curved class="gradient absolute-important left-0 w-full -z-10 -bottom-470" :skipBorderBottom="true" :fixed="true">
-    <footer class="container max-w-screen-xl flex flex-col md:flex-row px-16 pb-12 z-10 text-sm">
+    <footer class="container max-w-screen-xl flex flex-col md:flex-row px-16 pb-12 z-10">
       
       <div class="flex-1 pb-4">
-        <h6 class="mb-2">Freunde werden?</h6>
-        <p class="hidden md:block">Wenn wir Ihre Vorstellungen, gemeinsam die (Software-) Welt zu erobern, teilen, dann lass uns Freunde werden und kennen lernen.</p>
+        <h4 class="mb-2 text-white">Freunde werden?</h4>
+        <p class="hidden md:block">Wenn wir Ihre Vorstellungen, gemeinsam die (Software-) Welt zu erobern, teilen, dann lassen Sie uns Freunde werden und kennen lernen.</p>
         <ul class="mt-4">
           <li><a href="https://xing.de/">Xing</a></li>
           <li><a href="https://linkedin.com/">LinkedIn</a></li>
@@ -12,10 +12,9 @@
       </div>
 
       <div class="flex-1 md:pl-8 lg:pl-16 pb-4 border-t sm:border-none border-white">
-        <h6 class="mb-2">Sie haben Fragen?</h6>
-        <p class="hidden md:block">Wir haben Antworten! Fragen kostet ja nichts. Gerne beraten wir Sie unverbindlich bei Ihren Projekten rund um Softwareentwicklung.</p>
+        <h4 class="mb-2 text-white">Sie haben Fragen?</h4>
+        <p class="hidden md:block">Dann immer her damit, denn wir haben Antworten! Fragen kostet ja nichts. Wir freuen uns über einen kleinen Schnack und kümmern uns gerne um Ihr Anliegen.</p>
         <ul class="mt-4">
-          <li>Ansprechpartner: Dario D. Müller</li>
           <li>040 123 456 789</li>
           <li><a class="" href="mailto:ahoi@softwerkstatt.io">ahoi@softwerkstatt.io</a></li>
           <li>Brunckhorstweg 3, 22525 Hamburg</li>
@@ -23,8 +22,8 @@
       </div>
 
       <div class="flex-1 md:pl-8 lg:pl-16 pb-4 border-t sm:border-none border-white">
-        <h6 class="mb-2 hidden md:block">Interesse geweckt?</h6>
-        <p class="hidden md:block">Schön, dass wir Ihr Interesse wecken konnten. Senden Sie uns doch sehr gerne eine E-Mail oder rufen Sie uns an. Wir freuen uns drauf!</p>
+        <h4 class="mb-2 text-white hidden md:block">Interesse geweckt?</h4>
+        <p class="hidden md:block">Schön, dass wir Ihr Interesse wecken konnten. Schreiben Sie uns oder rufen Sie uns an. Wir freuen uns drauf!</p>
         <ul class="mt-4">
           <li><a href="#">Impressum</a></li>
           <li><a href="#">Datenschutzerklärung</a></li>
@@ -51,21 +50,19 @@ export default {
   z-index: -10;
 }
 .-bottom-470 {
-  bottom: -470px;
+  bottom: -520px;
 }
 @media (max-width: 768px) {
   .-bottom-470 {
-    bottom: -520px;
+    bottom: -570px;
   }
 }
 .absolute-important {
   position: absolute !important;
 }
-h6 {
-  color: white;
-}
 p, li {
   color: white;
+  line-height: 1.4em;
 }
 .gradient {
   background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;

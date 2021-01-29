@@ -2,33 +2,21 @@
   <curved class="bg" :skipBorderTop="true" id="bg3">
     <div class="container max-w-screen-lg 2xl:max-w-screen-xl pt-8 px-4 xl:px-0 text-center">
       <h2>Maschinenraum</h2>
-      <p class="pb-12 w-full md:max-w-4xl mx-auto">Unser Handwerk: Wir sind auf Full-Stack- und Backend-Entwicklung spezialisiert. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir bevorzugen "Try early - fail fast".</p>
-      <div class="grid grid-cols-4 lg:grid-cols-7 gap-4 text-left">
-        <div class="col-span-2">
-          <h3>Technologien</h3>
+      <p class="pb-12 w-full md:max-w-4xl mx-auto">Unser Handwerk: Wir sind auf Web- und Backend-Entwicklung spezialisiert. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir agieren nach "Try early - fail fast".</p>
+      <div class="grid grid-cols-2 gap-4 text-left">
+        <div class="col-span-1">
+          <h3>Werkzeuge</h3>
           <ul>
-            <li>Responsive Websites &amp; SPAs</li>
-            <li>Mobile Apps</li>
-            <li>Backend-Anwendungen</li>
-            <li>Datenbanken</li>
-            <li>Cloud-Hosting</li>
-            <li>Clean Code, DRY, KISS</li>
-            <li>Agile Softwareentwicklung</li>
+            <li>Responsive Websites &amp; SPAs mit Vue.js &amp; Angular</li>
+            <li>Mobile Apps und PWAs mit React Native, Flutter &amp; Unity</li>
+            <li>Backend mit Asp.Net &amp; .Net 5</li>
+            <li>Datenbanken mit MySQL, SQL Server &amp; MongoDB</li>
+            <li>Cloud-Hosting mit Azure &amp; AWS</li>
+            <li>Unit &amp; UI Tests sowie Clean Code, DRY, KISS</li>
+            <li>Agile Softwareentwicklung nach Scrum &amp; Kanban</li>
           </ul>
         </div>
-        <div class="col-span-2">
-          <h3 class="hidden sm:block">Werkzeuge</h3>
-          <ul class="mt-10 sm:mt-0 pl-4 border-l border-black sm:pl-0 sm:border-0">
-            <li>Vue.js &amp; Angular</li>
-            <li>React Native, Flutter, Unity</li>
-            <li>.Net Core &amp; .Net 5</li>
-            <li>MySQL, SQL Server, NoSQL</li>
-            <li>Azure &amp; AWS</li>
-            <li>Unit Tests &amp; UI-Tests</li>
-            <li>Scrum &amp; Kanban</li>
-          </ul>
-        </div>
-        <div class="col-span-4 lg:col-span-3">
+        <div class="col-span-1">
           <h3>Muttersprachen</h3>
           <img src="./../assets/img/technologies.png" alt="Technologien Softwerkstatt">
         </div>
@@ -59,8 +47,11 @@ export default {
 #bg3 {
   background-color: rgba(243, 244, 246, 1);
 }
+
 ul li {
-  list-style: circle;
-  margin-left: 20px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>') no-repeat left center;
+  padding-left: 32px;
+  line-height: 1.2em;
+  margin-bottom: 12px;
 }
 </style>

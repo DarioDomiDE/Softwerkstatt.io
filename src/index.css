@@ -6,7 +6,7 @@
 @tailwind utilities;
 
 body {
-  margin-bottom: 470px;
+  margin-bottom: 520px;
   color: #555;
 }
 
@@ -24,7 +24,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
   font-size: 4.8em;
-  line-height: 1.0;
+  line-height: 1.0em;
 }
 h2 {
   font-weight: normal;
@@ -34,6 +34,7 @@ h2 {
   margin-bottom: 3rem;
 }
 h3 {
+  font-weight: normal;
   font-size: 2.0em;
 }
 h4 {
@@ -58,7 +59,7 @@ p, span, li {
 }
 @media (max-width: 768px) {
   body {
-    margin-bottom: 520px;
+    margin-bottom: 570px;
   }
   p, span, li {
     font-size: 1.1em;
@@ -84,10 +85,9 @@ p, span, li {
 }
 
 a {
-  text-decoration: underline;
 }
 a:hover {
-  font-weight: bold;
+  text-decoration: underline;
 }
 .scale-103:hover {
   --tw-scale-x: 1.03;
@@ -98,6 +98,7 @@ a:hover {
   z-index: 20;
 }
 #content section {
+  background-color: #fff;
   position: relative;
   z-index: 20;
 }

@@ -12,21 +12,21 @@
           </svg>
         </div>
 
-        <div class="flex-initial px-2 lg:px-16 py-4 bg-white rounded shadow-md">
+        <div class="flex-initial">
           <figure :class="{'active': active == 1}">
             <h3>CRM</h3>
             <img class="img-fluid rounded" src="./../assets/img/project_x.jpg" alt="">
-            <figcaption class="text-right">Web-Tool zur Verwaltung von Aufträgen und Kunden<br />Deutsche Fernsehlotterie</figcaption>
+            <figcaption class="text-right">Web-Tool zur Verwaltung von Aufträgen und Kunden<br />für die Deutsche Fernsehlotterie</figcaption>
           </figure>
           <figure :class="{'active': active == 2}">
             <h3>Web-Shop</h3>
             <img class="img-fluid rounded" src="./../assets/img/project_y.jpg" alt="">
-            <figcaption class="text-right">Tool zur Littfassseulen Buchung<br />Weischer Media</figcaption>
+            <figcaption class="text-right">Tool zur Littfassseulen Buchung<br />für Weischer Media</figcaption>
           </figure>
           <figure :class="{'active': active == 3}">
             <h3>Wunderbox</h3>
             <img class="img-fluid rounded" src="./../assets/img/project_y.jpg" alt="">
-            <figcaption class="text-right">Casual Mobile Game<br />Peppermynt</figcaption>
+            <figcaption class="text-right">Casual Mobile Game<br />für Peppermynt</figcaption>
           </figure>
         </div>
         

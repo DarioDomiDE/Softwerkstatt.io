@@ -19,7 +19,7 @@
             </svg>
           </div>
         </div>
-        <p class="px-6 pb-4">Wie können wir Ihnen helfen, Ihre Software zu verbessern? Wir freuen uns auf Ihren Anruf und E-Mail.</p>
+        <p class="px-6 pb-4">Wie können wir Ihnen helfen, Ihre Software zu verbessern? Wir sind gespannt drauf und freuen uns darauf, Sie kennenzulernen!</p>
         <ul class="bg-gray-100 px-6 pt-4 pb-6">
           <li>Ansprechpartner: Dario D. Müller</li>
           <li>040 123 456 789</li>
