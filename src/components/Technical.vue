@@ -3,17 +3,17 @@
     <div class="container max-w-screen-lg 2xl:max-w-screen-xl pt-8 px-4 xl:px-0 text-center">
       <span class="pre-headline color3">Handwerk</span>
       <h2>Maschinenraum</h2>
-      <p class="pb-12 w-full md:max-w-4xl mx-auto">Unser Handwerk: Wir sind auf Web- und Backend-Entwicklung spezialisiert. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir agieren nach "Try early - fail fast".</p>
-      <div class="grid grid-cols-2 gap-4 text-left">
+      <p class="pb-4 md:pb-12 w-full md:max-w-4xl mx-auto text-left sm:text-center">Unser Handwerk: Wir sind auf Web- und Backend-Entwicklung spezialisiert. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir agieren nach "Try early - fail fast".</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
         <div class="col-span-1">
           <h3>Werkzeuge</h3>
           <ul>
-            <li>Responsive Websites &amp; SPAs mit Vue.js &amp; Angular</li>
-            <li>Mobile Apps und PWAs mit React Native, Flutter &amp; Unity</li>
+            <li>Erstellung Responsive Websites &amp; SPAs mit Vue.js &amp; Angular</li>
+            <li>Mobile Apps &amp; PWAs mit React Native, Flutter &amp; Unity</li>
             <li>Backend mit Asp.Net &amp; .Net 5</li>
-            <li>Datenbanken mit MySQL, SQL Server &amp; MongoDB</li>
+            <li>Datenbanken mit SQL Server, MySQL &amp; MongoDB</li>
             <li>Cloud-Hosting mit Azure &amp; AWS</li>
-            <li>Unit &amp; UI Tests sowie Clean Code, DRY, KISS</li>
+            <li>Unit- &amp; UI-Tests sowie Clean Code, DRY, KISS</li>
             <li>Agile Softwareentwicklung nach Scrum &amp; Kanban</li>
           </ul>
         </div>
@@ -54,5 +54,6 @@ ul li {
   padding-left: 32px;
   line-height: 1.2em;
   margin-bottom: 12px;
+  background-size: 18px;
 }
 </style>

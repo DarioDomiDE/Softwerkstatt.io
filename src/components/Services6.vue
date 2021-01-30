@@ -1,9 +1,9 @@
 <template>
   <curved class="gradient min-h-0" v-bind:borderTopGray="true" v-bind:borderBottomGray="true">
     <div class="container max-w-screen-xl px-4 md:px-8 2xl:px-0 text-center" id="services6">
-      <span class="pre-headline color-white">Services</span>
+      <span class="pre-headline color1">Services</span>
       <h2>Leistungen</h2>
-      <p class="mb-12 mx-auto w-full md:max-w-4xl">Unsere Domäne, hierbei haben wir Spaß. Wir sind im Herzen Techies. Und unterstützen unsere Kunden in allen Phasen ihrer Digitalisierung. Eine Auwahl, was uns besonders am Herzen liegt:</p>
+      <p class="pb-8 sm:mb-12 mx-auto w-full md:max-w-4xl text-left sm:text-center">Unsere Domäne, hierbei haben wir Spaß. Wir sind im Herzen Techies. Und unterstützen unsere Kunden in allen Phasen ihrer Digitalisierung. Eine Auwahl, was uns besonders am Herzen liegt:</p>
       <div id="articlesContainer">
         <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8 text-left">
           <article :class="isActive(0) ? 'active' : '' + isEffect == 0 ? 'is-effect' : afterEffect == 0 ? 'after-effect' : ''" @mouseover="isEffect = 0" v-on:click="onClickActive(0)">
@@ -67,13 +67,13 @@
             <p>Schutz, Stabilität und Sicherheit der Daten Ihrer Software und Kunden ist für uns selbstverständlich – gerne beraten wir umfassend und bieten dies in unseren Leistungen mit an.</p>
           </article>
         </div>
-        <div class="area area-y area-left" @mouseover="disableEffect(), left(1), left(4)"></div>
-        <div class="area area-y area-center1" @mouseover="disableEffect(), right(1), right(4), left(2), left(5)"></div>
-        <div class="area area-y area-center2" @mouseover="disableEffect(), right(2), right(5), left(3), left(6)"></div>
-        <div class="area area-y area-right" @mouseover="disableEffect(), right(3), right(6)"></div>
-        <div class="area area-x area-top" @mouseover="disableEffect(), top(1), top(2), top(3)"></div>
-        <div class="area area-x area-middle" @mouseover="disableEffect(), bottom(1), bottom(2), bottom(3), top(4), top(5), top(6)"></div>
-        <div class="area area-x area-bottom" @mouseover="disableEffect(), bottom(4), bottom(5), bottom(6)"></div>
+        <div class="hidden xl:block area area-y area-left" @mouseover="disableEffect(), left(1), left(4)"></div>
+        <div class="hidden xl:block area area-y area-center1" @mouseover="disableEffect(), right(1), right(4), left(2), left(5)"></div>
+        <div class="hidden xl:block area area-y area-center2" @mouseover="disableEffect(), right(2), right(5), left(3), left(6)"></div>
+        <div class="hidden xl:block area area-y area-right" @mouseover="disableEffect(), right(3), right(6)"></div>
+        <div class="hidden xl:block area area-x area-top" @mouseover="disableEffect(), top(1), top(2), top(3)"></div>
+        <div class="hidden xl:block area area-x area-middle" @mouseover="disableEffect(), bottom(1), bottom(2), bottom(3), top(4), top(5), top(6)"></div>
+        <div class="hidden xl:block area area-x area-bottom" @mouseover="disableEffect(), bottom(4), bottom(5), bottom(6)"></div>
       </div>
       <CtaButton class="mt-16 mb-8 hover:text-white" @clicked="onClickCta">Jetzt Potential nutzen</CtaButton>
     </div>
@@ -99,29 +99,30 @@ export default {
   },
   methods: {
     onClickActive(id) {
+      var i;
       if(!this.isActive(id)) {
-        this.enableActive(id)
-        if(id >= 3) {
-          if(this.isActive(0)) {
-            this.disableActive(0);
-          }
-          if(this.isActive(1)) {
-            this.disableActive(1);
-          }
-          if(this.isActive(2)) {
-            this.disableActive(2);
+        if(this.isDesktop()) {
+          if(id >= 3) {
+            for (i = 0; i < 3; i++) {
+              if(this.isActive(i)) {
+                this.disableActive(i);
+              }
+            }
+          } else {
+            for (i = 3; i < 6; i++) {
+              if(this.isActive(i)) {
+                this.disableActive(i);
+              }
+            }
           }
         } else {
-          if(this.isActive(3)) {
-            this.disableActive(3);
-          }
-          if(this.isActive(4)) {
-            this.disableActive(4);
-          }
-          if(this.isActive(5)) {
-            this.disableActive(5);
+          for (i = 0; i < 6; i++) {
+            if(this.isActive(i)) {
+              this.disableActive(i);
+            }
           }
         }
+        this.enableActive(id)
       } else {
         this.disableActive(id);
       }
@@ -131,7 +132,7 @@ export default {
       this.active.splice(index, 1)
     },
     enableActive(id) {
-        this.active.push(id)
+      this.active.push(id)
     },
     isActive(id) {
       return this.active.indexOf(id) !== -1
@@ -157,6 +158,9 @@ export default {
     },
     bottom(id) {
       this.orientations[id-1] = 3;
+    },
+    isDesktop() {
+      return window.innerWidth >= 1280;
     }
   }
 }
@@ -177,12 +181,9 @@ export default {
 article {
   border: 1px solid transparent;
   transition: all 0.6s;
-  height: 50px;
   overflow: hidden;
   cursor: pointer;
-}
-article.active {
-  height: auto;
+  height: fit-content;
 }
 article.active .icon {
   transform: rotate(180deg);
@@ -191,10 +192,12 @@ h3 {
   position: relative;
   margin-bottom: 0;
   overflow: hidden;
+  border: 1px solid transparent;
+  border-bottom: none;
+  margin-top: 0;
 }
 .active h3 {
-  border: 1px solid #fff;
-  border-bottom: none;
+  border-color: #fff;
 }
 h3 span {
   font-size: 1.0em;
@@ -205,19 +208,11 @@ article p {
   border: 1px solid #fff;
   border-top: none;
   padding: 0 10px 10px 10px;
+  display: none;
 }
-/* h3 span::after {
-  content: '';
-  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>');
-  position: absolute;
-  right: 20px;
-  top: 10px;
-  width: 30px;
-  height: 30px;
-  -webkit-mask-size: cover;
-  mask-size: cover;
-  background-color: #fff;
-} */
+article.active p {
+  display: block;
+}
 .effect {
   position: absolute;
   left: -100%;
@@ -270,27 +265,12 @@ article:hover .effect .text {
   left: 0;
   top: 0;
 }
-/* article .effect span::after {
-  background-color: #5FCCC7;
-  margin-left: 100%;
-}
-article:hover .effect span::after {
-  margin-left: 0;
-} */
 .icon {
   float: right;
   margin: -40px 25px 0 0;
   width: 30px;
   height: 30px;
 }
-/* article .effect .icon {
-  color: #5FCCC7;
-  color: red;
-  margin-left: 100%;
-}
-article:hover .effect .icon {
-  margin-left: 0;
-} */
 .area {
   position: absolute;
 }

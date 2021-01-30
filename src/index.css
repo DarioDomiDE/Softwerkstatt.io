@@ -22,16 +22,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.5rem;
   color: rgb(59,60,66);
 }
-h1 {
-  /* font-size: 4.8em; */
-  /* line-height: 1.0em; */
-}
 h2 {
   font-weight: normal;
   text-align: center;
   font-size: 3.0em;
   font-family: "Playfair Display";
-  margin-bottom: 3rem;
+  margin-bottom: 3.0rem;
 }
 h3 {
   font-weight: normal;
@@ -52,7 +48,7 @@ p, span, li {
   letter-spacing: 1.9px;
   color: #55b49b;
 }
-.pre-headline.text-white {
+.pre-headline.color1 {
   color: #fff;
 }
 .pre-headline.color2 {
@@ -69,6 +65,7 @@ p, span, li {
   }
   h2 {
     font-size: 3.0em;
+    margin-bottom: 2.0rem;
   }
   h3 {
     font-size: 2.0em;
@@ -94,17 +91,22 @@ p, span, li {
 }
 @media (max-width: 640px) {
   p, span, li {
-    font-size: 0.9em;
+    font-size: 0.95em;
   }
   h2 {
     font-size: 1.8em;
   }
+  h3 {
+    font-size: 1.6em;
+    margin-top: 0.8rem;
+  }
 }
 
 a {
+  text-decoration: underline;
 }
 a:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 .scale-103:hover {
   --tw-scale-x: 1.03;

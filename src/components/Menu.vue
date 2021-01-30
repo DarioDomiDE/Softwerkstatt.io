@@ -1,6 +1,6 @@
 <template>
   <div v-if="isVisible">
-    <div v-if="isOpened" class="fixed top-0 right-0 w-full z-30 h-screen sm:h-auto sm:w-64 p-8 bg-gray-700 text-xl leading-normal text-white">
+    <div v-if="isOpened" class="fixed top-0 right-0 w-full z-30 h-screen sm:h-auto sm:w-64 p-4 sm:p-8 pt-16 bg-gray-700 text-xl leading-normal text-white">
       <ul>
         <li><span>Unterstützung</span></li>
         <li><span>Wie wir arbeiten</span></li>
@@ -45,6 +45,9 @@ export default {
   max-width: 45px;
   min-width: 30px;
 }
+span {
+  font-size: 1.0em;
+}
 @media (max-width: 640px) {
   li {
     width: calc(50% - 5px);
@@ -66,6 +69,8 @@ export default {
       bottom: 0;
       vertical-align: middle;
       text-align: center;
+      line-height: 20px;
+      transform: translateY(calc(50% - 20px));
     }
 }
 .hover-bg-custom:hover {

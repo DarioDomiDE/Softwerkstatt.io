@@ -23,7 +23,7 @@
         <ul class="bg-gray-100 px-6 pt-4 pb-6">
           <li>Ansprechpartner: Dario D. Müller</li>
           <li>040 123 456 789</li>
-          <li><a class="" href="mailto:ahoi@softwerkstatt.io">ahoi@softwerkstatt.io</a></li>
+          <li><a class="" href="mailto:dario@softwerkstatt.io">dario@softwerkstatt.io</a></li>
           <li>Brunckhorstweg 3, 22525 Hamburg</li>
         </ul>
       </div>
