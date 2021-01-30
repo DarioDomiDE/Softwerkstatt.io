@@ -1,5 +1,5 @@
 <template>
-  <section class="container max-w-screen-xl h-screen pt-32 pb-32 overflow-hidden" id="welcome">
+  <section v-if="isActive" class="container max-w-screen-xl h-screen pt-32 pb-32 overflow-hidden" id="welcome">
     <video class="h-full mx-auto grayscale object-cover" id="videoPlayer" poster="./../assets/img/header_with_bg.png" preload="auto" autobuffer="" autoplay="" loop="" playsinline="" muted="">
       <source src="./../assets/video/teaser.webm" type='video/webm; codecs="vp8, vorbis"'>
       <source src="./../assets/video/teaser.mp4" type="video/mp4">
@@ -12,6 +12,27 @@
 
 <script>
 export default {
+  name: 'Welcome',
+  data: () => {
+    return {
+      isActive: true
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  unmounted () {
+    window.removeEventListener('scroll', this.handleScroll);
+  },
+  methods: {
+    handleScroll () {
+      if(this.isActive && window.scrollY >= window.innerHeight) {
+        this.isActive = false;
+      } else if(!this.isActive && window.scrollY <= window.innerHeight) {
+        this.isActive = true;
+      }
+    }
+  }
 }
 </script>
 
