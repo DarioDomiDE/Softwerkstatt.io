@@ -19,8 +19,4 @@ export default {
 </script>
 
 <style scoped>
-.scale-102:hover {
-  --tw-scale-x: 1.02;
-  --tw-scale-y: 1.02;
-}
 </style>

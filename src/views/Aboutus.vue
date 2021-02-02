@@ -24,8 +24,8 @@
     </div>
     <div class="contact mt-12">
       <ul>
-        <li>E-Mail: <a class="" href="mailto:dario@softwerkstatt.io">dario@softwerkstatt.io</a></li>
-        <li>Tel: 040 123 456 789</li>
+        <li>E-Mail: <a class="" href="mailto:moin@softwerkstatt.io">moin@softwerkstatt.io</a></li>
+        <li><a href="tel:040123456789">040 123 456 789</a></li>
         <li><a href="https://xing.de/">Xing</a> | <a href="https://linkedin.com/">LinkedIn</a></li>
       </ul>
     </div>

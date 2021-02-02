@@ -7,7 +7,7 @@
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
         <div class="col-span-1">
           <h3>Werkzeuge</h3>
-          <ul>
+          <ul class="checklist">
             <li>Erstellung Responsive Websites &amp; SPAs mit Vue.js &amp; Angular</li>
             <li>Mobile Apps &amp; PWAs mit React Native, Flutter &amp; Unity</li>
             <li>Backend mit Asp.Net &amp; .Net 5</li>
@@ -47,13 +47,5 @@ export default {
 <style scoped>
 #bg3 {
   background-color: rgba(243, 244, 246, 1);
-}
-
-ul li {
-  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>') no-repeat left center;
-  padding-left: 32px;
-  line-height: 1.2em;
-  margin-bottom: 12px;
-  background-size: 18px;
 }
 </style>

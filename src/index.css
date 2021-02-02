@@ -106,7 +106,11 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  font-weight: bold;
+  color: #36c1c7;
+}
+.scale-102:hover {
+  --tw-scale-x: 1.02;
+  --tw-scale-y: 1.02;
 }
 .scale-103:hover {
   --tw-scale-x: 1.03;
@@ -120,4 +124,20 @@ a:hover {
   background-color: #fff;
   position: relative;
   z-index: 20;
+}
+
+ul.checklist li,
+ul.list li {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 32px;
+  line-height: 1.2em;
+  margin-bottom: 12px;
+  background-size: 18px;
+}
+ul.checklist li {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>');
+}
+ul.list li {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>');
 }

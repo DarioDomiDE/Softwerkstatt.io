@@ -2,12 +2,14 @@
   <div v-if="isVisible">
     <div v-if="isOpened" class="fixed top-0 right-0 w-full z-30 h-screen sm:h-auto sm:w-64 p-4 sm:p-8 pt-16 bg-gray-700 text-xl leading-normal text-white">
       <ul>
-        <li><span>Unterstützung</span></li>
+        <!-- <li><span>Unterstützung</span></li>
         <li><span>Wie wir arbeiten</span></li>
         <li><span>Leistungen</span></li>
         <li><span>Maschinenraum</span></li>
-        <li><span>Wer wir sind</span></li>
-        <li><span>Projekte</span></li>
+        <li><span>Wer wir sind</span></li> -->
+        <!-- <li><span>Projekte</span></li> -->
+        <li><span><router-link to="/">Home</router-link></span></li>
+        <li><span><router-link to="/jobs">Jobs (2)</router-link></span></li>
       </ul>
     </div>
     <div class="fixed top-0 right-0 mt-4 mr-4 z-30" id="icon">

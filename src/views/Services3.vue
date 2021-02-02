@@ -1,13 +1,13 @@
 <template>
   <section class="container min-h-0 max-w-screen-xl pt-8 pb-8 px-4 md:px-8 2xl:px-0 text-center">
-    <span class="pre-headline color3">Support</span>
+    <span class="pre-headline color3">Expertise</span>
     <h2>Hier unterstützen wir</h2>
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 text-left">
       <div class="col-span-1 lg:col-span-1 hidden md:block">
         <ul id="tab-navi">
           <li v-on:click="active = 1" class="inline-block lg:block w-6/12 lg:w-full xl:text-2xl" v-bind:class="{'active': active == 1}">Digitale Strategie</li>
-          <li v-on:click="active = 2" class="inline-block lg:block w-6/12 lg:w-full xl:text-2xl" v-bind:class="{'active': active == 2}">Industrie 4.0</li>
           <li v-on:click="active = 3" class="inline-block lg:block w-6/12 lg:w-full xl:text-2xl" v-bind:class="{'active': active == 3}">Prozessoptimierung</li>
+          <li v-on:click="active = 2" class="inline-block lg:block w-6/12 lg:w-full xl:text-2xl" v-bind:class="{'active': active == 2}">Industrie 4.0</li>
           <li v-on:click="active = 4" class="inline-block lg:block w-6/12 lg:w-full xl:text-2xl" v-bind:class="{'active': active == 4}">Digitale Transformation</li>
         </ul>
       </div>
@@ -20,19 +20,19 @@
             <span class="inline-block lg:hidden color-red px-2 ml-2 text-bold border rounded cursor-pointer" v-if="readMore.indexOf(1) === -1" v-on:click="readMore.push(1)">mehr<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="12" width="12" class="inline-block align-text-middle"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></span>
             <span class="inline-block lg:hidden color-red px-2 ml-2 text-bold border rounded cursor-pointer" v-if="readMore.indexOf(1) !== -1" v-on:click="readMore.splice(readMore.indexOf(1), 1)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="12" width="12" class="inline-block align-text-middle"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>weniger</span>
           </article>
-          <article :class="{'active': active == 2}">
-            <h3>Industrie 4.0</h3>
-            <p class="inline">Geschäftsmodelle und Branchen verändern sich, werden digitaler und Arbeitsabläufe effizienter. Als IT-Dienstleister wissen wir aus der Praxis: Individuelle Software-Lösungen für etablierte und neue Arbeitsprozesse bringen die effizientesten Strategien im Einklang mit Ihrer Vision hervor.</p>
-            <p :class="readMore.indexOf(2) !== -1 ? 'inline' : 'hidden lg:inline'"> Um als Unternehmen Marktvorsprünge auszubauen, braucht es vor allem das grundlegende Commitment zur Optimierung. Wir möchten Ihre Prozesse und Abläufe optimieren, und bieten Ihnen dafür unverbindlich eine passgenaue Strategie-Beratung an. Unser Ziel ist es, Arbeitsabläufe zu verbessern und so die Auslastung zu steigern, um Produktivität Ihrer Mitarbeiter, Kollegen durch intelligente Software-Lösungen nachhaltig zu verbessern.</p>
-            <span class="inline-block lg:hidden color-red px-2 ml-2 text-bold border rounded cursor-pointer" v-if="readMore.indexOf(2) === -1" v-on:click="readMore.push(2)">mehr<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="12" width="12" class="inline-block align-text-middle"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></span>
-            <span class="inline-block lg:hidden color-red px-2 ml-2 text-bold border rounded cursor-pointer" v-if="readMore.indexOf(2) !== -1" v-on:click="readMore.splice(readMore.indexOf(2), 1)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="12" width="12" class="inline-block align-text-middle"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>weniger</span>
-          </article>
           <article :class="{'active': active == 3}">
             <h3>Prozessoptimierung</h3>
             <p class="inline">Wie optimieren Sie Ihr Geschäftsmodell im digitalen Raum? Es bedarf kreativer Lösungen für die komplexen Aufgaben moderner Geschäftsmodelle. Hierbei ist es von besonderer Bedeutung, Arbeitsschritte zu vereinfachen und Bottlenecks zu entfernen. Auf Grundlage einer Bewertung der Arbeitsabläufe Ihres Unternehmens bringen wir neue Blickwinkel ein</p>
             <p :class="readMore.indexOf(3) !== -1 ? 'inline' : 'hidden lg:inline'">, um mit Software teure Abläufe zu automatisieren und so Mitarbeiter zu entlasten. Um zukunftssicher für die stetigen Veränderungen Ihres Marktumfeldes zu sein, möchten wir Sie mit dem nötigen Fachwissen und Tools ausstatten, um das langfristige Potenzial Ihrer Software sicherstellen. Wir begleiten unsere Kunden in allen Schritten der Prozessoptimierung: Von der Konzeption, über Entwicklung von Algorithmen bis zur Programmierung. Denn wir lieben Automatisierung, um schneller wachsen können, Ihre Mitarbeiter zu entlasten und besser neue Kunden gewinnen zu können! Software, die das Leben vereinfacht.</p>
             <span class="inline-block lg:hidden color-red px-2 ml-2 text-bold border rounded cursor-pointer" v-if="readMore.indexOf(3) === -1" v-on:click="readMore.push(3)">mehr<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="12" width="12" class="inline-block align-text-middle"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></span>
             <span class="inline-block lg:hidden color-red px-2 ml-2 text-bold border rounded cursor-pointer" v-if="readMore.indexOf(3) !== -1" v-on:click="readMore.splice(readMore.indexOf(3), 1)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="12" width="12" class="inline-block align-text-middle"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>weniger</span>
+          </article>
+          <article :class="{'active': active == 2}">
+            <h3>Industrie 4.0</h3>
+            <p class="inline">Geschäftsmodelle und Branchen verändern sich, werden digitaler und Arbeitsabläufe effizienter. Als IT-Dienstleister wissen wir aus der Praxis: Individuelle Software-Lösungen für etablierte und neue Arbeitsprozesse bringen die effizientesten Strategien im Einklang mit Ihrer Vision hervor.</p>
+            <p :class="readMore.indexOf(2) !== -1 ? 'inline' : 'hidden lg:inline'"> Um als Unternehmen Marktvorsprünge auszubauen, braucht es vor allem das grundlegende Commitment zur Optimierung. Wir möchten Ihre Prozesse und Abläufe optimieren, und bieten Ihnen dafür unverbindlich eine passgenaue Strategie-Beratung an. Unser Ziel ist es, Arbeitsabläufe zu verbessern und so die Auslastung zu steigern, um Produktivität Ihrer Mitarbeiter, Kollegen durch intelligente Software-Lösungen nachhaltig zu verbessern.</p>
+            <span class="inline-block lg:hidden color-red px-2 ml-2 text-bold border rounded cursor-pointer" v-if="readMore.indexOf(2) === -1" v-on:click="readMore.push(2)">mehr<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="12" width="12" class="inline-block align-text-middle"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg></span>
+            <span class="inline-block lg:hidden color-red px-2 ml-2 text-bold border rounded cursor-pointer" v-if="readMore.indexOf(2) !== -1" v-on:click="readMore.splice(readMore.indexOf(2), 1)"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" height="12" width="12" class="inline-block align-text-middle"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" /></svg>weniger</span>
           </article>
           <article :class="{'active': active == 4}">
             <h3>Digitale Transformation</h3>
@@ -45,11 +45,10 @@
       </div>
       <div class="col-span-1 hidden lg:block">
         <ul>
-          <li :class="{'active': active == 1}"><img class="rounded-lg" src="./../assets/img/service_1.jpg" alt=""></li>
-          <li :class="{'active': active == 2}"><img class="rounded-lg" src="http://placehold.it/300x505" alt=""></li>
-          <li :class="{'active': active == 3}"><img class="rounded-lg" src="http://placehold.it/300x510" alt=""></li>
-          <li :class="{'active': active == 4}"><img class="rounded-lg" src="http://placehold.it/300x515" alt=""></li>
-          <li :class="{'active': active == 5}"><img class="rounded-lg" src="http://placehold.it/300x520" alt=""></li>
+          <li :class="{'active': active == 1}"><img class="rounded-lg" src="./../assets/img/services3/1.jpg" alt=""></li>
+          <li :class="{'active': active == 3}"><img class="rounded-lg" src="./../assets/img/services3/5.jpg" alt=""></li>
+          <li :class="{'active': active == 2}"><img class="rounded-lg" src="./../assets/img/services3/3.jpg" alt=""></li>
+          <li :class="{'active': active == 4}"><img class="rounded-lg" src="./../assets/img/services3/4.jpg" alt=""></li>
         </ul>
       </div>
     </div>
