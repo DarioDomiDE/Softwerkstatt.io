@@ -1,7 +1,7 @@
 <template>
   <section class="container mx-auto max-w-screen-lg 2xl:max-w-screen-xl pt-16 pb-16 px-4 lg:px-0 text-center">
     <span class="pre-headline">Clients</span>
-    <h2>Referenzen</h2>
+    <h1>Referenzen</h1>
     <p class="w-full md:max-w-2xl mx-auto text-left sm:text-center">Gute Gründe, mit uns zu arbeiten. Ein Auszug unserer Kunden, bei denen wir stolz sind, sie glücklich gemacht und unterstützt zu haben.</p>
     <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 justify-items-center
     gap-x-8 sm:gap-x-16
@@ -23,6 +23,7 @@
 
 <script>
 import CtaButton from './CtaButton.vue'
+
 export default {
   name: 'References',
   components: {

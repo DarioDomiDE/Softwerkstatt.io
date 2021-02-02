@@ -1,13 +1,13 @@
 <template>
   <div class="container mx-auto max-w-screen-lg 2xl:max-w-screen-xl pt-16 px-4 lg:px-0 pb-32">
     <span class="block pre-headline text-center">Mannschaft</span>
-    <h2 class="text-center">Jobs bei Softwerkstatt</h2>
-    <h3>Über uns</h3>
+    <h1 class="text-center">Jobs bei Softwerkstatt</h1>
+    <h2>Über uns</h2>
     <p>Wir sind ein ambitioniertes Team und arbeiten an abwechslungsreichen Projekten in der Software-Entwicklung.</p>
     <p>Unsere Ziel? Benutzerfreundliche Web-Applikationen, die Benutzern die Arbeit erleichtern. Dabei ist jedes Teammitglied gefragt, um das bestmögliche Produkt zu entwickeln! Wir freuen uns auf Deine Ideen und Fähigkeiten!</p>
     <p>Unser Büro liegt zentral in der Hamburger Innenstadt. In der direkten Umgebung stehen Dir zahlreiche Möglichkeiten für die Mittagspause mit deinen Kollegen zur Verfügung.</p>
     <p>Bis hierhin gefällt Dir alles? Dann wirf doch einen Blick auf unsere offenen Jobs!</p>
-    <h3>Aktuelle Jobs</h3>
+    <h2>Aktuelle Jobs</h2>
     <ul class="list">
       <li><router-link to="/jobs/fullstack-entwickler-hamburg">Full-Stack Entwickler/in</router-link></li>
       <li><router-link to="/jobs/dotnet-entwickler-hamburg">.Net Entwickler/in</router-link></li>

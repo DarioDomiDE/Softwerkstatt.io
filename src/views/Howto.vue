@@ -2,7 +2,7 @@
   <curved class="min-h-0 bg text-center" :skipBorderBottom="true" id="bg2">
     <div class="container max-w-screen-xl pb-4 px-4 md:px-8 2xl:px-0">
       <span class="pre-headline color2">Abwicklung</span>
-      <h2>Wie wir arbeiten</h2>
+      <h1>Wie wir arbeiten</h1>
       <img class="hidden lg:block absolute left-0 right-0" src="./../assets/img/howto/bg.png" alt="">
       <div id="howtoContainer">
         <div id="step1" class="step order-1 z-10">

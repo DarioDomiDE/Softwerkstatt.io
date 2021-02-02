@@ -1,7 +1,7 @@
 <template>
   <section class="container max-w-screen-lg 2xl:max-w-screen-xl pt-8 pb-16 px-4 xl:px-0 text-center">
     <span class="pre-headline">About Us</span>
-    <h2>Wer wir sind</h2>
+    <h1>Wer wir sind</h1>
     <p class="pb-8 sm:pb-12 w-full md:max-w-3xl mx-auto text-left sm:text-center" id="about-us-text">Wir sind Made with <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="20" class="inline-block" id="heart1"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
       </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="20" id="heart2"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
       </svg> in Hamburg, ein Team von Softwareentwicklern und Freelancern, die onsite oder fully remote das tun, was wir am liebsten machen - Software entwickeln.</p>

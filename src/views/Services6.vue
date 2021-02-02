@@ -2,7 +2,7 @@
   <curved class="gradient min-h-0" v-bind:borderTopGray="true" v-bind:borderBottomGray="true">
     <div class="container max-w-screen-xl px-4 md:px-8 2xl:px-0 text-center" id="services6">
       <span class="pre-headline color1">Services</span>
-      <h2>Leistungen</h2>
+      <h1>Leistungen</h1>
       <p class="pb-8 sm:mb-12 mx-auto w-full md:max-w-4xl text-left sm:text-center">Unsere Domäne, hierbei haben wir Spaß. Wir sind im Herzen Techies. Und unterstützen unsere Kunden in allen Phasen ihrer Digitalisierung. Eine Auwahl, was uns besonders am Herzen liegt:</p>
       <div id="articlesContainer">
         <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8 text-left">
@@ -168,7 +168,7 @@ export default {
 
 <style scoped>
 #services6,
-#services6 h2,
+#services6 h1,
 #services6 h3 {
   color: #fff;
 }

@@ -11,7 +11,6 @@
     <References @clicked="onClickCta" />
     <Modal ref="modal" @modalClosed="onModalClosed" />
   </div>
-  <!-- <Footer /> -->
 </template>
 
 <script>
@@ -24,7 +23,6 @@ import Technical from './../views/Technical.vue'
 import Aboutus from './../views/Aboutus.vue'
 import Projects from './../views/Projects.vue'
 import References from './../views/References.vue'
-// import Footer from './../views/Footer.vue'
 import Modal from './../views/Modal.vue'
 
 export default {
@@ -39,7 +37,6 @@ export default {
     Aboutus,
     Projects,
     References,
-    // Footer,
     Modal
   },
   methods: {

@@ -4,6 +4,7 @@ import Jobs from './components/Jobs.vue'
 import JobDotNetDeveloper from './components/JobDotNetDeveloper.vue'
 import Legal from './components/Legal.vue'
 import PrivacyPolicy from './components/PrivacyPolicy.vue'
+import Feedback from './components/Feedback.vue'
 import NotFound from './components/NotFound.vue'
 
 const routes = [
@@ -13,6 +14,7 @@ const routes = [
   { path: '/jobs/dotnet-entwickler-hamburg', name: '.Net Developer Hamburg', component: JobDotNetDeveloper },
   { path: '/legal', name: 'Legal', component: Legal },
   { path: '/privacy-policy', name: 'PrivacyPolicy', component: PrivacyPolicy },
+  { path: '/feedback', name: 'Feedback', component: Feedback },
   { path: "/:catchAll(.*)", component: NotFound, },
 ];
 

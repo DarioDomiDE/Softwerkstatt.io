@@ -25,9 +25,9 @@
         <h4 class="mb-2 text-white hidden md:block">Interesse geweckt?</h4>
         <p class="hidden md:block">Schön, dass wir Ihr Interesse wecken konnten. Schreiben Sie uns oder rufen Sie uns an. Wir freuen uns drauf!</p>
         <ul class="mt-4">
-          <li><a href="#">Impressum</a></li>
-          <li><a href="#">Datenschutzerklärung</a></li>
-          <li><a href="#">Feedback</a></li>
+          <li><router-link to="/legal">Impressum</router-link></li>
+          <li><router-link to="/privacy-policy">Datenschutzerklärung</router-link></li>
+          <li><router-link to="/feedback">Feedback</router-link></li>
         </ul>
       </div>
 
