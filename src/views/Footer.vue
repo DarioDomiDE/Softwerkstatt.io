@@ -27,7 +27,6 @@
         <ul class="mt-4">
           <li><router-link to="/legal"><span v-on:click="scrollToTop">Impressum</span></router-link></li>
           <li><router-link to="/privacy-policy"><span v-on:click="scrollToTop">Datenschutzerklärung</span></router-link></li>
-          <li><router-link to="/feedback"><span v-on:click="scrollToTop">Feedback</span></router-link></li>
         </ul>
       </div>
 
