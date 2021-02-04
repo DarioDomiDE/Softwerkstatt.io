@@ -1,14 +1,14 @@
 <template>
   <curved class="min-h-0 bg text-center" :skipBorderBottom="true" id="bg2">
-    <div class="container max-w-screen-xl pb-4 px-4 md:px-8 2xl:px-0">
+    <div class="container max-w-screen-xl 2xl:max-w-screen-2xl pb-4 px-4 md:px-8 2xl:px-0">
       <span class="pre-headline color2">Abwicklung</span>
       <h1>Wie wir arbeiten</h1>
-      <img class="hidden lg:block absolute left-0 right-0" src="./../assets/img/howto/bg.png" alt="">
       <div id="howtoContainer">
+        <img class="hidden lg:block" src="./../assets/img/howto/bg.png" alt="" id="howToBg">
         <div id="step1" class="step order-1 z-10">
           <h4>Analyse</h4>
           <img class="mx-auto" src="./../assets/img/howto/step1.svg" alt="">
-          <div class="popup">
+          <div class="popup xl:shadow-md">
             <img class="mx-auto" src="./../assets/img/howto/step1.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -16,7 +16,7 @@
         <div id="step2" class="step order-2 margin-left">
           <h4>Beratung</h4>
           <img class="mx-auto" src="./../assets/img/howto/step2.svg" alt="">
-          <div class="popup">
+          <div class="popup xl:shadow-md">
             <img class="mx-auto" src="./../assets/img/howto/step2.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -26,7 +26,7 @@
         <div id="step3" class="step order-4 lg:order-3 margin-left">
           <h4>Prototyping</h4>
           <img class="mx-auto" src="./../assets/img/howto/step3.svg" alt="">
-          <div class="popup">
+          <div class="popup xl:shadow-md">
             <img class="mx-auto" src="./../assets/img/howto/step3.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -36,7 +36,7 @@
         <div id="step4" class="step order-3 lg:order-6 lg-margin-left">
           <h4>Sicherheit</h4>
           <img class="mx-auto" src="./../assets/img/howto/step4.svg" alt="">
-          <div class="popup">
+          <div class="popup xl:shadow-md">
             <img class="mx-auto" src="./../assets/img/howto/step4.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -46,7 +46,7 @@
         <div id="step5" class="step order-5 lg:order-5 lg-margin-left z-10">
           <h4>Automatisierung</h4>
           <img class="mx-auto" src="./../assets/img/howto/step5.svg" alt="">
-          <div class="popup">
+          <div class="popup xl:shadow-md">
             <img class="mx-auto" src="./../assets/img/howto/step5.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -55,7 +55,7 @@
         <div id="step6" class="step order-6 lg:order-4 sm-margin-left">
           <h4>Benutzer</h4>
           <img class="mx-auto" src="./../assets/img/howto/step6.svg" alt="">
-          <div class="popup">
+          <div class="popup xl:shadow-md">
             <img class="mx-auto" src="./../assets/img/howto/step6.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -65,12 +65,12 @@
         <div id="step7" class="step order-8 lg:order-7 sm-margin-left">
           <h4>Potential</h4>
           <img class="mx-austo" src="./../assets/img/howto/step7.svg" alt="">
-          <div class="popup">
+          <div class="popup xl:shadow-md">
             <img class="mx-auto" src="./../assets/img/howto/step7.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
         </div>
-        <div id="step8" class="step order-7 lg:order-8 empty">
+        <div id="step8" class="step order-7 lg:order-8 empty xl:hidden">
         </div>
       </div>
       <CtaButton class="my-4 hover:border-gray-700" @clicked="onClickCta">Jetzt Chancen ergreifen</CtaButton>
@@ -99,147 +99,177 @@ export default {
 #bg2 {
   background-color: rgba(243, 244, 246, 1);
 }
-#howtoContainer {
-  position: relative;
-  display: flex;
-  flex-flow: wrap;
-}
-.step {
-  position: relative;
-  width: 44%;
-  padding-top: 44%;
-  display: inline-block;
-  border-radius: 100%;
-  text-align: center;
-  margin-bottom: 12%;
-}
-.step:not(.empty) {
-  background: #fff;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
-  transition: all 0.4s;
-  cursor: pointer;
-}
-.step:not(.empty):hover {
-  box-shadow: 0 0 20px rgba(0,0,0,0.3);
-}
-.margin-left,
-.sm-margin-left {
-  margin-left: 12%;
-}
-@media (min-width: 1024px) {
-  .step {
-    width: 28%;
-    padding-top: 28%;
-    margin-bottom: 8%;
-  }
-  .sm-margin-left {
-    margin-left: 0;
-  }
-  .margin-left,
-  .lg-margin-left {
-    margin-left: 8%;
-  }
-}
 .popup {
   display: none;
 }
-/* .step:hover .popup {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #fff;
-} */
-  #howtoContainer h4,
-  #howtoContainer img {
+@media (max-width: 1280px) {
+  #howtoContainer {
+    position: relative;
+    display: flex;
+    flex-flow: wrap;
+  }
+  .step {
+    position: relative;
+    width: 44%;
+    padding-top: 44%;
+    display: inline-block;
+    border-radius: 100%;
+    text-align: center;
+    margin-bottom: 12%;
+  }
+  .step:not(.empty) {
+    background: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+    transition: all 0.4s;
+    cursor: pointer;
+  }
+  .step:not(.empty):hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+  .margin-left,
+  .sm-margin-left {
+    margin-left: 12%;
+  }
+  @media (min-width: 1024px) {
+    .step {
+      width: 28%;
+      padding-top: 28%;
+      margin-bottom: 8%;
+    }
+    .sm-margin-left {
+      margin-left: 0;
+    }
+    .margin-left,
+    .lg-margin-left {
+      margin-left: 8%;
+    }
+  }
+  /* .step:hover .popup {
+    display: block;
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
-  }
-  h4 {
-    top: 5%;
-  }
-  #howtoContainer img {
-    height: 100%;
-    max-height: calc(100% - 50px);
-    top: calc(25px + 10%);
-    object-fit: contain;
-  }
-  .line {
-    position: absolute;
-    background-color: #C1DDF3;
-  }
-  .line-left {
-    left: calc(-28.5% - 1px);
-    top: calc(50% - 10px);
-    width: 28.5%;
-    height: 20px;
-  }
-  .line-bottom {
-    left: calc(50% - 10px);
-    bottom: calc(-28.5% - 1px);
-    width: 20px;
-    height: 28.5%;
-  }
-
-/* #desc {
-  position: absolute;
-  left: -100px;
-  top: -150px;
+    background: #fff;
+  } */
+    #howtoContainer h4,
+    #howtoContainer img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
+    h4 {
+      top: 5%;
+    }
+    #howtoContainer img {
+      height: 100%;
+      max-height: calc(100% - 50px);
+      top: calc(25px + 10%);
+      object-fit: contain;
+    }
+    .line {
+      position: absolute;
+      background-color: #C1DDF3;
+    }
+    .line-left {
+      left: calc(-28.5% - 1px);
+      top: calc(50% - 10px);
+      width: 28.5%;
+      height: 20px;
+    }
+    .line-bottom {
+      left: calc(50% - 10px);
+      bottom: calc(-28.5% - 1px);
+      width: 20px;
+      height: 28.5%;
+    }
 }
+
+@media (min-width: 1280px) {
+  #howtoContainer {
+    margin: 12rem 0 4rem 0;
+    position: relative;
+    height: 622px;
+  }
+  #howToBg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
   .step {
     position: absolute;
+    height: 200px;
+    width: 220px;
+    margin: -200px 0 0 -110px;
   }
-    .step h6 {
-      line-height: 1.1em;
-    text-align: center;
-    }
-    .popup {
-      display: none;
-      position: absolute;
-      top: -150px;
-      left: 0px;
-      background-color: rgba(255, 255, 255, 1);
-      border: 1px solid #000;
-      width: 350px;
-      padding: 10px 5px;
-    }
-    .popup img {
-      height: 150px;
-    }
-    .popup p {
-    }
-    .step:hover .popup {
-      display: block;
-    }
-#step1 {
-  left: 190px;
-  top: 340px;
+  .step > h4 {
+    font-size: 1.7em;
+    font-weight: normal;
+  }
+  .step > img {
+    position: absolute;
+    bottom: 0;
+  }
+  #step1 {
+    left: 17%;
+    top: 23%;
+  }
+  #step2 {
+    left: 52%;
+    top: 7%;
+  }
+  #step3 {
+    left: 88.5%;
+    top: 22%;
+  }
+  #step4 {
+    left: 52%;
+    top: 49%;
+  }
+  #step5 {
+    left: 9%;
+    top: 68%;
+  }
+  #step6 {
+    left: 51%;
+    top: 98%;
+  }
+  #step7 {
+    left: 91%;
+    top: 69%;
+  }
+  .step:hover .popup {
+    display: block;
+  }
+  .step .popup {
+    position: relative;
+    margin: -100px 0 0 -60px;
+    width: 340px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    z-index: 30;
+  }
+  .step .popup p {
+    font-size: 1.1em;
+    text-align: left;
+  }
 }
-#step2 {
-  left: 540px;
-  top: 210px;
+@media (min-width: 1536px) {
+  #howtoContainer {
+    height: 778px;
+  }
+  .step {
+    height: 240px;
+    width: 280px;
+    margin: -240px 0 0 -140px;
+  }
+  .step .popup {
+    margin: -150px 0 0 -60px;
+    width: 400px;
+  }
 }
-#step3 {
-  left: 890px;
-  top: 340px;
-}
-#step4 {
-  left: 540px;
-  top: 500px;
-}
-#step5 {
-  left: 50px;
-  top: 720px;
-}
-#step6 {
-  left: 550px;
-  top: 950px;
-}
-#step7 {
-  left: 1010px;
-  top: 720px;
-} */
 </style>
