@@ -8,14 +8,14 @@ import Feedback from './components/Feedback.vue'
 import NotFound from './components/NotFound.vue'
 
 const routes = [
-  { path: '/', name: 'Home', component: Home },
-  { path: '/jobs', name: 'Jobs', component: Jobs },
-  { path: '/jobs/fullstack-entwickler-hamburg', name: '.Net Developer Hamburg', component: JobDotNetDeveloper },
-  { path: '/jobs/dotnet-entwickler-hamburg', name: '.Net Developer Hamburg', component: JobDotNetDeveloper },
-  { path: '/legal', name: 'Legal', component: Legal },
-  { path: '/privacy-policy', name: 'PrivacyPolicy', component: PrivacyPolicy },
-  { path: '/feedback', name: 'Feedback', component: Feedback },
-  { path: "/:catchAll(.*)", component: NotFound, },
+  { path: '/', name: 'home', component: Home, meta: { title: '' } },
+  { path: '/jobs', name: 'jobs', component: Jobs, meta: { title: 'Jobs' } },
+  { path: '/jobs/fullstack-entwickler-hamburg', name: 'fullstack-dev', component: JobDotNetDeveloper, meta: { title: '.Net Developer Hamburg' } },
+  { path: '/jobs/dotnet-entwickler-hamburg', name: 'dotnet-dev', component: JobDotNetDeveloper, meta: { title: '.Net Developer Hamburg' } },
+  { path: '/legal', name: 'legal', component: Legal, meta: { title: 'Impressum' } },
+  { path: '/privacy-policy', name: 'privacy', component: PrivacyPolicy, meta: { title: 'Datenschutzerklärung' } },
+  { path: '/feedback', name: 'feedback', component: Feedback, meta: { title: 'Feedback' } },
+  { path: "/:catchAll(.*)", name: 'notfound', component: NotFound, meta: { title: 'Not Found' } },
 ];
 
 const router = createRouter({

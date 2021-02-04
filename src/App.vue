@@ -14,6 +14,17 @@ export default {
     Menu,
     Footer
   },
+  watch: {
+    '$route' (to) {
+      var postfix = 'Softwerkstatt - Software Entwicklung Consulting Hamburg '
+      var title = to.meta.title || ''
+      if(title != '') {
+        title += ' - '
+      }
+      title += postfix;
+      document.title = title
+    }
+  },
   methods: {
   }
 }
