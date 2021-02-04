@@ -16,10 +16,10 @@
     <h2>Registereintrag</h2>
     <p>Eintragung im Handelsregister.
         <br> Registergericht:Amtsgericht Hamburg
-        <br> Registernummer: HRB 136692</p>
+        <br> Registernummer: HRB 123456</p>
     <h2>Umsatzsteuer</h2>
     <p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:
-        <br> DE 300567825
+        <br> DE 123456789
     </p>
     <h3>Streitschlichtung</h3>
     <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
