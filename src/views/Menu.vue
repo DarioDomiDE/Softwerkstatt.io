@@ -8,8 +8,8 @@
         <li><span>Maschinenraum</span></li>
         <li><span>Wer wir sind</span></li> -->
         <!-- <li><span>Projekte</span></li> -->
-        <li><span><router-link to="/">Home</router-link></span></li>
-        <li><span><router-link to="/jobs">Jobs (3)</router-link></span></li>
+        <li><router-link to="/" ><span v-on:click="isOpened = false, scrollToTop()">Home</span></router-link></li>
+        <li><router-link to="/jobs"><span v-on:click="isOpened = false, scrollToTop()">Jobs (3)</span></router-link></li>
       </ul>
     </div>
     <div class="fixed top-0 right-0 mt-4 mr-4 z-30" id="icon">
@@ -36,6 +36,9 @@ export default {
     },
     close() {
       this.isVisible = false; 
+    },
+    scrollToTop() {
+      window.scrollTo(0,0);
     }
   }
 }
