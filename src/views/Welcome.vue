@@ -48,9 +48,8 @@ export default {
   background: linear-gradient(90deg, #3eeaff 0%, #a2ff5a 100%);
 }
 .grayscale {
-  filter: grayscale(1);
   -webkit-filter: grayscale(1); 
-  filter: grayscale(100%); 
+  filter: grayscale(1); 
 }
 #videoPlayer {
   filter:brightness(150%);

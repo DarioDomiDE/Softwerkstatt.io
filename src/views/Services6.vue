@@ -5,7 +5,7 @@
       <h1>Leistungen</h1>
       <p class="pb-8 sm:mb-12 mx-auto w-full md:max-w-4xl text-left sm:text-center">Unsere Domäne, hierbei haben wir Spaß. Wir sind im Herzen Techies. Und unterstützen unsere Kunden in allen Phasen ihrer Digitalisierung. Eine Auwahl, was uns besonders am Herzen liegt:</p>
       <div id="articlesContainer">
-        <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-16 gap-y-8 text-left">
+        <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-8 text-left">
           <article :class="isActive(0) ? 'active' : '' + isEffect == 0 ? 'is-effect' : afterEffect == 0 ? 'after-effect' : ''" @mouseover="isEffect = 0" v-on:click="onClickActive(0)">
             <h3>
               <span>Strategie Analyse</span>
@@ -14,7 +14,7 @@
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Unsere Expertise für neue Strategien und Blickwinkel: Wir helfen Ihnen, Ideen und Anforderungen zu analyiseren und Lösungen zu konzipieren, um mit innovativer Software langfristige Chancen zu nutzen.</p>
+            <p>Nutzen Sie unsere Expertise für neue Strategien und Blickwinkel: Wir helfen Ihnen, Ideen und deren Anforderungen zu analysieren und entwerfen mit Ihnen Lösungen, um mit Software langfristige Chancen optimal nutzen zu können.</p>
           </article>
           <article :class="isActive(1) ? 'active' : '' + isEffect == 1 ? 'is-effect' : ''" @mouseover="isEffect = 1" v-on:click="onClickActive(1)">
             <h3>
@@ -24,7 +24,7 @@
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Schnell am Markt sein oder perfektes Handwerk? Wir beraten Sie rund um Technologien und Frameworks und hinterfragen, was wirklich wichtig statt nur dringend ist - effektiv oder nur effizient.</p>
+            <p>Was braucht Ihre Lösung: Schnellste am Markt oder die Beste am Markt? Wir beraten Sie rund um Technologien und Frameworks und hinterfragen mit Ihnen, was für Sie wirklich wichtig ist statt nur dringend zu sein. Ist ein Prozess effizient? Oder nur effektiv?</p>
           </article>
           <article :class="isActive(2) ? 'active' : '' + isEffect == 2 ? 'is-effect' : ''" @mouseover="isEffect = 2" v-on:click="onClickActive(2)">
             <h3>
@@ -34,7 +34,7 @@
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Unser Herzstück: Programmierung maßgeschneiderter Tools, Backends und Datenbanken: Wir lieben Open-Source, plattformübergreifende Entwickelung und das Microsoft Ökosystem.</p>
+            <p>Unser Herzstück: Wir bieten Ihnen unsere Erfahrung bei der Programmierung maßgeschneiderter Tools, Backends und Datenbanken an. Wir lieben Open Source, plattformübergreifend nutzbare Software und das Microsoft Ökosystem.</p>
           </article>
           <article :class="isActive(3) ? 'active' : '' + isEffect == 3 ? 'is-effect' : ''" @mouseover="isEffect = 3" v-on:click="onClickActive(3)">
             <h3>
@@ -44,7 +44,7 @@
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Validierung vom Look &amp; Feel mithilfe und Mockups, Feedback-Loops und A/B-Tests direkt am User. Nutzung von Konzepten wie Design Thinking und Design Concepts, um ab Tag 1 Feedback-getrieben die User Experience zu verbessern.</p>
+            <p>Wir validieren ständig das Look &amp; Feel mithilfe von Mockups, Feedback-Loops und A/B-Tests direkt am Nutzer. Mit Konzepten wie Design Thinking und Design Concepts werden wir uns dabei ab Tag 1 Feedback-getrieben auf die UX fokussieren.</p>
           </article>
           <article :class="isActive(4) ? 'active' : '' + isEffect == 4 ? 'is-effect' : ''" @mouseover="isEffect = 4" v-on:click="onClickActive(4)">
             <h3>
@@ -54,7 +54,7 @@
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Entscheidungen durch Auswertung großer Datenmengen Auswertung erleichtern. Wir analysieren und evalusieren, um das Potential von Daten zu nutzen.</p>
+            <p>Algorithmen in Ihrer Software werden Entscheidungen durch Auswertung großer Datenmengen erleichtern. Wir analysieren und evaluieren mit Ihnen, das Potential Ihrer Daten nutzbar zu machen und entwickeln individuelle Lösungen.</p>
           </article>
           <article :class="isActive(5) ? 'active' : '' + isEffect == 5 ? 'is-effect' : ''" @mouseover="isEffect = 5" v-on:click="onClickActive(5)">
             <h3>
@@ -64,7 +64,7 @@
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Schutz, Stabilität und Sicherheit der Daten Ihrer Software und Kunden ist für uns selbstverständlich – gerne beraten wir umfassend und bieten dies in unseren Leistungen mit an.</p>
+            <p>Schutz, Revision und Sicherheit der Daten Ihrer Software, Ihrer Kunden und der Geschäftsgeheimnisse ist für uns selbstverständlich. Gern beraten wir Sie dabei umfassend.</p>
           </article>
         </div>
         <div class="hidden xl:block area area-y area-left" @mouseover="disableEffect(), left(1), left(4)"></div>
@@ -283,12 +283,12 @@ article:hover .effect .text {
     left: -30px;
   }
   .area-center1 {
-    left: calc((100% - 2 * 4rem) / 3);
-    width: 60px;
+    left: calc((100% - 2 * 2rem) / 3);
+    width: 30px;
   }
   .area-center2 {
-    left: calc((100% - 2 * 4rem) / 3 * 2 + 4rem);
-    width: 60px;
+    left: calc((100% - 2 * 2rem) / 3 * 2 + 2rem);
+    width: 30px;
   }
   .area-right {
     right: -30px;

@@ -52,7 +52,7 @@
         </ul>
       </div>
     </div>
-    <CtaButton class="mt-8 bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Jetzt Prozesse optimieren</CtaButton>
+    <CtaButton class="mt-8 bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Sprechen Sie mit uns</CtaButton>
   </section>
 </template>
 
@@ -74,7 +74,7 @@ export default {
       this.active = id; 
     },
     onClickCta() {
-      this.$emit('clicked', 'Prozesse optimieren')
+      this.$emit('clicked', 'Kontakt aufnehmen')
     }
   }
 }

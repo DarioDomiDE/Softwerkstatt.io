@@ -48,4 +48,12 @@ export default {
 #bg3 {
   background-color: rgba(243, 244, 246, 1);
 }
+img {
+  -webkit-filter: grayscale(1); 
+  filter: grayscale(1); 
+}
+img:hover {
+  -webkit-filter: grayscale(0); 
+  filter: grayscale(0); 
+}
 </style>
