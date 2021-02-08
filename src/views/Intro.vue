@@ -1,11 +1,11 @@
 <template>
-  <curved class="gradient min-h-0 lg:min-h-screen" v-bind:skipBorderTop="true" v-bind:usePaddingTop="true" id="intro">
+  <curved class="gradient min-h-0 lg:min-h-screen" v-bind:skipBorderTop="isDesktop" v-bind:usePaddingTop="true" id="intro">
     <div class="container xl:max-w-screen-lg 2xl:max-w-screen-2xl mx-auto text-white lg:mt-16 xl:mt-0">
       <div class="float-none lg:float-right w-full lg:w-1/3 pt-16 sm:pt-0 text-center">
         <img src="./../assets/img/intro_1.png" alt="" class="mx-auto sm:max-w-sm md:max-w-md lg:max-w-full">
       </div>
       <div class="float-none lg:float-right 2xl:float-left w-full lg:w-3/5 px-4 md:px-0">
-        <span class="font-bold mb-8 lg:mb-16 text-5xl md:text-6xl lg:text-8xl text-white"><span>Wir haben eine Vision:</span> Unser Handwerk und Ihre Software.</span>
+        <span class="block font-bold mb-8 lg:mb-16 text-5xl md:text-6xl lg:text-8xl text-white" id="headline"><span>Wir haben eine Vision:</span> Unser Handwerk und Ihre Software.</span>
         <span class="inline md:block text-lg lg:text-xl lg:text-2xl">Ahoi! Wir setzen Segel und lichten den Anker auf dem Weg zu neuen Ufern! </span>
         <span class="inline md:block text-lg lg:text-xl lg:text-2xl ">Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.</span>
         <CtaButton class="mt-8 lg:mt-16 block hover:text-white" @clicked="onClickCta">Segel setzen für neuen Kurs</CtaButton>
@@ -23,10 +23,24 @@ export default {
     Curved,
     CtaButton
   },
+  data: () => {
+    return {
+      isDesktop: true
+    }
+  },
   methods: {
     onClickCta() {
       this.$emit('clicked', 'Segel setzen')
+    },
+    onResize() {
+      this.isDesktop = window.innerWidth >= 1024;
     }
+  },
+  created() {
+    window.addEventListener("resize", this.onResize);
+  },
+  unmounted() {
+    window.removeEventListener("resize", this.onResize);
   }
 }
 </script>
@@ -37,8 +51,12 @@ export default {
 }
 .gradient {
   background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;
+}
+@media (min-width: 1024px) {
+  .gradient {
   mask-image: url('./../assets/img/border_black2.png');
   mask-size: cover;
+  }
 }
 span span {
   -webkit-text-fill-color: transparent;
@@ -46,5 +64,15 @@ span span {
   background-clip: text;
   font-size: 1.0em;
   line-height: 1.0em;
+}
+@media (max-width: 1024px) {
+  #headline {
+    line-height: 1.2em;
+  }
+}
+@media (max-width: 640px) {
+  #headline {
+    line-height: 1.3em;
+  }
 }
 </style>
