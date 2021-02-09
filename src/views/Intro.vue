@@ -2,7 +2,7 @@
   <curved class="gradient min-h-0 lg:min-h-screen" v-bind:skipBorderTop="isDesktop" v-bind:usePaddingTop="true" id="intro">
     <div class="container xl:max-w-screen-lg 2xl:max-w-screen-2xl mx-auto text-white lg:mt-24 xl:mt-16">
       <div class="float-none lg:float-right w-full lg:w-1/3 pt-16 sm:pt-0 text-center">
-        <img src="./../assets/img/intro_1.png" alt="" class="mx-auto sm:max-w-sm md:max-w-md lg:max-w-full">
+        <img src="./../assets/img/intro_4.png" alt="" class="mx-auto sm:max-w-sm md:max-w-md lg:max-w-full">
       </div>
       <div class="float-none lg:float-right 2xl:float-left w-full lg:w-3/5 px-4 md:px-0">
         <span class="block font-bold mb-8 lg:mb-16 text-5xl md:text-6xl lg:text-8xl text-white" id="headline"><span>Wir haben eine Vision:</span> Unser Handwerk und Ihre Software.</span>
