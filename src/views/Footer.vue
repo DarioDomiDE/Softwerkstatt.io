@@ -15,7 +15,7 @@
         <h4 class="mb-2 text-white">Sie haben Fragen?</h4>
         <p class="hidden md:block">Dann immer her damit, denn wir haben Antworten! Wir freuen uns über einen kleinen Schnack und kümmern uns gerne um Ihr Anliegen.</p>
         <ul class="mt-4">
-          <li><a href="tel:040123456789">040 123 456 789</a></li>
+          <li><a href="tel:04025468922">040 254 689 22</a></li>
           <li><a href="mailto:moin@softwerkstatt.io">moin@softwerkstatt.io</a></li>
           <li>Brunckhorstweg 3, 22525 Hamburg</li>
         </ul>

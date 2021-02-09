@@ -14,7 +14,7 @@
         <p class="px-6 pb-4">Wie können wir Ihnen helfen, Ihre Software zu verbessern? Wir sind gespannt und freuen uns darauf, Sie kennenzulernen!</p>
         <ul class="bg-gray-100 px-6 pt-4 pb-6">
           <li>Ansprechpartner: Dario D. Müller</li>
-          <li><a href="tel:040123456789">040 123 456 789</a></li>
+          <li><a href="tel:04025468922">040 254 689 22</a></li>
           <li><a class="" href="mailto:moin@softwerkstatt.io">moin@softwerkstatt.io</a></li>
           <li>Brunckhorstweg 3, 22525 Hamburg</li>
         </ul>

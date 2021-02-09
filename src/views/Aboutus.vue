@@ -25,7 +25,7 @@
     <div class="contact mt-12">
       <ul>
         <li><a class="" href="mailto:moin@softwerkstatt.io">moin@softwerkstatt.io</a></li>
-        <li><a href="tel:040123456789">040 123 456 789</a></li>
+        <li><a href="tel:04025468922">040 254 689 22</a></li>
         <li><a href="https://xing.de/">Xing</a> | <a href="https://linkedin.com/">LinkedIn</a></li>
       </ul>
     </div>
