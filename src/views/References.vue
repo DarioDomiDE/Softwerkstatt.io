@@ -1,5 +1,5 @@
 <template>
-  <section class="container mx-auto max-w-screen-lg 2xl:max-w-screen-xl pt-16 pb-16 px-4 lg:px-0 text-center">
+  <section class="container mx-auto max-w-screen-lg 2xl:max-w-screen-xl pb-12 px-4 lg:px-0 text-center">
     <span class="pre-headline">Clients</span>
     <h1>Referenzen</h1>
     <p class="w-full md:max-w-2xl mx-auto text-left sm:text-center">Gute Gründe, mit uns zu arbeiten. Ein Auszug unserer Kunden, bei denen wir stolz sind, sie glücklich gemacht und unterstützt zu haben.</p>
@@ -16,7 +16,7 @@
       <img src="./../assets/img/logos/esailors.png" alt="eSailors by ZEAL Network" />
       <img src="./../assets/img/logos/weischer.png" alt="Weischer Media" />
     </div>
-    <span class="mt-16 xl:mt-32 mb-2 text-center block text-gray-600">Wie können wir Ihnen helfen, Ihre Software zu verbessern?</span>
+    <span class="mt-8 xl:mt-16 mb-2 text-center block text-gray-600">Wie können wir Ihnen helfen, Ihre Software zu verbessern?</span>
     <CtaButton class="mx-auto bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Jetzt Kontakt aufnehmen</CtaButton>
   </section>
 </template>

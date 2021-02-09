@@ -1,5 +1,5 @@
 <template>
-  <section class="container min-h-0 max-w-screen-xl pt-8 pb-8 px-4 md:px-8 2xl:px-0 text-center">
+  <section class="container min-h-0 max-w-screen-xl pb-2 px-4 md:px-8 2xl:px-0 text-center">
     <span class="pre-headline color3">Expertise</span>
     <h1>Hier unterstützen wir</h1>
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 text-left">

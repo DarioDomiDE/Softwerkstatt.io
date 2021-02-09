@@ -9,6 +9,7 @@
           <h4>Analyse</h4>
           <img class="mx-auto" src="./../assets/img/howto/step1.svg" alt="">
           <div class="popup xl:shadow-md">
+            <span>Analyse</span>
             <img class="mx-auto" src="./../assets/img/howto/step1.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -17,6 +18,7 @@
           <h4>Beratung</h4>
           <img class="mx-auto" src="./../assets/img/howto/step2.svg" alt="">
           <div class="popup xl:shadow-md">
+            <span>Beratung</span>
             <img class="mx-auto" src="./../assets/img/howto/step2.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -27,6 +29,7 @@
           <h4>Prototyping</h4>
           <img class="mx-auto" src="./../assets/img/howto/step3.svg" alt="">
           <div class="popup xl:shadow-md">
+            <span>Prototyping</span>
             <img class="mx-auto" src="./../assets/img/howto/step3.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -37,6 +40,7 @@
           <h4>Sicherheit</h4>
           <img class="mx-auto" src="./../assets/img/howto/step4.svg" alt="">
           <div class="popup xl:shadow-md">
+            <span>Sicherheit</span>
             <img class="mx-auto" src="./../assets/img/howto/step4.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -47,6 +51,7 @@
           <h4>Automatisierung</h4>
           <img class="mx-auto" src="./../assets/img/howto/step5.svg" alt="">
           <div class="popup xl:shadow-md">
+            <span>Automatisierung</span>
             <img class="mx-auto" src="./../assets/img/howto/step5.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -56,6 +61,7 @@
           <h4>Benutzer</h4>
           <img class="mx-auto" src="./../assets/img/howto/step6.svg" alt="">
           <div class="popup xl:shadow-md">
+            <span>Benutzer</span>
             <img class="mx-auto" src="./../assets/img/howto/step6.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -66,6 +72,7 @@
           <h4>Potential</h4>
           <img class="mx-austo" src="./../assets/img/howto/step7.svg" alt="">
           <div class="popup xl:shadow-md">
+            <span>Potential</span>
             <img class="mx-auto" src="./../assets/img/howto/step7.svg" alt="">
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
@@ -188,7 +195,7 @@ export default {
 
 @media (min-width: 1280px) {
   #howtoContainer {
-    margin: 12rem 0 4rem 0;
+    margin: 16rem 0 4rem 0;
     position: relative;
     height: 622px;
   }
@@ -252,6 +259,9 @@ export default {
     padding: 10px;
     border-radius: 6px;
     z-index: 30;
+  }
+  .step .popup span {
+    font-size: 1.7em;
   }
   .step .popup p {
     font-size: 1.1em;
