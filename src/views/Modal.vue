@@ -16,7 +16,6 @@
           <li>Ansprechpartner: Dario D. Müller</li>
           <li><a href="tel:04025468922">040 254 689 22</a></li>
           <li><a class="" href="mailto:moin@softwerkstatt.io">moin@softwerkstatt.io</a></li>
-          <li>Brunckhorstweg 3, 22525 Hamburg</li>
         </ul>
       </div>
     </div>

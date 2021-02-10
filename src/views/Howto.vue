@@ -9,18 +9,18 @@
           <h4>Analyse</h4>
           <img class="mx-auto" src="./../assets/img/howto/step1.svg" alt="">
           <div class="popup xl:shadow-md">
-            <span>Analyse</span>
-            <img class="mx-auto" src="./../assets/img/howto/step1.svg" alt="">
-            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            <!-- <span>Analyse</span> -->
+            <!-- <img class="mx-auto" src="./../assets/img/howto/step1.svg" alt=""> -->
+            <p>Nutzen Sie unsere Expertise für neue Strategien und Blickwinkel: Wir helfen Ihnen, Ideen und deren Anforderungen zu analysieren und entwerfen mit Ihnen Lösungen, um mit Software langfristige Chancen optimal nutzen zu können.</p>
           </div>
         </div>
         <div id="step2" class="step order-2 margin-left">
           <h4>Beratung</h4>
           <img class="mx-auto" src="./../assets/img/howto/step2.svg" alt="">
           <div class="popup xl:shadow-md">
-            <span>Beratung</span>
-            <img class="mx-auto" src="./../assets/img/howto/step2.svg" alt="">
-            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            <!-- <span>Beratung</span> -->
+            <!-- <img class="mx-auto" src="./../assets/img/howto/step2.svg" alt=""> -->
+            <p>Was braucht Ihre Lösung: Schnellste am Markt oder die Beste am Markt? Wir beraten Sie rund um Technologien und Frameworks und hinterfragen mit Ihnen, was für Sie wirklich wichtig ist statt nur dringend zu sein. Ist ein Prozess effizient? Oder nur effektiv?</p>
           </div>
           <div class="line line-left"></div>
           <div class="line line-bottom block lg:hidden"></div>
@@ -29,20 +29,20 @@
           <h4>Prototyping</h4>
           <img class="mx-auto" src="./../assets/img/howto/step3.svg" alt="">
           <div class="popup xl:shadow-md">
-            <span>Prototyping</span>
-            <img class="mx-auto" src="./../assets/img/howto/step3.svg" alt="">
-            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            <!-- <span>Prototyping</span> -->
+            <!-- <img class="mx-auto" src="./../assets/img/howto/step3.svg" alt=""> -->
+            <p>Wir validieren ständig das Look &amp; Feel mithilfe von Mockups, Feedback-Loops und A/B-Tests direkt am Nutzer. Mit Konzepten wie Design Thinking und Design Concepts werden wir uns dabei ab Tag 1 Feedback-getrieben auf die UX fokussieren.</p>
           </div>
           <div class="line line-left"></div>
           <div class="line line-bottom hidden lg:block"></div>
         </div>
         <div id="step4" class="step order-3 lg:order-6 lg-margin-left">
-          <h4>Sicherheit</h4>
+          <h4>Cyber Security</h4>
           <img class="mx-auto" src="./../assets/img/howto/step4.svg" alt="">
           <div class="popup xl:shadow-md">
-            <span>Sicherheit</span>
-            <img class="mx-auto" src="./../assets/img/howto/step4.svg" alt="">
-            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            <!-- <span>Cyber Security</span> -->
+            <!-- <img class="mx-auto" src="./../assets/img/howto/step4.svg" alt=""> -->
+            <p>Schutz, Revision und Sicherheit der Daten Ihrer Software, Ihrer Kunden und der Geschäftsgeheimnisse ist für uns selbstverständlich. Gern beraten wir Sie dabei umfassend.</p>
           </div>
           <div class="line line-left hidden lg:block"></div>
           <div class="line line-bottom lg:hidden"></div>
@@ -51,9 +51,9 @@
           <h4>Automatisierung</h4>
           <img class="mx-auto" src="./../assets/img/howto/step5.svg" alt="">
           <div class="popup xl:shadow-md">
-            <span>Automatisierung</span>
-            <img class="mx-auto" src="./../assets/img/howto/step5.svg" alt="">
-            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            <!-- <span>Automatisierung</span> -->
+            <!-- <img class="mx-auto" src="./../assets/img/howto/step5.svg" alt=""> -->
+            <p>Algorithmen in Ihrer Software werden Entscheidungen durch Auswertung großer Datenmengen erleichtern. Wir analysieren und evaluieren mit Ihnen, das Potential Ihrer Daten nutzbar zu machen und entwickeln individuelle Lösungen.</p>
           </div>
           <div class="line line-left hidden lg:block"></div>
         </div>
@@ -61,8 +61,8 @@
           <h4>Benutzer</h4>
           <img class="mx-auto" src="./../assets/img/howto/step6.svg" alt="">
           <div class="popup xl:shadow-md">
-            <span>Benutzer</span>
-            <img class="mx-auto" src="./../assets/img/howto/step6.svg" alt="">
+            <!-- <span>Benutzer</span> -->
+            <!-- <img class="mx-auto" src="./../assets/img/howto/step6.svg" alt=""> -->
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
           <div class="line line-left lg:hidden"></div>
@@ -72,8 +72,8 @@
           <h4>Potential</h4>
           <img class="mx-austo" src="./../assets/img/howto/step7.svg" alt="">
           <div class="popup xl:shadow-md">
-            <span>Potential</span>
-            <img class="mx-auto" src="./../assets/img/howto/step7.svg" alt="">
+            <!-- <span>Potential</span> -->
+            <!-- <img class="mx-auto" src="./../assets/img/howto/step7.svg" alt=""> -->
             <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </div>
         </div>
@@ -106,10 +106,10 @@ export default {
 #bg2 {
   background-color: rgba(243, 244, 246, 1);
 }
-.popup {
-  display: none;
-}
 @media (max-width: 1280px) {
+  .popup {
+    display: none;
+  }
   #howtoContainer {
     position: relative;
     display: flex;
@@ -212,13 +212,24 @@ export default {
     width: 220px;
     margin: -200px 0 0 -110px;
   }
-  .step > h4 {
+  .step h4 {
+    position: relative;
     font-size: 1.7em;
     font-weight: normal;
+    transition: all 0.4s;
+    z-index: 40;
   }
-  .step > img {
+  .step:hover h4 {
+    transform: translateY(-60px);
+  }
+  .step img {
     position: absolute;
     bottom: 0;
+    transition: all 0.4s;
+    z-index: 40;
+  }
+  .step:hover img {
+    transform: scale(1.37) translateY(-20px);
   }
   #step1 {
     left: 17%;
@@ -248,9 +259,6 @@ export default {
     left: 91%;
     top: 69%;
   }
-  .step:hover .popup {
-    display: block;
-  }
   .step .popup {
     position: relative;
     margin: -100px 0 0 -60px;
@@ -259,6 +267,11 @@ export default {
     padding: 10px;
     border-radius: 6px;
     z-index: 30;
+    transition: all 0.4s;
+    opacity: 0;
+  }
+  .step:hover .popup {
+    opacity: 1;
   }
   .step .popup span {
     font-size: 1.7em;
@@ -266,6 +279,7 @@ export default {
   .step .popup p {
     font-size: 1.1em;
     text-align: left;
+    margin-top: 255px;
   }
 }
 @media (min-width: 1536px) {
@@ -278,8 +292,11 @@ export default {
     margin: -240px 0 0 -140px;
   }
   .step .popup {
-    margin: -150px 0 0 -60px;
+    margin: -100px 0 0 -60px;
     width: 400px;
+  }
+  .step .popup p {
+    margin-top: 295px;
   }
 }
 </style>
