@@ -7,8 +7,8 @@
       </svg> in Hamburg. Wir sind ein Team von Softwareentwicklern und wir tun On-Site oder fully remote für Sie das, was wir am liebsten machen: Software entwickeln.</p>
     <div class="flex flex-col lg:flex-row">
       <div class="flex-1 border-2 border-black px-4 py-4 text-left mt-4 lg:mt-0 order-3 lg:order-1">
-        <h3>Vision</h3>
-        <p>Wir sind Macher, Erfinder und Entdecker! Ein Team von jungen und engagierten Entwicklern, die gemeinsam und ganzheitlich von der Idee bis zum Ergebnis unterstützen können und möchten. Dabei begleiten wir mittelständische Unternehmen von der Beratung, über Prototyping bis zur Umsetzung. Wir entwickeln nicht nur, wir erfinden.</p>
+        <h3>Über uns</h3>
+        <p>Wir sind Macher, Erfinder und Entdecker! Ein Zusammenschluss junger und engagierter Softwareentwickler, die gemeinsam und ganzheitlich von der Idee bis zum Ergebnis unterstützen können und möchten. Dabei begleiten wir mittelständische Unternehmen von der Beratung, über Prototyping und Umsetzung bis zur Pflege und Skalierung.</p>
       </div>
       <div class="flex-1 relative max-w-sm lg:max-w-max lg:ml-2 order-2">
         <div class="square">
@@ -19,7 +19,7 @@
       </div>
       <div class="flex-1 border-2 border-black mt-4 lg:mt-0 lg:ml-2 px-4 py-4 text-left order-4">
         <h3>Mission</h3>
-        <p>Unserer Leidenschaft, Software zu entwickeln. Produkte, Handwerk und Lösungsorientiert stehen im Vordergrund. Hierarchien und unnötige Prozesse im Hintergrund. Software Craftsmanship</p>
+        <p>Wir entwickeln nicht nur, wir erfinden! Unsere Leidenschaft ist, Software zu entwickeln: Dabei steht das Handwerk und die Produkte stets im Vordergrund. Hierarchien und unnötige Prozesse im Hintergrund. Wir lieben Software Craftsmanship sowie agile Vorgehensweisen.</p>
       </div>
     </div>
     <div class="contact mt-12">
@@ -63,6 +63,6 @@ export default {
   position: absolute;
   left: 0;
   bottom: 0;
-  color: #fff;
+  color: rgba(30, 30, 30, 1);
 }
 </style>

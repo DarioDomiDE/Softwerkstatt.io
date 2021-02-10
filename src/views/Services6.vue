@@ -48,13 +48,14 @@
           </article>
           <article :class="isActive(4) ? 'active' : '' + isEffect == 4 ? 'is-effect' : ''" @mouseover="isEffect = 4" v-on:click="onClickActive(4)">
             <h3>
-              <span>Künstliche Intelligenz</span>
+              <span>Cloud</span>
               <div class="effect" :class="orientations[4] == 1 ? 'top' : orientations[4] == 2 ? 'right' : orientations[4] == 3 ? 'bottom' : 'left'">
-                <span class="text">Künstliche Intelligenz</span>
+                <span class="text">Cloud</span>
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Algorithmen in Ihrer Software werden Entscheidungen durch Auswertung großer Datenmengen erleichtern. Wir analysieren und evaluieren mit Ihnen, das Potential Ihrer Daten nutzbar zu machen und entwickeln individuelle Lösungen.</p>
+            <!-- <p>Algorithmen in Ihrer Software werden Entscheidungen durch Auswertung großer Datenmengen erleichtern. Wir analysieren und evaluieren mit Ihnen, das Potential Ihrer Daten nutzbar zu machen und entwickeln individuelle Lösungen.</p> -->
+            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
           </article>
           <article :class="isActive(5) ? 'active' : '' + isEffect == 5 ? 'is-effect' : ''" @mouseover="isEffect = 5" v-on:click="onClickActive(5)">
             <h3>

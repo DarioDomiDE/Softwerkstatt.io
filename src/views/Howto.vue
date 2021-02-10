@@ -37,7 +37,7 @@
           <div class="line line-bottom hidden lg:block"></div>
         </div>
         <div id="step4" class="step order-3 lg:order-6 lg-margin-left">
-          <h4>Cyber Security</h4>
+          <h4>Sicherheit</h4>
           <img class="mx-auto" src="./../assets/img/howto/step4.svg" alt="">
           <div class="popup xl:shadow-md">
             <!-- <span>Cyber Security</span> -->
@@ -220,7 +220,7 @@ export default {
     z-index: 40;
   }
   .step:hover h4 {
-    transform: translateY(-60px);
+    transform: translateY(-55px);
   }
   .step img {
     position: absolute;
@@ -229,7 +229,7 @@ export default {
     z-index: 40;
   }
   .step:hover img {
-    transform: scale(1.37) translateY(-20px);
+    transform: scale(1.3) translateY(-20px);
   }
   #step1 {
     left: 17%;

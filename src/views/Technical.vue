@@ -8,9 +8,9 @@
         <div class="col-span-1">
           <h3>Werkzeuge</h3>
           <ul class="checklist">
-            <li>Erstellung Responsive Websites &amp; SPAs mit Vue.js &amp; Angular</li>
+            <li>Responsive Websites &amp; SPAs mit Vue.js &amp; Angular 2+</li>
             <li>Mobile Apps &amp; PWAs mit React Native, Flutter &amp; Unity</li>
-            <li>Backend mit Asp.Net &amp; .Net 5</li>
+            <li>Backend mit Asp.Net, .Net Core &amp; .Net 5</li>
             <li>Datenbanken mit SQL Server, MySQL &amp; MongoDB</li>
             <li>Cloud-Hosting mit Azure &amp; AWS</li>
             <li>Unit- &amp; UI-Tests sowie Clean Code, DRY, KISS</li>
