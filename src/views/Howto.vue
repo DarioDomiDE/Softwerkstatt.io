@@ -11,7 +11,7 @@
           <div class="popup xl:shadow-md">
             <!-- <span>Analyse</span> -->
             <!-- <img class="mx-auto" src="./../assets/img/howto/step1.svg" alt=""> -->
-            <p>Nutzen Sie unsere Expertise für neue Strategien und Blickwinkel: Wir helfen Ihnen, Ideen und deren Anforderungen zu analysieren und entwerfen mit Ihnen Lösungen, um mit Software langfristige Chancen optimal nutzen zu können.</p>
+            <p>Nutzen Sie unsere Expertise für neue Strategien und Blickwinkel: Wir helfen Ihnen, Ideen und deren Anforderungen zu analysieren und entwerfen mit Ihnen Lösungen, um langfristige Chancen und Potentiale der Digitalisierung optimal nutzen zu können.</p>
           </div>
         </div>
         <div id="step2" class="step order-2 margin-left">
@@ -212,23 +212,33 @@ export default {
     width: 220px;
     margin: -200px 0 0 -110px;
   }
+  #step1,
+  #step2,
+  #step3 {
+    z-index: 55;
+  }
+  #step4 {
+    z-index: 50;
+  }
   .step h4 {
     position: relative;
     font-size: 1.7em;
     font-weight: normal;
-    transition: all 0.4s;
+    transition: all 0.5s;
     z-index: 40;
   }
   .step:hover h4 {
+    transition: all 0.3s;
     transform: translateY(-55px);
   }
   .step img {
     position: absolute;
     bottom: 0;
-    transition: all 0.4s;
+    transition: all 0.3s;
     z-index: 40;
   }
   .step:hover img {
+    transition: all 0.5s;
     transform: scale(1.3) translateY(-20px);
   }
   #step1 {
@@ -244,7 +254,7 @@ export default {
     top: 22%;
   }
   #step4 {
-    left: 52%;
+    left: 52.5%;
     top: 49%;
   }
   #step5 {
@@ -253,7 +263,7 @@ export default {
   }
   #step6 {
     left: 51%;
-    top: 98%;
+    top: 91%;
   }
   #step7 {
     left: 91%;

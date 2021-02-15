@@ -8,7 +8,7 @@
     <div class="flex flex-col lg:flex-row">
       <div class="flex-1 border-2 border-black px-4 py-4 text-left mt-4 lg:mt-0 order-3 lg:order-1">
         <h3>Über uns</h3>
-        <p>Wir sind Macher, Erfinder und Entdecker! Ein Zusammenschluss junger und engagierter Softwareentwickler, die gemeinsam und ganzheitlich von der Idee bis zum Ergebnis unterstützen können und möchten. Dabei begleiten wir mittelständische Unternehmen von der Beratung, über Prototyping und Umsetzung bis zur Pflege und Skalierung.</p>
+        <p>Wir sind Macher, Erfinder und Entdecker! Ein Zusammenschluss junger und engagierter Softwareentwickler, die gemeinsam und ganzheitlich von der Idee bis zum Ergebnis unterstützen möchten und werden. Dabei begleiten wir mittelständische Unternehmen in Beratung und Umsetzung.</p>
       </div>
       <div class="flex-1 relative max-w-sm lg:max-w-max lg:ml-2 order-2">
         <div class="square">
@@ -19,14 +19,14 @@
       </div>
       <div class="flex-1 border-2 border-black mt-4 lg:mt-0 lg:ml-2 px-4 py-4 text-left order-4">
         <h3>Mission</h3>
-        <p>Wir entwickeln nicht nur, wir erfinden! Unsere Leidenschaft ist, Software zu entwickeln: Dabei steht das Handwerk und die Produkte stets im Vordergrund. Hierarchien und unnötige Prozesse im Hintergrund. Wir lieben Software Craftsmanship sowie agile Vorgehensweisen.</p>
+        <p>Wir entwickeln nicht nur, wir erfinden! Unsere Leidenschaft ist, Software zu entwickeln: Dabei steht das Handwerk und die Produkte stets im Vordergrund. Hierarchien und unnötige Prozesse im Hintergrund. Unser Commitment ist, durch Liebe zur Software Craftsmanship sowie agiler Vorgehensweisen stets Spaß an der Entwickelung zu haben.</p>
       </div>
     </div>
     <div class="contact mt-12">
       <ul>
         <li><a class="" href="mailto:moin@softwerkstatt.io">moin@softwerkstatt.io</a></li>
         <li><a href="tel:04025468922">040 254 689 22</a></li>
-        <li><a href="https://xing.de/">Xing</a> | <a href="https://linkedin.com/">LinkedIn</a></li>
+        <li><a href="https://www.xing.com/profile/DarioD_Mueller">Xing</a> | <a href="https://www.linkedin.com/in/dariomueller/">LinkedIn</a></li>
       </ul>
     </div>
   </section>

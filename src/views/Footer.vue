@@ -6,8 +6,8 @@
         <h4 class="mb-2 text-white">Freunde werden?</h4>
         <p class="">Wenn wir Ihre Vorstellungen, gemeinsam die (Software-) Welt zu erobern, teilen, dann lassen Sie uns Freunde werden.</p>
         <ul class="mt-4">
-          <li><a href="https://xing.de/">Xing</a></li>
-          <li><a href="https://linkedin.com/">LinkedIn</a></li>
+          <li><a href="https://www.xing.com/profile/DarioD_Mueller">Xing</a></li>
+          <li><a href="https://www.linkedin.com/in/dariomueller/">LinkedIn</a></li>
         </ul>
       </div>
 
@@ -25,8 +25,9 @@
         <h4 class="mb-2 text-white hidden md:block">Interesse geweckt?</h4>
         <p class="hidden md:block">Schreiben Sie uns eine Flaschenpost oder rufen Sie uns an. Wir freuen uns drauf!</p>
         <ul class="mt-4">
-          <li><router-link to="/legal"><span v-on:click="scrollToTop">Impressum</span></router-link></li>
           <li><router-link to="/privacy-policy"><span v-on:click="scrollToTop">Datenschutzerklärung</span></router-link></li>
+          <li><router-link to="/legal"><span v-on:click="scrollToTop">Impressum</span></router-link></li>
+          <li><router-link to="/kontakt"><span v-on:click="scrollToTop">Kontakt</span></router-link></li>
         </ul>
       </div>
 
@@ -70,5 +71,9 @@ p, li {
 }
 .gradient {
   background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;
+}
+a:hover {
+  font-weight: bold;
+  color: rgba(0,0,0,0.5);
 }
 </style>

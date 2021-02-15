@@ -8,13 +8,13 @@
         <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-8 text-left">
           <article :class="isActive(0) ? 'active' : '' + isEffect == 0 ? 'is-effect' : afterEffect == 0 ? 'after-effect' : ''" @mouseover="isEffect = 0" v-on:click="onClickActive(0)">
             <h3>
-              <span>Strategie Analyse</span>
+              <span>Strategie</span>
               <div class="effect" :class="orientations[0] == 1 ? 'top' : orientations[0] == 2 ? 'right' : orientations[0] == 3 ? 'bottom' : 'left'">
-                <span class="text">Strategie Analyse</span>
+                <span class="text">Strategie</span>
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Nutzen Sie unsere Expertise für neue Strategien und Blickwinkel: Wir helfen Ihnen, Ideen und deren Anforderungen zu analysieren und entwerfen mit Ihnen Lösungen, um mit Software langfristige Chancen optimal nutzen zu können.</p>
+            <p>Als branchenübergreifender Dienstleister kombinieren wir Erfahrungen aus diversen Disziplinen, um komplexe Projekte in Ihre Bestandteile zu zerlegen und mit optimalen Strategien Ihre Prozesse zu verbinden. Wir unterstützen Sie dabei, zielgerichtet und erfolgreich, Marktrisiken zu verringern.</p>
           </article>
           <article :class="isActive(1) ? 'active' : '' + isEffect == 1 ? 'is-effect' : ''" @mouseover="isEffect = 1" v-on:click="onClickActive(1)">
             <h3>
@@ -38,9 +38,9 @@
           </article>
           <article :class="isActive(3) ? 'active' : '' + isEffect == 3 ? 'is-effect' : ''" @mouseover="isEffect = 3" v-on:click="onClickActive(3)">
             <h3>
-              <span>Prototyping</span>
+              <span>UX</span>
               <div class="effect" :class="orientations[3] == 1 ? 'top' : orientations[3] == 2 ? 'right' : orientations[3] == 3 ? 'bottom' : 'left'">
-                <span class="text">Prototyping</span>
+                <span class="text">UX</span>
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
@@ -48,24 +48,23 @@
           </article>
           <article :class="isActive(4) ? 'active' : '' + isEffect == 4 ? 'is-effect' : ''" @mouseover="isEffect = 4" v-on:click="onClickActive(4)">
             <h3>
-              <span>Cloud</span>
+              <span>Konzeption</span>
               <div class="effect" :class="orientations[4] == 1 ? 'top' : orientations[4] == 2 ? 'right' : orientations[4] == 3 ? 'bottom' : 'left'">
-                <span class="text">Cloud</span>
+                <span class="text">Konzeption</span>
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <!-- <p>Algorithmen in Ihrer Software werden Entscheidungen durch Auswertung großer Datenmengen erleichtern. Wir analysieren und evaluieren mit Ihnen, das Potential Ihrer Daten nutzbar zu machen und entwickeln individuelle Lösungen.</p> -->
-            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            <p>Wir beraten Sie von der Idee bis zum Livegang, und unterstützen Sie dabei, mit einem anforderungsgerechtes Konzept den Grundstein für Potenzialsteigerungen zu setzen, indem wir mit Ihnen gemeinsam Lösungen auszuarbeiten und ein indivuelles Konzept erstellen.</p>
           </article>
           <article :class="isActive(5) ? 'active' : '' + isEffect == 5 ? 'is-effect' : ''" @mouseover="isEffect = 5" v-on:click="onClickActive(5)">
             <h3>
-              <span>Cyber Security</span>
+              <span>Web Solutions</span>
               <div class="effect" :class="orientations[5] == 1 ? 'top' : orientations[5] == 2 ? 'right' : orientations[5] == 3 ? 'bottom' : 'left'">
-                <span class="text">Cyber Security</span>
+                <span class="text">Web Solutions</span>
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Schutz, Revision und Sicherheit der Daten Ihrer Software, Ihrer Kunden und der Geschäftsgeheimnisse ist für uns selbstverständlich. Gern beraten wir Sie dabei umfassend.</p>
+            <p>Corporate Websites und interne Web-Applikationen müssen hohen Anforderungen genügen, plattformübergreifend auf Desktop und Mobile einwandfrei nutzbar sein, schnelle Ladezeiten gewährleisten, offline nutzbar sein und dem Unternehmen erlauben, Inhalte über ein CMS selbstständig anzupassen.</p>
           </article>
         </div>
         <div class="hidden xl:block area area-y area-left" @mouseover="disableEffect(), left(1), left(4)"></div>

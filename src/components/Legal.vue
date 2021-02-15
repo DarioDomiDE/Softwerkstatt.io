@@ -1,9 +1,9 @@
 <template>
-  <div class="container mx-auto max-w-screen-lg 2xl:max-w-screen-xl pt-16 px-4 lg:px-0 pb-32">
+  <div class="container mx-auto max-w-screen-lg xl:max-w-screen-lg pt-16 px-4 lg:px-0 pb-32">
     <span class="block pre-headline text-center">Legal Notice</span>
     <h1 class="text-center">Impressum</h1>
     <h2>Angaben gemäß § 5 TMG:</h2>
-    <p>Softwerkstatt GmbH
+    <p>Softwerkstatt
       <br>Brunckhorstweg 3
       <br>22525 Hamburg</p>
     <h2>Vertreten durch</h2>
@@ -13,13 +13,13 @@
     <p>Telefon: +49 123 456 789
       <br>E-Mail: <a href="mailto:moin@softwerkstatt.io">moin@softwerkstatt.io</a>
     </p>
-    <h2>Registereintrag</h2>
+    <!-- <h2>Registereintrag</h2>
     <p>Eintragung im Handelsregister.
         <br> Registergericht:Amtsgericht Hamburg
-        <br> Registernummer: HRB 123456</p>
+        <br> Registernummer: HRB 123456</p> -->
     <h2>Umsatzsteuer</h2>
-    <p>Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:
-        <br> DE 123456789
+    <p>Umsatzsteuer-Identifikationsnummer gemäß §27a UStG:
+        <br> DE 320 408 679
     </p>
     <h3>Streitschlichtung</h3>
     <p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>
@@ -36,7 +36,7 @@
     <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet.</p>
     <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
 
-    <CtaButton class="mx-auto bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Fragen oder Anmerkungen?</CtaButton>
+    <CtaButton class="mt-8 mx-auto bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Fragen oder Anmerkungen?</CtaButton>
     <Modal ref="modal" @modalClosed="onModalClosed" />
   </div>
 </template>
@@ -64,4 +64,7 @@ export default {
 </script>
 
 <style scoped>
+h2, h3 {
+  margin-top: 1.0rem;
+}
 </style>

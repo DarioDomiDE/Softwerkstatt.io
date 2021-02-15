@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto max-w-screen-lg 2xl:max-w-screen-xl pt-16 px-4 lg:px-0 pb-32">
+  <div class="container mx-auto max-w-screen-lg xl:max-w-screen-lg pt-16 px-4 lg:px-0 pb-32">
     <span class="block pre-headline text-center">Privacy Policy</span>
     <h1 class="text-center">Datenschutzerklärung</h1>
     <h2>1. Datenschutz auf einen Blick</h2>
@@ -31,15 +31,14 @@
     </p>
     <h3>Hinweis zur verantwortlichen Stelle</h3>
     <p>Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:</p>
-    <p>Elbgoods GmbH
-        <br> Internetagentur
-        <br>
-        <br> Alter Wall 69
-        <br> 20457 Hamburg
-        <br> Deutschland</p>
-    <p>Telefon: +49 40 - 309 938 81
-        <br> EMail: moin@elbgoods.de
-    </p>
+    <ul style="list-style: circle; padding-left: 25px;">
+      <li>Softwerkstatt</li>
+      <li>Brunckhorstweg 3</li>
+      <li>22525 Hamburg</li>
+      <li>Deutschland</li>
+      <li>Telefon: +49 40 254 689 22</li>
+      <li>E-Mail: moin@softwerkstatt.io</li>
+    </ul>
     <p>Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet.</p>
     <h3>Widerruf
     Ihrer Einwilligung zur Datenverarbeitung</h3>
@@ -120,4 +119,7 @@ export default {
 </script>
 
 <style scoped>
+h2, h3 {
+  margin-top: 1.0rem;
+}
 </style>
