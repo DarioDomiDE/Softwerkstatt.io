@@ -8,19 +8,31 @@ import PrivacyPolicy from './components/PrivacyPolicy.vue'
 import NotFound from './components/NotFound.vue'
 
 const routes = [
-  { path: '/', name: 'home', component: Home, meta: { title: '' } },
-  { path: '/jobs', name: 'jobs', component: Jobs, meta: { title: 'Jobs' } },
-  { path: '/jobs/fullstack-entwickler-hamburg', name: 'fullstack-dev', component: JobDotNetDeveloper, meta: { title: '.Net Developer Hamburg' } },
-  { path: '/jobs/dotnet-entwickler-hamburg', name: 'dotnet-dev', component: JobDotNetDeveloper, meta: { title: '.Net Developer Hamburg' } },
-  { path: '/kontakt', name: 'kontakt', component: Kontakt, meta: { title: 'Kontakt' } },
-  { path: '/legal', name: 'legal', component: Legal, meta: { title: 'Impressum' } },
-  { path: '/privacy-policy', name: 'privacy', component: PrivacyPolicy, meta: { title: 'Datenschutzerklärung' } },
-  { path: "/:catchAll(.*)", name: 'notfound', component: NotFound, meta: { title: 'Not Found' } },
+  { path: '/', name: 'home', component: Home, meta: { title: '', desc: 'Softwareentwicklung Consulting aus Hamburg: Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle' } },
+  { path: '/jobs', name: 'jobs', component: Jobs, meta: { title: 'Jobs', desc: 'Werde als Software Entwickler Teil der Hamburger Softwerkstatt! Wir freuen uns darauf, Dich persönlich kennenzulernen. » Jetzt bewerben!' } },
+  { path: '/jobs/fullstack-entwickler-hamburg', name: 'fullstack-dev', component: JobDotNetDeveloper, meta: { title: 'Fullstack Entwickler Hamburg', desc: 'Werde Fullstack-Entwickler/in bei der Hamburger Softwerkstatt! Wir freuen uns darauf, Dich persönlich kennenzulernen. » Jetzt Bewerben!' } },
+  { path: '/jobs/dotnet-entwickler-hamburg', name: 'dotnet-dev', component: JobDotNetDeveloper, meta: { title: '.Net Entwickler Hamburg', desc: 'Werde .Net-Entwickler/in bei der Hamburger Softwerkstatt! Wir freuen uns darauf, Dich persönlich kennenzulernen. » Jetzt Bewerben!' } },
+  { path: '/kontakt', name: 'kontakt', component: Kontakt, meta: { title: 'Kontakt', desc: 'Kontakt zur Hamburger Softwerkstatt. Ihr Consulting Partner für Digitalierung und Prozessoptimierung. » Jetzt Anfragen!' } },
+  { path: '/legal', name: 'legal', component: Legal, meta: { title: 'Impressum', desc: 'Impressum der Softwerkstatt aus Hamburg' } },
+  { path: '/privacy-policy', name: 'privacy', component: PrivacyPolicy, meta: { title: 'Datenschutzerklärung', desc: 'Datenschutzerklärung der Hamburger Softwerkstatt' } },
+  { path: "/:catchAll(.*)", name: 'notfound', component: NotFound, meta: { title: 'Not Found', desc: 'Softwerkstatt Consulting aus Hamburg' } },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
 });
+
+router.beforeEach((to, from, next) => {
+  var postfix = 'Softwerkstatt - Software Entwicklung Consulting Hamburg '
+  var title = to.meta.title || ''
+  if(title != '') {
+    title += ' | '
+  }
+  title += postfix;
+  document.title = title
+  document.querySelector('meta[name="description"]').setAttribute("content", to.meta.desc || '')
+  next()
+})
 
 export default router;
