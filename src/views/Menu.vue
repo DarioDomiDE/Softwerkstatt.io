@@ -1,15 +1,15 @@
 <template>
   <div v-if="isVisible">
-    <div v-if="isOpened" class="fixed top-0 right-0 w-full z-30 h-screen sm:h-auto sm:w-64 p-4 sm:p-8 pt-16 bg-gray-700 text-xl leading-normal text-white">
+    <div v-if="isOpened" class="fixed top-0 right-0 sm:top-4 sm:right-4 w-full z-30 h-screen sm:h-auto sm:w-64 p-4 sm:p-8 pt-16 border-2 border-gray-700 text-xl leading-normal text-white sm:text-gray-700 bg-gray-700 sm:bg-white">
       <ul>
         <li><router-link to="/" ><span v-on:click="isOpened = false, scrollToTop()">Home</span></router-link></li>
         <li><router-link to="/jobs"><span v-on:click="isOpened = false, scrollToTop()">Jobs (3)</span></router-link></li>
         <li><router-link to="/kontakt"><span v-on:click="isOpened = false, scrollToTop()">Kontakt</span></router-link></li>
       </ul>
     </div>
-    <div class="fixed top-0 right-0 mt-4 mr-4 z-30" id="icon">
-      <svg v-on:click="isOpened = !isOpened" v-if="!isOpened" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cursor-pointer hover-bg-custom hover:text-white rounded"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
-      <svg v-on:click="isOpened = !isOpened" v-if="isOpened" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cursor-pointer text-white"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
+    <div class="fixed top-0 right-0 sm:top-4 sm:right-4 mt-4 mr-4 z-30" id="icon">
+      <svg v-on:click="isOpened = !isOpened" v-if="!isOpened" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cursor-pointer bg-custom hover:text-white"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+      <svg v-on:click="isOpened = !isOpened" v-if="isOpened" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cursor-pointer text-white sm:text-gray-700"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
     </div>
   </div>
 </template>
@@ -53,7 +53,7 @@ span {
     width: calc(50% - 5px);
     display: inline-block;
     border: 1px solid #fff;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     padding-top: calc(50% - 7px);
     position: relative;
     max-height: 25vh;
@@ -70,10 +70,13 @@ span {
       vertical-align: middle;
       text-align: center;
       line-height: 20px;
-      transform: translateY(calc(50% - 20px));
+      transform: translateY(calc(50% - 10px));
     }
 }
-.hover-bg-custom:hover {
-  background-color: #36c1c7;
+.bg-custom {
+  color: #67dfc4;
+}
+.bg-custom:hover {
+  background-color: #67dfc4;
 }
 </style>

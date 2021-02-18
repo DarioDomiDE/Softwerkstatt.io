@@ -25,9 +25,9 @@
         <h4 class="mb-2 text-white hidden md:block">Interesse geweckt?</h4>
         <p class="hidden md:block">Schreiben Sie uns eine Flaschenpost oder rufen Sie uns an. Wir freuen uns drauf!</p>
         <ul class="mt-4">
-          <li><router-link to="/privacy-policy"><span v-on:click="scrollToTop">Datenschutzerklärung</span></router-link></li>
+          <li><router-link to="/privacy-policy"><span v-on:click="scrollToTop">Datenschutz</span></router-link></li>
           <li><router-link to="/legal"><span v-on:click="scrollToTop">Impressum</span></router-link></li>
-          <li><router-link to="/kontakt"><span v-on:click="scrollToTop">Kontakt</span></router-link></li>
+          <li><router-link to="/jobs"><span v-on:click="scrollToTop">Jobs</span></router-link></li>
         </ul>
       </div>
 

@@ -7,12 +7,18 @@
     <div class="mx-auto w-full h-screen pt-32 pb-32 absolute left-0 top-0" id="logoContainer">
       <div class="h-full w-full" id="logo"></div>
     </div>
+    <Borders />
   </section>
 </template>
 
 <script>
+import Borders from './../views/Borders.vue'
+
 export default {
   name: 'Welcome',
+  components: {
+    Borders
+  },
   data: () => {
     return {
       isActive: true

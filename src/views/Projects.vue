@@ -26,7 +26,7 @@
           </figure>
           <figure :class="{'active': active == 3}">
             <h3>Mobile Game</h3>
-            <img class="img-fluid rounded" src="./../assets/img/project_y.jpg" alt="">
+            <img class="img-fluid rounded" src="./../assets/img/wunderbox.jpg" alt="">
             <figcaption class="text-right">Casual Mobile Game "Wunderbox" Android &amp; iOS<br />für Peppermynt</figcaption>
           </figure>
         </div>
