@@ -7,6 +7,12 @@
         <img class="hidden xl:block" src="./../assets/img/howto/bg.png" alt="" id="howToBg">
         <div id="step1" class="step order-1">
           <h4>Analyse</h4>
+          <svg viewBox="0 0 500 500">
+            <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+            <text width="500">
+              <textPath xlink:href="#curve">&nbsp;&nbsp;&nbsp;&nbsp;Analyse</textPath>
+            </text>
+          </svg>
           <img class="mx-auto" src="./../assets/img/howto/step1.svg" alt="" @click="open(0)">
           <div :class="'popup xl:shadow-md ' + (isOpen === 0 ? 'active' : '')" @click="close">
             <span>Analyse</span>
@@ -16,6 +22,12 @@
         </div>
         <div id="step2" class="step order-2 margin-left">
           <h4>Beratung</h4>
+          <svg viewBox="0 0 500 500">
+            <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+            <text width="500">
+              <textPath xlink:href="#curve">&nbsp;&nbsp;&nbsp;&nbsp;Beratung</textPath>
+            </text>
+          </svg>
           <img class="mx-auto" src="./../assets/img/howto/step2.svg" alt="" @click="open(1)">
           <div :class="'popup xl:shadow-md ' + (isOpen === 1 ? 'active' : '')" @click="close">
             <span>Beratung</span>
@@ -27,6 +39,12 @@
         </div>
         <div id="step3" class="step order-4 lg:order-3 margin-left">
           <h4>Prototyping</h4>
+          <svg viewBox="0 0 500 500">
+            <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+            <text width="500">
+              <textPath xlink:href="#curve">&nbsp;&nbsp;Prototyping</textPath>
+            </text>
+          </svg>
           <img class="mx-auto" src="./../assets/img/howto/step3.svg" alt="" @click="open(2)">
           <div :class="'popup xl:shadow-md ' + (isOpen === 2 ? 'active' : '')" @click="close">
             <span>Prototyping</span>
@@ -37,7 +55,13 @@
           <div class="line line-bottom hidden lg:block"></div>
         </div>
         <div id="step4" class="step order-3 lg:order-6 lg-margin-left">
-          <h4>Sicherheit</h4>
+          <h4>Cyber Security</h4>
+          <svg viewBox="0 0 500 500">
+            <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+            <text width="500" class="smaller">
+              <textPath xlink:href="#curve">&nbsp;Cyber Security</textPath>
+            </text>
+          </svg>
           <img class="mx-auto" src="./../assets/img/howto/step4.svg" alt="" @click="open(3)">
           <div :class="'popup xl:shadow-md ' + (isOpen === 3 ? 'active' : '')" @click="close">
             <span>Cyber Security</span>
@@ -49,6 +73,12 @@
         </div>
         <div id="step5" class="step order-5 lg:order-5 lg-margin-left">
           <h4>Automatisierung</h4>
+          <svg viewBox="0 0 500 500">
+            <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+            <text width="500" class="smaller">
+              <textPath xlink:href="#curve">&nbsp;Automatisierung</textPath>
+            </text>
+          </svg>
           <img class="mx-auto" src="./../assets/img/howto/step5.svg" alt="" @click="open(4)">
           <div :class="'popup xl:shadow-md ' + (isOpen === 4 ? 'active' : '')" @click="close">
             <span>Automatisierung</span>
@@ -59,6 +89,12 @@
         </div>
         <div id="step6" class="step order-6 lg:order-4 sm-margin-left">
           <h4>Benutzer</h4>
+          <svg viewBox="0 0 500 500">
+            <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+            <text width="500">
+              <textPath xlink:href="#curve">&nbsp;&nbsp;&nbsp;&nbsp;Benutzer</textPath>
+            </text>
+          </svg>
           <img class="mx-auto" src="./../assets/img/howto/step6.svg" alt="" @click="open(5)">
           <div :class="'popup xl:shadow-md ' + (isOpen === 5 ? 'active' : '')" @click="close">
             <span>Benutzer</span>
@@ -70,6 +106,12 @@
         </div>
         <div id="step7" class="step order-8 lg:order-7 sm-margin-left">
           <h4>Potential</h4>
+          <svg viewBox="0 0 500 500">
+            <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
+            <text width="500">
+              <textPath xlink:href="#curve">&nbsp;&nbsp;&nbsp;&nbsp;Potential</textPath>
+            </text>
+          </svg>
           <img class="mx-austo" src="./../assets/img/howto/step7.svg" alt="" @click="open(6)">
           <div :class="'popup xl:shadow-md ' + (isOpen === 6 ? 'active' : '')" @click="close">
             <span>Potential</span>
@@ -161,7 +203,10 @@ export default {
       margin-left: 8%;
     }
   }
-  #howtoContainer h4,
+  #howtoContainer h4 {
+    display: none;
+  }
+  #howtoContainer svg,
   #howtoContainer > .step > img {
     position: absolute;
     top: 0;
@@ -169,13 +214,23 @@ export default {
     bottom: 0;
     right: 0;
   }
-  #howtoContainer h4 {
-    top: 10%;
+  /* #howtoContainer svg { */
+    /* top: 1%; */
+  /* } */
+  path {
+    fill: transparent;
+  }
+  text {
+    fill: rgb(59,60,66);
+    font-size: 75px;
+  }
+  text.smaller {
+    font-size: 60px;
   }
   #howtoContainer > .step > img {
     height: 100%;
-    max-height: calc(100% - 20px);
-    top: calc(10px + 10%);
+    max-height: calc(100% - 30px);
+    top: calc(15px + 10%);
     object-fit: contain;
   }
   .line {
@@ -274,6 +329,9 @@ export default {
   #step4 {
     z-index: 50;
   }
+  .step svg {
+    display: none;
+  }
   .step h4 {
     position: relative;
     font-size: 1.7em;
@@ -323,6 +381,7 @@ export default {
     left: 91%;
     top: 69%;
   }
+  /* Popup */
   .step .popup {
     position: relative;
     margin: -100px 0 0 -60px;
