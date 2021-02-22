@@ -16,7 +16,7 @@
         <div class="flex-initial">
           <figure :class="{'active': active == 1}">
             <h3>CRM</h3>
-            <img class="img-fluid rounded" src="./../assets/img/project_x.jpg" alt="">
+            <img class="img-fluid rounded" src="./../assets/img/project_y.jpg" alt="">
             <figcaption class="text-right">Web-Applikation zur Verwaltung von Aufträgen von Geschäftskunden<br />für Deutsche Fernsehlotterie</figcaption>
           </figure>
           <figure :class="{'active': active == 2}">

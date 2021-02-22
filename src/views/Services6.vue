@@ -18,9 +18,9 @@
           </article>
           <article :class="isActive(1) ? 'active' : '' + isEffect == 1 ? 'is-effect' : ''" @mouseover="isEffect = 1" v-on:click="onClickActive(1)">
             <h3>
-              <span>Technical Consulting</span>
+              <span>Software Consulting</span>
               <div class="effect" :class="orientations[1] == 1 ? 'top' : orientations[1] == 2 ? 'right' : orientations[1] == 3 ? 'bottom' : 'left'">
-                <span class="text">Technical Consulting</span>
+                <span class="text">Software Consulting</span>
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
@@ -54,7 +54,7 @@
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Wir beraten Sie von der Idee bis zum Livegang, und unterstützen Sie dabei, mit einem anforderungsgerechtes Konzept den Grundstein für Potenzialsteigerungen zu setzen, indem wir mit Ihnen gemeinsam Lösungen auszuarbeiten und ein indivuelles Konzept erstellen.</p>
+            <p>Wir beraten Sie von der Idee bis zum Livegang, und unterstützen Sie dabei, mit einem anforderungsgerechtem Konzept den Grundstein für Potenzialsteigerungen zu setzen, indem wir mit Ihnen gemeinsam Lösungen auszuarbeiten und ein indivuelles Konzept erstellen.</p>
           </article>
           <article :class="isActive(5) ? 'active' : '' + isEffect == 5 ? 'is-effect' : ''" @mouseover="isEffect = 5" v-on:click="onClickActive(5)">
             <h3>
@@ -64,7 +64,7 @@
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Corporate Websites und interne Web-Applikationen müssen hohen Anforderungen genügen, plattformübergreifend auf Desktop und Mobile einwandfrei nutzbar sein, schnelle Ladezeiten gewährleisten, offline nutzbar sein und dem Unternehmen erlauben, Inhalte über ein CMS selbstständig anzupassen.</p>
+            <p>Corporate Websites und interne Web-Applikationen müssen hohen Anforderungen genügen: Plattformübergreifend auf Desktop und Mobile nutzbar sein, schnelle Ladezeiten gewährleisten und dem Unternehmen erlauben, Inhalte über ein CMS selbständig anzupassen.</p>
           </article>
         </div>
         <div class="hidden xl:block area area-y area-left" @mouseover="disableEffect(), left(1), left(4)"></div>

@@ -6,9 +6,9 @@
       </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" width="20" id="heart2"><path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
       </svg> in Hamburg. Wir sind ein Team von Softwareentwicklern und wir tun On-Site oder fully remote für Sie das, was wir am liebsten machen: Software entwickeln.</p>
     <div class="flex flex-col lg:flex-row">
-      <div class="flex-1 border-2 border-black px-4 py-4 text-left mt-4 lg:mt-0 order-3 lg:order-1">
+      <div class="flex-1 border-2 border-black px-4 py-2 lg:py-4 text-left mt-4 lg:mt-0 order-3 lg:order-1">
         <h3>Über uns</h3>
-        <p>Wir sind Macher, Erfinder und Entdecker! Ein Zusammenschluss leidenschaftlicher Softwareentwickler, die gemeinsam von der Idee bis zum Ergebnis unterstützen werden. Dabei begleiten wir mittelständische Unternehmen in Beratung und Umsetzung.</p>
+        <p class="lg:mt-2">Wir sind Macher, Erfinder und Entdecker! Ein Zusammenschluss leidenschaftlicher Softwareentwickler, die gemeinsam von der Idee bis zum Ergebnis unterstützen werden. Dabei begleiten wir mittelständische Unternehmen in Beratung und Umsetzung.</p>
       </div>
       <div class="flex-1 relative max-w-sm lg:max-w-max lg:ml-2 order-2">
         <div class="square">
@@ -17,9 +17,9 @@
           <span class="block text-xl ml-6 mb-3">Kapitän &amp; Programmierer</span>
         </div>
       </div>
-      <div class="flex-1 border-2 border-black mt-4 lg:mt-0 lg:ml-2 px-4 py-4 text-left order-4">
+      <div class="flex-1 border-2 border-black px-4 py-2 lg:py-4 text-left mt-4 lg:mt-0 lg:ml-2 order-4">
         <h3>Mission</h3>
-        <p>Wir entwickeln nicht nur, wir erfinden! Unsere Leidenschaft ist, Software zu entwickeln: Dabei steht das Handwerk und die Produkte stets im Vordergrund. Hierarchien und unnötige Prozesse im Hintergrund. Unser Commitment ist, durch Liebe zur Software Craftsmanship und agiler Vorgehensweisen stets Leidenschaft an der Programmierung zu haben.</p>
+        <p class="lg:mt-2">Wir entwickeln nicht nur, wir erfinden! Unsere Leidenschaft ist, Software zu entwickeln: Dabei steht das Handwerk und die Produkte stets im Vordergrund. Hierarchien und unnötige Prozesse im Hintergrund. Unser Commitment ist, durch Liebe zur Software Craftsmanship und agiler Vorgehensweisen stets Leidenschaft an der Programmierung zu haben.</p>
       </div>
     </div>
     <div class="contact mt-12">
@@ -64,5 +64,8 @@ export default {
   left: 0;
   bottom: 0;
   color: rgba(30, 30, 30, 1);
+}
+h3 {
+  margin: 0;
 }
 </style>

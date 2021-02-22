@@ -3,7 +3,7 @@
     <div class="container max-w-screen-lg 2xl:max-w-screen-xl px-4 xl:px-0 text-center">
       <span class="pre-headline color3">Handwerk</span>
       <h1>Maschinenraum</h1>
-      <p class="pb-4 md:pb-8 w-full md:max-w-4xl mx-auto text-left sm:text-center">Unser Handwerk: Wir sind auf Web- und Backend-Entwicklung spezialisiert. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir agieren nach "Try early - fail fast".</p>
+      <p class="pb-4 md:pb-8 w-full md:max-w-4xl mx-auto text-left sm:text-center">Unser Handwerk: Wir fühlen uns von der Software Craftmanship Bewegung geleitet. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir agieren nach "Try early - fail fast".</p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
         <div class="col-span-1">
           <h3>Werkzeuge</h3>
@@ -15,6 +15,7 @@
             <li>Cloud-Hosting mit Azure &amp; AWS</li>
             <li>Unit- &amp; UI-Tests sowie Clean Code, DRY, KISS</li>
             <li>Agile Softwareentwicklung nach Scrum &amp; Kanban</li>
+            <li>Hohe Handwerkskunst nach Software Craftmanship Manifesto</li>
           </ul>
         </div>
         <div class="col-span-1">

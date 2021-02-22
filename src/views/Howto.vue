@@ -55,16 +55,16 @@
           <div class="line line-bottom hidden lg:block"></div>
         </div>
         <div id="step4" class="step order-3 lg:order-6 lg-margin-left">
-          <h4>Cyber Security</h4>
+          <h4>Sicherheit</h4>
           <svg viewBox="0 0 500 500">
             <path id="curve" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
-            <text width="500" class="smaller">
-              <textPath xlink:href="#curve">&nbsp;Cyber Security</textPath>
+            <text width="500">
+              <textPath xlink:href="#curve">&nbsp;&nbsp;&nbsp;Sicherheit</textPath>
             </text>
           </svg>
           <img class="mx-auto" src="./../assets/img/howto/step4.svg" alt="" @click="open(3)">
           <div :class="'popup xl:shadow-md ' + (isOpen === 3 ? 'active' : '')" @click="close">
-            <span>Cyber Security</span>
+            <span>Sicherheit</span>
             <img class="mx-auto" src="./../assets/img/howto/step4.svg" alt="">
             <p>Schutz, Revision und Sicherheit der Daten Ihrer Software, Ihrer Kunden und der Geschäftsgeheimnisse ist für uns selbstverständlich. Gern beraten wir Sie dabei umfassend.</p>
           </div>
@@ -99,7 +99,7 @@
           <div :class="'popup xl:shadow-md ' + (isOpen === 5 ? 'active' : '')" @click="close">
             <span>Benutzer</span>
             <img class="mx-auto" src="./../assets/img/howto/step6.svg" alt="">
-            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            <p>Wir werden das Arbeitsleben Ihrer Mitarbeiter angenehmer und produktiver zu machen, indem wir Arbeitsschritte vereinfachen und Bottlenecks entfernen. Leicht bedienbare Anwendungen werden es Ihren Kunden ermöglichen, mit Ihren Produkten oder Services zu agieren.</p>
           </div>
           <div class="line line-left lg:hidden"></div>
           <div class="line line-bottom"></div>
@@ -116,7 +116,7 @@
           <div :class="'popup xl:shadow-md ' + (isOpen === 6 ? 'active' : '')" @click="close">
             <span>Potential</span>
             <img class="mx-auto" src="./../assets/img/howto/step7.svg" alt="">
-            <p>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </p>
+            <p>Unser Ziel ist es, Arbeitsabläufe zu verbessern und so die Auslastung zu steigern, um Produktivität Ihrer Mitarbeiter, Kollegen nachhaltig zu verbessern und besser neue Kunden gewinnen zu können!</p>
           </div>
         </div>
         <div id="step8" class="step order-7 lg:order-8 empty xl:hidden">
@@ -214,9 +214,9 @@ export default {
     bottom: 0;
     right: 0;
   }
-  /* #howtoContainer svg { */
-    /* top: 1%; */
-  /* } */
+  #howtoContainer svg {
+    top: 1%;
+  }
   path {
     fill: transparent;
   }
@@ -229,25 +229,27 @@ export default {
   }
   #howtoContainer > .step > img {
     height: 100%;
-    max-height: calc(100% - 30px);
-    top: calc(15px + 10%);
+    max-height: calc(100% - 25px);
+    top: calc(10px + 10%);
     object-fit: contain;
+    overflow: hidden;
+    border-radius: 0 0 50% 50%;
   }
   .line {
     position: absolute;
-    background-color: #C1DDF3;
+    background-color: #fff;
   }
   .line-left {
-    left: calc(-26.5% - 1px);
+    left: calc(-27% - 1px);
     top: calc(50% - 10px);
-    width: 26.5%;
+    width: 29%;
     height: 20px;
   }
   .line-bottom {
     left: calc(50% - 10px);
-    bottom: calc(-28.5% - 1px);
+    bottom: calc(-27% - 1px);
     width: 20px;
-    height: 28.5%;
+    height: 29%;
   }
   /* Popup */
   .popup {
@@ -267,7 +269,7 @@ export default {
     content: '';
     background-color: #fff;
     width: 90%;
-    height: 340px;
+    height: 360px;
     position: absolute;
     left: 5%;
     top: calc(50% - 170px);
@@ -288,14 +290,14 @@ export default {
     padding-top: 5px;
   }
   .popup img {
-    height: 195px;
-    padding-top: 40px;
+    height: 185px;
+    padding-top: 35px;
   }
   .popup p {
     margin-top: 185px;
     text-align: left;
     width: 90%;
-    height: 155px;
+    height: 175px;
     padding: 5px 10px 0 10px;
     background-color: rgba(243, 244, 246, 1);
     border-radius: 0 0 0.25rem 0.25rem;

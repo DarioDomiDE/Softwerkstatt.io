@@ -10,7 +10,8 @@
     <p>Geschäftsführer:
       <br />Dario D. Müller</p>
     <h2>Kontakt</h2>
-    <p>Telefon: +49 123 456 789
+    <p>
+      Telefon: +49 (0)40 254 689 22
       <br>E-Mail: <a href="mailto:moin@softwerkstatt.io">moin@softwerkstatt.io</a>
     </p>
     <!-- <h2>Registereintrag</h2>
