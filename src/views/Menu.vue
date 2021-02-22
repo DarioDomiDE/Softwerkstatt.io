@@ -8,7 +8,7 @@
       </ul>
     </div>
     <div class="fixed top-0 right-0 sm:top-4 sm:right-4 mt-4 mr-4 z-30" id="icon">
-      <svg v-on:click="isOpened = !isOpened" v-if="!isOpened" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cursor-pointer bg-custom hover:text-white"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
+      <svg v-on:click="isOpened = !isOpened" v-if="!isOpened" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" :class="'cursor-pointer text-gray-500 hover:bg-gray-500 hover:text-white ' + (isOnTop ? 'bg-custom' : '')"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
       <svg v-on:click="isOpened = !isOpened" v-if="isOpened" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cursor-pointer text-white sm:text-gray-700"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
     </div>
   </div>
@@ -22,8 +22,15 @@ export default {
   data: () => {
     return {
       isVisible: true,
-      isOpened: false
+      isOpened: false,
+      isOnTop: true
     }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  unmounted () {
+    window.removeEventListener('scroll', this.handleScroll);
   },
   methods: {
     open() {
@@ -34,6 +41,13 @@ export default {
     },
     scrollToTop() {
       window.scrollTo(0,0);
+    },
+    handleScroll () {
+      if(this.isOnTop && window.scrollY >= window.innerHeight) {
+        this.isOnTop = false;
+      } else if(!this.isOnTop && window.scrollY <= window.innerHeight) {
+        this.isOnTop = true;
+      }
     }
   }
 }
@@ -53,7 +67,6 @@ span {
     width: calc(50% - 5px);
     display: inline-block;
     border: 1px solid #fff;
-    /* margin-bottom: 10px; */
     padding-top: calc(50% - 7px);
     position: relative;
     max-height: 25vh;

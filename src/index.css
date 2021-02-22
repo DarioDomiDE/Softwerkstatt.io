@@ -18,7 +18,6 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
   margin-bottom: 0.5rem;
   color: rgb(59,60,66);
 }
@@ -95,7 +94,10 @@ li > span {
 }
 @media (max-width: 640px) {
   p, span, li {
-    font-size: 0.95em;
+    font-size: 1.0em;
+    line-height: 1.5em;
+    /* font-size: 1.125rem;
+    line-height: 1.75rem; */
   }
   h1 {
     font-size: 1.8em;

@@ -3,7 +3,7 @@
     <div class="container max-w-screen-lg 2xl:max-w-screen-lg px-4 xl:px-0 pb-8 text-center">
       <span class="pre-headline">Showcases</span>
       <h1>Projekte</h1>
-      <p class="pb-4 sm:mb-8 w-full md:max-w-4xl mx-auto text-left sm:text-center">Wir begleiten unsere Kunden langfristig und schaffen Mehrwert, damit aus Ideen Wirklichkeit wird. Wir lieben Lösungen, und entwickeln ausschließlich Individualsoftware - echte Unikate eben.</p>
+      <p class="pb-4 sm:mb-8 w-full md:max-w-3xl mx-auto text-left sm:text-center">Wir begleiten unsere Kunden langfristig und schaffen Mehrwert, indem aus Ideen Wirklichkeit wird. Wir entwickeln Individualsoftware - echte Unikate eben.</p>
       
       <div class="flex w-full">
 
