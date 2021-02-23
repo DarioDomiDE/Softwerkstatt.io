@@ -1,8 +1,8 @@
 <template>
-  <div class="container mx-auto max-w-screen-lg xl:max-w-screen-lg pt-16 px-4 lg:px-0 pb-16 lg:pb-64 lg:my-5">
+  <div class="container mx-auto max-w-screen-lg xl:max-w-screen-lg min-h-0 lg:min-h-screen pt-16 px-4 lg:px-0 pb-16 lg:my-5">
     <span class="block pre-headline text-center">Zusammenarbeit</span>
-    <h1 class="text-center">Kontakt</h1>
-    <p>Wir unterstützen Sie gerne dabei, Ihre Software (weiter) zu entwickeln oder erfolgreich zu starten. Rufen Sie uns einfach unverbindlich an oder schreiben Sie uns eine Flaschenpost oder E-Mail.</p>
+    <h1 class="text-center">Lass machen, Softwerkstatt</h1>
+    <p>Wir unterstützen Sie gerne dabei, Ihre Software (weiter) zu entwickeln oder erfolgreich zu starten. Rufen Sie uns einfach unverbindlich an oder schreiben Sie uns eine Flaschenpost oder Mail.</p>
     <p class="font-bold">Ihr Ansprechpartner: Dario D. Müller</p>
     <ul class="list">
       <li><a href="tel:04025468922">040 254 689 22</a></li>
