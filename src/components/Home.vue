@@ -7,7 +7,6 @@
     <Services6 @clicked="onClickCta" />
     <Technical @clicked="onClickCta" />
     <Aboutus />
-    <Projects />
     <References @clicked="onClickCta" />
     <Modal ref="modal" @modalClosed="onModalClosed" />
   </div>
@@ -21,7 +20,6 @@ import Howto from './../views/Howto.vue'
 import Services6 from './../views/Services6.vue'
 import Technical from './../views/Technical.vue'
 import Aboutus from './../views/Aboutus.vue'
-import Projects from './../views/Projects.vue'
 import References from './../views/References.vue'
 import Modal from './../views/Modal.vue'
 
@@ -35,7 +33,6 @@ export default {
     Services6,
     Technical,
     Aboutus,
-    Projects,
     References,
     Modal
   },

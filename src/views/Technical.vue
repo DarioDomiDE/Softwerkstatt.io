@@ -1,9 +1,9 @@
 <template>
-  <curved class="bg" :skipBorderTop="true" id="bg3">
-    <div class="container max-w-screen-lg 2xl:max-w-screen-xl px-4 xl:px-0 text-center">
+  <section class="">
+    <div class="container max-w-screen-lg 2xl:max-w-screen-xl px-4 xl:px-0 pb-1 text-center">
       <span class="pre-headline color3">Handwerk</span>
       <h1>Maschinenraum</h1>
-      <p class="pb-4 md:pb-8 w-full md:max-w-4xl mx-auto text-left sm:text-center">Unser Handwerk: Wir fühlen uns von der Software Craftmanship Bewegung geleitet. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir agieren nach "Try early - fail fast".</p>
+      <p class="pb-4 md:pb-8 w-full md:max-w-4xl mx-auto text-left sm:text-center">Unser Handwerk: Wir fühlen uns von der Software Craftsmanship Bewegung geleitet. Sie können zwischen Spritsparend und Vollausstattung wählen. Wir agieren nach "Try early - fail fast".</p>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
         <div class="col-span-1">
           <h3>Werkzeuge</h3>
@@ -15,7 +15,7 @@
             <li>Cloud-Hosting mit Azure &amp; AWS</li>
             <li>Unit- &amp; UI-Tests sowie Clean Code, DRY, KISS</li>
             <li>Agile Softwareentwicklung nach Scrum &amp; Kanban</li>
-            <li>Hohe Handwerkskunst nach Software Craftmanship Manifesto</li>
+            <li>Hohe Handwerkskunst nach Software Craftsmanship Manifesto</li>
           </ul>
         </div>
         <div class="col-span-1">
@@ -23,18 +23,16 @@
           <img src="./../assets/img/technologies.png" alt="Technologien Softwerkstatt">
         </div>
       </div>
-      <CtaButton class="mt-16 hover:border-gray-700" @clicked="onClickCta">Jetzt Werkstatt betreten</CtaButton>
+      <CtaButton class="mt-16 bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Jetzt Werkstatt betreten</CtaButton>
     </div>
-  </curved>
+  </section>
 </template>
 
 <script>
-import Curved from './Curved.vue'
 import CtaButton from './CtaButton.vue'
 export default {
   name: 'Intro',
   components: {
-    Curved,
     CtaButton
   },
   methods: {
@@ -46,9 +44,6 @@ export default {
 </script>
 
 <style scoped>
-#bg3 {
-  background-color: rgba(243, 244, 246, 1);
-}
 img {
   -webkit-filter: grayscale(1); 
   filter: grayscale(1); 

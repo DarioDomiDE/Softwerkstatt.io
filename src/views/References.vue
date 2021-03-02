@@ -17,7 +17,7 @@
       <img src="./../assets/img/logos/weischer.png" alt="Weischer Media" />
     </div>
     <h1 class="mt-8 lg:mt-16 xl:mt-32 mb-2">Let's create something amazing</h1>
-    <span class="mb-2 text-center block text-gray-400">Speedboot statt Riesentanker: Wir sind schnell, agil und effektiv.</span>
+    <span class="mb-2 text-center block text-gray-400">Speedboot statt Riesentanker: Wir sind schnell, agil und effektiv. </span>
     <CtaButton class="mx-auto bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Projekt starten</CtaButton>
   </section>
 </template>

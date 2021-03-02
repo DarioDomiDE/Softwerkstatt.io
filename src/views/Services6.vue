@@ -1,5 +1,5 @@
 <template>
-  <curved class="gradient min-h-0" v-bind:borderTopGray="true" v-bind:borderBottomGray="true">
+  <curved class="gradient min-h-0" v-bind:borderTopGray="true">
     <div class="container max-w-screen-xl pb-4 px-4 md:px-8 2xl:px-0 text-center" id="services6">
       <span class="pre-headline color1">Services</span>
       <h1>Leistungen</h1>
