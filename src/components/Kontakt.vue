@@ -13,7 +13,7 @@
       <li class="font-bold">Softwerkstatt</li>
       <li>Brunckhorstweg 3, 22525 Hamburg</li>
     </ul>
-    <CtaButton class="mt-8 mx-auto bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Beratungsgespräch vereinbaren</CtaButton>
+    <CtaButton class="mt-8 mx-auto text-gray-700 bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Beratungsgespräch vereinbaren</CtaButton>
     <Modal ref="modal" @modalClosed="onModalClosed" />
     <Borders />
   </div>

@@ -1,6 +1,6 @@
 <template>
   <curved class="min-h-0 bg text-center" :skipBorderBottom="true" id="bg2">
-    <div class="container max-w-screen-xl 2xl:max-w-screen-2xl pb-4 px-4 md:px-8 2xl:px-0">
+    <div class="container max-w-screen-xl 2xl:max-w-screen-2xl pb-1 px-4 md:px-8 2xl:px-0">
       <span class="pre-headline color2">Abwicklung</span>
       <h1>Wie wir arbeiten</h1>
       <div id="howtoContainer">
@@ -122,7 +122,7 @@
         <div id="step8" class="step order-7 lg:order-8 empty xl:hidden">
         </div>
       </div>
-      <CtaButton class="my-4 hover:border-gray-700" @clicked="onClickCta">Jetzt Chancen ergreifen</CtaButton>
+      <CtaButton class="my-4 border-white text-gray-700 hover:border-gray-700" @clicked="onClickCta">Jetzt Chancen ergreifen</CtaButton>
     </div>
   </curved>
 </template>
@@ -130,6 +130,7 @@
 <script>
 import Curved from './Curved.vue'
 import CtaButton from './CtaButton.vue'
+
 export default {
   name: 'Howto',
   components: {

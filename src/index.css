@@ -147,3 +147,9 @@ ul.checklist li {
 ul.list li {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" /></svg>');
 }
+.my-gradient {
+  background-image: linear-gradient(to right, #5DCAC7, #67dfc4);
+}
+.my-gradient:hover {
+  background-image: none;
+}

@@ -31,20 +31,20 @@
     </div>
     <h3>Initiativbewerbung</h3>
     <p>(Noch) nicht das Richtige dabei? Keine Bange: Das muss nichts heißen! Vielleicht kannst du uns trotzdem helfen. Schick uns initiativ Deine Bewerbungsunterlagen zu und lass uns kennen lernen.</p>
-    <button class="bg-white rounded shadow-md hover:shadow-none border-2 border-white hover:bg-transparent transform scale-102 transition-all outline-none focus:outline-none px-5 sm:px-8 py-3 sm:py-4 text-md sm:text-xl text-gray-700 mb-8 sm:mb-0 mt-8 bg-gray-100 border-gray-100 hover:border-gray-500" v-on:click="onClick">
-      Jetzt bewerben
-    </button>
+    <CtaButton class="my-gradient border-transparent hover:border-gray-500 text-white hover:text-gray-700 mt-8" @clicked="onClick">Jetzt bewerben</CtaButton>
     <Borders />
   </div>
 </template>
 
 <script>
 import Borders from './../views/Borders.vue'
+import CtaButton from './../views/CtaButton.vue'
 
 export default {
   name: 'Jobs',
   components: {
-    Borders
+    Borders,
+    CtaButton
   },
   methods: {
     onClick() {

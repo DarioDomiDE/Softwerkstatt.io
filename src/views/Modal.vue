@@ -6,7 +6,7 @@
         <div class="flex justify-between items-center pl-6 pr-4 py-4">
           <p class="text-2xl">{{headline}}</p>
         </div>
-        <p class="px-6 pb-4">Wie können wir Ihnen helfen, Ihre Software zu verbessern? Lassen Sie uns gemeinsam jetzt durchstarten!</p>
+        <p class="px-6 pb-4">Wie können wir Ihnen helfen, Ihre Software zu verbessern? Lassen Sie uns jetzt gemeinsam durchstarten!</p>
         <ul class="bg-gray-100 px-6 pt-4 pb-6">
           <li>Ihr Ansprechpartner: Dario D. Müller</li>
           <li><a href="tel:04025468922">040 254 689 22</a></li>

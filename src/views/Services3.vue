@@ -52,7 +52,7 @@
         </ul>
       </div>
     </div>
-    <CtaButton class="mt-8 bg-gray-100 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Sprechen Sie mit uns</CtaButton>
+    <CtaButton class="mt-8 bg-gray-100 text-gray-700 border-gray-100 hover:border-gray-500" @clicked="onClickCta">Sprechen Sie mit uns</CtaButton>
   </section>
 </template>
 

@@ -8,7 +8,7 @@
         <span class="block font-bold mb-8 lg:mb-16 text-5xl md:text-6xl lg:text-8xl text-white" id="headline"><span>Wir haben eine Vision:</span> Unser Handwerk und Ihre Software.</span>
         <span class="inline md:block text-lg lg:text-xl lg:text-2xl">Ahoi! Wir setzen Segel und lichten den Anker auf dem Weg zu neuen Ufern! </span>
         <span class="inline md:block text-lg lg:text-xl lg:text-2xl ">Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.</span>
-        <CtaButton class="mt-8 lg:mt-16 block hover:text-white" @clicked="onClickCta">Segel setzen für neuen Kurs</CtaButton>
+        <CtaButton class="mt-8 lg:mt-16 block border-white text-gray-700 hover:text-white" @clicked="onClickCta">Segel setzen für neuen Kurs</CtaButton>
       </div>
     </div>
   </curved>

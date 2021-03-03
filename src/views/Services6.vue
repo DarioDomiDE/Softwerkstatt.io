@@ -75,7 +75,7 @@
         <div class="hidden xl:block area area-x area-middle" @mouseover="disableEffect(), bottom(1), bottom(2), bottom(3), top(4), top(5), top(6)"></div>
         <div class="hidden xl:block area area-x area-bottom" @mouseover="disableEffect(), bottom(4), bottom(5), bottom(6)"></div>
       </div>
-      <CtaButton class="mt-16 mb-8 hover:text-white" @clicked="onClickCta">Jetzt Potential nutzen</CtaButton>
+      <CtaButton class="mt-16 mb-8 border-white text-gray-700 hover:text-white" @clicked="onClickCta">Jetzt Potential nutzen</CtaButton>
     </div>
   </curved>
 </template>

@@ -5,7 +5,7 @@
       <div class="flex-1 pb-4">
         <h4 class="mb-2 text-white">Freunde werden?</h4>
         <p class="">Wenn wir Ihre Vorstellungen, gemeinsam die (Software-) Welt zu erobern, teilen, dann lassen Sie uns Freunde werden.</p>
-        <ul class="mt-4">
+        <ul>
           <li><a href="https://www.xing.com/profile/DarioD_Mueller">Xing</a></li>
           <li><a href="https://www.linkedin.com/in/dariomueller/">LinkedIn</a></li>
         </ul>
@@ -14,7 +14,7 @@
       <div class="flex-1 md:pl-8 lg:pl-16 pb-4 pt-4 md:pt-0 border-t md:border-none border-white">
         <h4 class="mb-2 text-white">Sie haben Fragen?</h4>
         <p class="hidden md:block">Dann immer her damit, denn wir haben Antworten! Wir freuen uns über einen kleinen Schnack und kümmern uns gerne um Ihr Anliegen.</p>
-        <ul class="mt-4">
+        <ul>
           <li><a href="tel:04025468922">040 254 689 22</a></li>
           <li><a href="mailto:moin@softwerkstatt.io">moin@softwerkstatt.io</a></li>
           <li>Brunckhorstweg 3, 22525 Hamburg</li>
@@ -24,7 +24,7 @@
       <div class="flex-1 md:pl-8 lg:pl-16 pb-4 border-t md:border-none border-white">
         <h4 class="mb-2 text-white hidden md:block">Interesse geweckt?</h4>
         <p class="hidden md:block">Schreiben Sie uns eine Flaschenpost oder rufen Sie uns an. Wir freuen uns drauf!</p>
-        <ul class="mt-4">
+        <ul>
           <li><router-link to="/privacy-policy"><span v-on:click="scrollToTop">Datenschutz</span></router-link></li>
           <li><router-link to="/legal"><span v-on:click="scrollToTop">Impressum</span></router-link></li>
           <li><router-link to="/jobs"><span v-on:click="scrollToTop">Jobs</span></router-link></li>
@@ -67,7 +67,7 @@ export default {
 }
 p, li {
   color: white;
-  line-height: 1.4em;
+  line-height: 1.3em;
 }
 .gradient {
   background: linear-gradient(45deg, #36c1c7 0%, #67dfc4 90%) !important;
@@ -75,5 +75,11 @@ p, li {
 a:hover {
   font-weight: bold;
   color: rgba(0,0,0,0.5);
+}
+h4 {
+  margin-bottom: 1rem;
+}
+ul {
+  margin-top: 1rem;
 }
 </style>
