@@ -8,7 +8,7 @@
         <li><router-link to="/kontakt"><span v-on:click="isOpened = false, scrollToTop()">Kontakt</span></router-link></li>
       </ul>
     </div>
-    <div :class="'fixed top-0 right-0 sm:top-4 sm:right-4 mt-4 mr-4 z-30 rounded-full shadow p-2 bg-white text-gray-500 hover:bg-gray-500 hover:text-white ' + (isOnTop ? 'bg-custom' : '')" id="icon">
+    <div :class="'fixed top-0 right-0 sm:top-4 sm:right-4 mt-4 mr-4 z-30 rounded-full shadow p-2 bg-white text-gray-500 hover:bg-gray-500 hover:text-white transform transition-all duration-500 ease-in-out rotate-0 hover:scale-110 hover:-rotate-6 ' + (isOnTop ? 'bg-custom' : '')" id="icon">
       <svg v-on:click="isOpened = !isOpened" v-if="!isOpened" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cursor-pointer"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" /></svg>
       <svg v-on:click="isOpened = !isOpened" v-if="isOpened" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="cursor-pointer text-white sm:text-gray-700"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" /></svg>
     </div>
