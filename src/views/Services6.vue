@@ -83,6 +83,7 @@
 <script>
 import Curved from './Curved.vue'
 import CtaButton from './CtaButton.vue'
+
 export default {
   name: 'Solutions',
   components: {
