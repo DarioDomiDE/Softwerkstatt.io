@@ -1,14 +1,14 @@
 <template>
   <div class="pt-16 pb-32 lg:my-5">
-    <div class="container mx-auto max-w-screen-lg xl:max-w-screen-lg text-gray-400 px-4 lg:px-0 mb-8">
-      <span class="block pre-headline text-center">Wer wir sind</span>
+    <div class="container mx-auto max-w-screen-lg text-gray-400 px-4 lg:px-0 mb-8">
+      <span class="block pre-headline text-center">Wer sind wir eigentlich</span>
       <h1 class="text-center">Wir sind Softwerkstatt</h1>
       <p>Ein Zusammenschluss leidenschaftlicher Softwareentwickler. In Hamburg daheim, in der Welt zu Hause. Wir sehen uns als Partner, Kollegen und Freunde, die gemeinsam etwas bewegen möchten.</p>
       <p>Nachfolgend unsere Grundsätze für Zufriedene Kunden und langfristige Zusammenarbeit, Selbstverantwortung und Selbstorganisation, effiziente Softwarelösungen, hochwertiges Handwerk und für kreative Diskussionen.</p>
     </div>
     
     <curved v-bind:skipBorderBottom="true">
-      <div class="mx-auto max-w-screen-lg xl:max-w-screen-lg -my-4">
+      <div class="mx-auto max-w-screen-lg -my-4">
         <div class="w-3/5 inline-block">
           <h2>1. User-driven development</h2>
           <p>Gemeinsam bewegen wir Menschen und Unternehmen. Wir arbeiten für Unternehmen, aber designen für Menschen. Wir wollen Software langfristiger und Arbeitsabläufe einfacher machen. Als digitale Problemlöser für echte Menschen sind wir die Erweiterung der Teams unserer Kunden. Wir fangen beim Kunden an und arbeiten von dort aus rückwärts. Problemlösungen-first statt Technologie-first.</p>
@@ -20,7 +20,7 @@
     </curved>
     
     <curved class="bg-white" v-bind:skipBorderBottom="true" v-bind:borderTopGray="true">
-      <div class="mx-auto max-w-screen-lg xl:max-w-screen-lg-my-4">
+      <div class="mx-auto max-w-screen-lg -my-4">
         <div class="w-2/5 inline-block">
           <img class="w-4/5" src="./../assets/img/howto/step4.svg" alt="">
         </div>
@@ -32,7 +32,7 @@
     </curved>
 
     <curved v-bind:skipBorderBottom="true">
-      <div class="mx-auto max-w-screen-lg xl:max-w-screen-lg -my-4">
+      <div class="mx-auto max-w-screen-lg -my-4">
         <div class="w-3/5 inline-block">
           <h2>3. Ständiges Lernen</h2>
           <p>Jedes Unternehmen wünscht sich die besten Talente der Industrie. Wir hinterfragten, wie Entwickler zu Top-Talente werden, und wie dessen Qualität langfristig erhalten und weiter ausgebaut werden kann. Unsere Schlussfolgerung: Eine Umgebung schaffen, die es nicht nur proaktiv anbietet, sondern zur Pflicht macht, regelmäßig Neues zu lernen und sich zu verbessern. Hierfür ist ein Tag pro Woche reserviert, an dem nicht am Daily Business gearbeitet werden darf! Arbeite an dem, an was auch immer du möchtest. Stelle dir aus unbegrenzten individuellen Entwicklungsmöglichkeiten deinen persönlichen Karrierepfad zusammen. Unsere Kunden stimmen uns zu: Man sieht unseren Projekten die Kultur an, in der sie entstanden ist.</p>
@@ -44,7 +44,7 @@
     </curved>
 
     <curved class="bg-white" v-bind:skipBorderBottom="true" v-bind:borderTopGray="true">
-      <div class="mx-auto max-w-screen-lg xl:max-w-screen-lg -my-4">
+      <div class="mx-auto max-w-screen-lg -my-4">
         <div class="w-2/5 inline-block">
           <img class="w-4/5" src="./../assets/img/howto/step3.svg" alt="">
         </div>
@@ -56,7 +56,7 @@
     </curved>
 
     <curved>
-      <div class="mx-auto max-w-screen-lg xl:max-w-screen-lg -my-4">
+      <div class="mx-auto max-w-screen-lg -my-4">
         <div class="w-3/5 inline-block">
           <h2>5. Team</h2>
           <p>Jeder im Team hat die Möglichkeit seine Fähigkeiten und Talente einzubringen und Entscheidungen Anderer zu hinterfragen, auch außerhalb seines Fachgebietes. Nicht der Lauteste, sondern das stärkste Argument gewinnt. Nur wenn jeder von uns seine Erfahrungen mit einbringt, entstehen zusammen die besten Konzepte. Wir planen auf lange Sicht und opfern langfristigen Chancen nicht zugunsten kurzfristiger Ergebnisse.</p>

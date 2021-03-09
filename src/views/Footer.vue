@@ -4,7 +4,7 @@
       
       <div class="flex-1 pb-4">
         <h4 class="mb-2 text-white">Freunde werden?</h4>
-        <p class="">Wenn wir Ihre Vorstellungen, gemeinsam die Meere zu erobern, teilen, dann lassen Sie uns doch Freunde werden.</p>
+        <p>Wenn wir Ihre Vorstellungen, gemeinsam die Meere zu erobern, teilen, dann lassen Sie uns doch Freunde werden.</p>
         <ul>
           <li><a href="https://www.xing.com/profile/DarioD_Mueller">Xing</a></li>
           <li><a href="https://www.linkedin.com/in/dariomueller/">LinkedIn</a></li>
@@ -17,7 +17,7 @@
         <ul>
           <li><a href="tel:04025468922">040 254 689 22</a></li>
           <li><a href="mailto:moin@softwerkstatt.io">moin@softwerkstatt.io</a></li>
-          <li>Brunckhorstweg 3, 22525 Hamburg</li>
+          <!-- <li>Brunckhorstweg 3, 22525 Hamburg</li> -->
         </ul>
       </div>
 

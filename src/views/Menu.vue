@@ -4,6 +4,7 @@
       <ul>
         <li><router-link to="/" ><span v-on:click="isOpened = false, scrollToTop()">Home</span></router-link></li>
         <li><router-link to="/wer-wir-sind"><span v-on:click="isOpened = false, scrollToTop()">Wer wir sind</span></router-link></li>
+        <li><router-link to="/handwerk"><span v-on:click="isOpened = false, scrollToTop()">Handwerk</span></router-link></li>
         <li><router-link to="/jobs"><span v-on:click="isOpened = false, scrollToTop()">Jobs (3)</span></router-link></li>
         <li><router-link to="/kontakt"><span v-on:click="isOpened = false, scrollToTop()">Kontakt</span></router-link></li>
       </ul>
