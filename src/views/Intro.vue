@@ -1,14 +1,14 @@
 <template>
   <curved class="gradient min-h-0 lg:min-h-screen" v-bind:skipBorderTop="isDesktop" v-bind:usePaddingTop="true" id="intro">
-    <div class="container xl:max-w-screen-lg 2xl:max-w-screen-2xl mx-auto text-white lg:mt-24 xl:mt-16">
-      <div class="float-none lg:float-right w-full lg:w-1/3 pt-16 sm:pt-0 text-center">
-        <img src="./../assets/img/intro_4.png" alt="" class="mx-auto sm:max-w-sm md:max-w-md lg:max-w-full">
+    <div class="container xl:max-w-screen-lg 2xl:max-w-screen-2xl mx-auto text-white lg:mt-24 xl:mt-16 clearfix">
+      <div class="float-none lg:float-right w-full lg:w-1/3 pb-4 text-center px-4 md:px-0">
+        <img src="./../assets/img/intro.png" alt="" class="mx-auto sm:max-w-sm md:max-w-md lg:max-w-full">
       </div>
       <div class="float-none lg:float-right 2xl:float-left w-full lg:w-3/5 px-4 md:px-0">
-        <span class="block font-bold mb-8 lg:mb-16 text-5xl md:text-6xl lg:text-8xl text-white" id="headline"><span>Wir haben eine Vision:</span> Unser Handwerk und Ihre Software.</span>
+        <span class="block font-bold mb-4 sm:mb-8 lg:mb-16 text-5xl md:text-6xl lg:text-7xl 2xl:text-8xl text-white" id="headline"><span>Wir haben eine Vision:</span> Unser Handwerk und Ihre Software.</span>
         <span class="inline md:block text-lg lg:text-xl lg:text-2xl">Ahoi! Wir setzen Ihre Segel und lichten den Anker auf dem Weg zu neuen Ufern! </span>
         <span class="inline md:block text-lg lg:text-xl lg:text-2xl ">Wir entwickeln Software für Ihre digitalen Prozesse und Geschäftsmodelle.</span>
-        <CtaButton class="mt-8 lg:mt-16 block border-white text-gray-700 hover:text-white" @clicked="onClickCta">Segel setzen für neuen Kurs</CtaButton>
+        <CtaButton class="mt-4 sm:mt-8 lg:mt-16 block border-white text-gray-700 hover:text-white" @clicked="onClickCta">Segel setzen für neuen Kurs</CtaButton>
       </div>
     </div>
   </curved>
@@ -72,7 +72,12 @@ span span {
 }
 @media (max-width: 640px) {
   #headline {
-    line-height: 1.3em;
+    line-height: 1.1em;
   }
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 </style>
