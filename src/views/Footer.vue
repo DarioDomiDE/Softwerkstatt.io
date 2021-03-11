@@ -17,7 +17,7 @@
         <ul>
           <li><a href="tel:04025468922">040 254 689 22</a></li>
           <li><a href="mailto:moin@softwerkstatt.io">moin@softwerkstatt.io</a></li>
-          <!-- <li>Brunckhorstweg 3, 22525 Hamburg</li> -->
+          <li>Brunckhorstweg 3, 22525 Hamburg</li>
         </ul>
       </div>
 

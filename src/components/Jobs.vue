@@ -3,11 +3,10 @@
     <span class="block pre-headline text-center">Mannschaft / Karriere</span>
     <h1 class="text-center">Jobs als Softwareentwickler</h1>
     <h2>Softwareentwickler in Hamburg</h2>
-    <p>Ahoi Matrose! Als <a href="https://www.hamburg.de/stellenangebote-hamburg/4286608/softwareentwickler-hamburg/">Softwareentwickler bei Softwerkstatt</a> entwickelst und erstellst die Architektur für Web-Applikationen, Tools und Backend-Lösungen. Wir fördern Allround-Talente und Du arbeitest <a href="https://de.wikipedia.org/wiki/Softwareentwickler">in diversen Rollen</a>, um Software zu programmieren und Prozesse dahinter zu optimieren. Als branchenübergreifender <a href="https://jaxenter.de/software-consultants-21060">Software-Consultant</a> erwarten Dich regelmäßig neue Aufgaben und abwechslungsreichen Projekte.</p>
+    <p>Ahoi Matrose! Liebst du es genau so wie wir, Software zu entwickeln? Als <a href="https://www.hamburg.de/stellenangebote-hamburg/4286608/softwareentwickler-hamburg/">Softwareentwickler in Hamburg</a> entwickelst und pflegst du Web-Applikationen, Backend und Datenbanken. Wir fördern Allround-Talente und du arbeitest <a href="https://de.wikipedia.org/wiki/Softwareentwickler">in diversen Rollen</a>, um Software zu programmieren und Prozesse dahinter zu optimieren. Als <a href="https://jaxenter.de/software-consultants-21060">Software-Consultant</a> erwarten Dich regelmäßig neue Aufgaben und abwechslungsreichen Projekte. Bei uns ist jedes Teammitglied gefragt! Eigenverantwortung und selbständiges Denken ist nicht nur gern gesehen, sondern gehört zu Deinen täglichen Aufgaben.</p>
     <h3>Arbeite mit uns! :)</h3>
-    <p>Liebst du es genau wie wir, Software zu entwickeln? Unsere Ziel ist es, benutzerfreundliche Web-Applikationen zu entwickeln, die die Arbeit erleichtern. Um dies zu erreichen, ist jedes Teammitglied gefragt! Eigenverantwortung und selbständiges Denken ist nicht nur gern gesehen, sondern gehört zu Deinen täglichen Aufgaben. Du findest, dass du in Deinem Fachgebiet echt was drauf hast? Worauf wartest du? Komm zu uns ins Team!</p>
-    <p>Wir suchen vielversprechende Entwickler/innen und legen Wert auf Charakter-Eigenschaften, Intelligenz und Persönlichkeit anstatt auf Ausbildung und Skills. Wir freuen uns auf Deine neuen Ideen und Blickwinkel!</p>
-    <p>Als branchenübergreifend tätiges Unternehmen mit flachen Hierarchien und einer Start-up-Kultur können wir dir unzählige Chancen bieten. Ergreife sie! Unser Büro liegt zentral in der Hamburger Innenstadt. In der direkten Umgebung stehen Dir zahlreiche Möglichkeiten für die Mittagspause oder einen Bummel nach der Arbeit zur Verfügung.</p>
+    <p>Du findest, dass du in Deinem Fachgebiet echt was drauf hast? Worauf wartest du? Komm zu uns ins Team! Wir suchen vielversprechende Entwickler/innen und legen Wert auf Charakter-Eigenschaften, Intelligenz und Persönlichkeit anstatt auf Ausbildung und Skills. Wir freuen uns auf Deine neuen Ideen und Blickwinkel!</p>
+    <p>Als branchenübergreifend agierendes Unternehmen mit flachen Hierarchien und einer Start-up-Kultur können wir dir unzählige Chancen bieten. Ergreife sie! Unser Büro liegt zentral in der Hamburger Innenstadt. In der direkten Umgebung stehen Dir zahlreiche Möglichkeiten für die Mittagspause oder einen Bummel nach der Arbeit zur Verfügung.</p>
     <h2>Jobs to be done</h2>
     <ul class="list">
       <li><router-link to="/jobs/fullstack-entwickler-hamburg">Full-Stack Entwickler/in</router-link></li>
@@ -17,7 +16,7 @@
     <ul class="list">
       <li><router-link to="/jobs">Werkstudent/in in der Software-Entwicklung</router-link></li>
     </ul>
-    <div class="bg-gray-700 -mx-4 lg:mx-0 xl:-mx-32 2xl:-mx-64 text-white my-8 py-8 sm:py-16">
+    <div class="-mx-4 lg:mx-0 xl:-mx-32 2xl:-mx-64 text-white my-8 py-8 sm:py-16" style="background-color: #114154;">
       <div class="px-4 sm:px-0 md:w-4/5 lg:w-3/5 2xl:w-2/5 mx-auto">
         <img class="sm:float-left w-2/5 border-4 rounded-full mx-auto" style="border-color: #67dfc4;" src="./../assets/img/about_us.jpg" alt="" />
         <div class="sm:float-right sm:w-3/5 sm:pl-8">
