@@ -3,7 +3,7 @@
     <div class="container max-w-screen-xl pb-4 px-4 md:px-8 2xl:px-0 text-center" id="services6">
       <span class="pre-headline color1">Services</span>
       <h1>Leistungen</h1>
-      <p class="mb-12 mx-auto w-full md:max-w-4xl text-left sm:text-center">Unsere Domäne, hierbei haben wir Spaß. Wir sind im Herzen Techies. Und unterstützen unsere Kunden in allen Phasen ihrer Digitalisierung. Eine Auwahl, was uns besonders am Herzen liegt:</p>
+      <p class="mb-4 sm:mb-12 mx-auto w-full md:max-w-4xl text-left sm:text-center">Unsere Domäne, hierbei haben wir Spaß. Wir sind im Herzen Techies. Und unterstützen unsere Kunden in allen Phasen ihrer Digitalisierung. Eine Auwahl, was uns besonders am Herzen liegt:</p>
       <div id="articlesContainer">
         <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-2 md:gap-y-4 lg:gap-y-8 text-left">
           <article :class="isActive(0) ? 'active' : '' + isEffect == 0 ? 'is-effect' : afterEffect == 0 ? 'after-effect' : ''" @mouseover="isEffect = 0" v-on:click="onClickActive(0)">
@@ -75,7 +75,7 @@
         <div class="hidden xl:block area area-x area-middle" @mouseover="disableEffect(), bottom(1), bottom(2), bottom(3), top(4), top(5), top(6)"></div>
         <div class="hidden xl:block area area-x area-bottom" @mouseover="disableEffect(), bottom(4), bottom(5), bottom(6)"></div>
       </div>
-      <CtaButton class="mt-16 mb-8 border-white text-gray-700 hover:text-white" @clicked="onClickCta">Jetzt Potential nutzen</CtaButton>
+      <CtaButton class="mt-8 sm:mt-16 mb-8 border-white text-gray-700 hover:text-white" @clicked="onClickCta">Jetzt Potential nutzen</CtaButton>
     </div>
   </curved>
 </template>

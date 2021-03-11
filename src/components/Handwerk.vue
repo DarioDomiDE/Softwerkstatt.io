@@ -14,7 +14,7 @@
 
     <div class="relative" style="background-color: #114154;">
       <div class="container mx-auto max-w-screen-lg py-32 mb-16">
-        <h3 class="mb-16" style="color: #5DCAC7; line-height: 1.0em; font-size: 5.0em;">Fazit</h3>
+        <h3 class="text-7xl mb-12" style="color: #5DCAC7;">Fazit</h3>
         <p class="text-white">Praesent consequat lacus ut metus iaculis, at hendrerit dolor suscipit. Aenean sit amet metus vulputate, gravida odio in, euismod orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Integer at tincidunt mauris. Vestibulum lectus quam, ultricies vitae tortor quis, tincidunt congue eros. Proin mi felis, tincidunt id tortor nec, facilisis dignissim felis. Morbi ut lorem maximus, laoreet dui a, pharetra lorem. Pellentesque vestibulum metus ante, in imperdiet nunc gravida vitae. Maecenas elementum dapibus tortor in semper. Duis auctor nec augue at gravida. Nam bibendum sodales enim, auctor sodales massa ornare in.</p>
       </div>
       <Borders />
@@ -41,12 +41,6 @@ export default {
 }
 </script>
 
-<style>
-.my-border {
-  position: absolute !important;
-}
-</style>
-
 <style scoped>
 .bg-white {
   background-color: #fff;
@@ -55,7 +49,6 @@ p {
   margin: 1rem 0 0 0;
 }
 p {
-  font-size: 1.4em;
   margin: 1rem 0;
 }
 </style>

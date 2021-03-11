@@ -1,7 +1,7 @@
 <template>
-  <section v-if="isActive" class="container max-w-screen-xl h-screen pt-32 pb-32 overflow-hidden" id="welcome">
-    <video class="h-full mx-auto grayscale object-cover" id="videoPlayer" poster="./../assets/img/header.png" preload="auto" autobuffer="" autoplay="" loop="" playsinline="" muted="">
-      <source src="./../assets/video/teaser.webm" type='video/webm; codecs="vp8, vorbis"'>
+  <section v-if="isActive" class="container max-w-screen-xl h-screen pt-32 pb-32 overflow-hidden relative lg:fixed left-0 right-0 top-0 bottom-0">
+    <video class="h-full mx-auto object-cover" id="videoPlayer" poster="./../assets/img/header.png" preload="auto" autobuffer="" autoplay="" loop="" playsinline="" muted="">
+      <!-- <source src="./../assets/video/teaser.webm" type='video/webm; codecs="vp8, vorbis"'> -->
       <source src="./../assets/video/teaser.mp4" type="video/mp4">
     </video>
     <div class="mx-auto w-full h-screen pt-32 pb-32 absolute left-0 top-0" id="logoContainer">
@@ -32,10 +32,13 @@ export default {
   },
   methods: {
     handleScroll () {
+      if(window.innerWidth < 1024) {
+        return
+      }
       if(this.isActive && window.scrollY >= window.innerHeight) {
-        this.isActive = false;
+        this.isActive = false
       } else if(!this.isActive && window.scrollY <= window.innerHeight) {
-        this.isActive = true;
+        this.isActive = true
       }
     }
   }
@@ -43,22 +46,11 @@ export default {
 </script>
 
 <style scoped>
-#welcome {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-}
 .gradient {
   background: linear-gradient(90deg, #3eeaff 0%, #a2ff5a 100%);
 }
-.grayscale {
-  -webkit-filter: grayscale(1); 
-  filter: grayscale(1); 
-}
 #videoPlayer {
-  filter:brightness(150%);
+  /* filter:brightness(150%); */
 }
 #logo {
   background: url('./../assets/img/header.png') no-repeat center center;

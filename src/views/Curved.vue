@@ -83,7 +83,7 @@ export default {
 }
 @media (max-width: 768px) {
   .larger-height {
-    height: 570px;
+    height: 470px;
   }
 }
 </style>

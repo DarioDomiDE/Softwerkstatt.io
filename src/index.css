@@ -37,7 +37,7 @@ h4 {
   line-height: 1.2em;
 }
 p, span, li {
-  font-size: 1.25em;
+  font-size: 1.35em;
 }
 a > span,
 li > span {
@@ -76,7 +76,7 @@ li > span {
 }
 @media (max-width: 768px) {
   body {
-    margin-bottom: 570px;
+    margin-bottom: 470px;
   }
   p, span, li {
     font-size: 1.1em;
@@ -94,10 +94,8 @@ li > span {
 }
 @media (max-width: 640px) {
   p, span, li {
-    font-size: 1.0em;
+    font-size: 1.05em;
     line-height: 1.5em;
-    /* font-size: 1.125rem;
-    line-height: 1.75rem; */
   }
   h1 {
     font-size: 1.8em;

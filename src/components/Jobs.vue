@@ -3,10 +3,10 @@
     <span class="block pre-headline text-center">Mannschaft / Karriere</span>
     <h1 class="text-center">Jobs als Softwareentwickler</h1>
     <h2>Softwareentwickler in Hamburg</h2>
-    <p>Ahoi Matrose! Liebst du es genau so wie wir, Software zu entwickeln? Als <a href="https://www.hamburg.de/stellenangebote-hamburg/4286608/softwareentwickler-hamburg/">Softwareentwickler in Hamburg</a> entwickelst und pflegst du Web-Applikationen, Backend und Datenbanken. Wir fördern Allround-Talente und du arbeitest <a href="https://de.wikipedia.org/wiki/Softwareentwickler">in diversen Rollen</a>, um Software zu programmieren und Prozesse dahinter zu optimieren. Als <a href="https://jaxenter.de/software-consultants-21060">Software-Consultant</a> erwarten Dich regelmäßig neue Aufgaben und abwechslungsreichen Projekte. Bei uns ist jedes Teammitglied gefragt! Eigenverantwortung und selbständiges Denken ist nicht nur gern gesehen, sondern gehört zu Deinen täglichen Aufgaben.</p>
+    <p>Ahoi Matrose! Liebst Du es genau so wie wir, Software zu entwickeln? Als <a href="https://www.hamburg.de/stellenangebote-hamburg/4286608/softwareentwickler-hamburg/">Softwareentwickler in Hamburg</a> entwickelst und pflegst Du Web-Applikationen, Backend und Datenbanken. Wir fördern Allround-Talente und Du arbeitest <a href="https://de.wikipedia.org/wiki/Softwareentwickler">in diversen Rollen</a>, um Software zu programmieren und Prozesse dahinter zu optimieren. Als <a href="https://jaxenter.de/software-consultants-21060">Software-Consultant</a> erwarten Dich regelmäßig neue Aufgaben und abwechslungsreichen Projekte. Bei uns ist jedes Teammitglied gefragt! Eigenverantwortung und selbständiges Denken ist nicht nur gern gesehen, sondern gehört zu Deinen täglichen Aufgaben.</p>
     <h3>Arbeite mit uns! :)</h3>
-    <p>Du findest, dass du in Deinem Fachgebiet echt was drauf hast? Worauf wartest du? Komm zu uns ins Team! Wir suchen vielversprechende Entwickler/innen und legen Wert auf Charakter-Eigenschaften, Intelligenz und Persönlichkeit anstatt auf Ausbildung und Skills. Wir freuen uns auf Deine neuen Ideen und Blickwinkel!</p>
-    <p>Als branchenübergreifend agierendes Unternehmen mit flachen Hierarchien und einer Start-up-Kultur können wir dir unzählige Chancen bieten. Ergreife sie! Unser Büro liegt zentral in der Hamburger Innenstadt. In der direkten Umgebung stehen Dir zahlreiche Möglichkeiten für die Mittagspause oder einen Bummel nach der Arbeit zur Verfügung.</p>
+    <p>Du findest, dass Du in Deinem Fachgebiet echt was drauf hast? Worauf wartest Du? Komm zu uns ins Team! Wir suchen vielversprechende Entwickler/innen und legen Wert auf Charakter-Eigenschaften, Intelligenz und Persönlichkeit anstatt auf Ausbildung und Skills. Wir freuen uns auf Deine neuen Ideen und Blickwinkel!</p>
+    <p>Als branchenübergreifend agierendes Unternehmen mit flachen Hierarchien und einer Start-up-Kultur können wir Dir unzählige Chancen bieten. Ergreife sie! Unser Büro liegt zentral in der Hamburger Innenstadt. In der direkten Umgebung stehen Dir zahlreiche Möglichkeiten für die Mittagspause oder einen Bummel nach der Arbeit zur Verfügung.</p>
     <h2>Jobs to be done</h2>
     <ul class="list">
       <li><router-link to="/jobs/fullstack-entwickler-hamburg">Full-Stack Entwickler/in</router-link></li>
@@ -29,7 +29,7 @@
       <div class="clear-both"></div>
     </div>
     <h3>Initiativbewerbung</h3>
-    <p>(Noch) nicht das Richtige dabei? Keine Bange: Das muss nichts heißen! Vielleicht kannst du uns trotzdem helfen. Schick uns initiativ Deine Bewerbungsunterlagen zu und lass uns kennen lernen.</p>
+    <p>(Noch) nicht das Richtige dabei? Keine Bange: Das muss nichts heißen! Vielleicht kannst Du uns trotzdem helfen. Schick uns initiativ Deine Bewerbungsunterlagen zu und lass uns kennen lernen.</p>
     <CtaButton class="my-gradient border-transparent hover:border-gray-500 text-white hover:text-gray-700 mt-8" @clicked="onClick">Jetzt bewerben</CtaButton>
     <Borders />
   </div>

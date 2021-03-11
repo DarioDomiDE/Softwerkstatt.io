@@ -15,7 +15,7 @@
       <li>Fehleranalyse und -behebung</li>
     </ul>
     <h2>Das solltest Du mitbringen:</h2>
-    <ul class="list">
+    <ul class="checklist">
       <li>Sehr gute PHP-Kenntnisse</li>
       <li>Sehr gute Kenntnisse in CSS3 (Sass, Scss), JavaScript / Typescript &amp; Vue.js / Angular 2+</li>
       <li>Grundlegende Kenntnisse im Backend-Bereich mit .Net</li>
@@ -52,7 +52,6 @@ export default {
 
 <style scoped>
 p {
-  font-size: 1.4em;
   margin: 1rem 0;
 }
 img {
