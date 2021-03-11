@@ -1,6 +1,6 @@
 <template>
   <section v-if="isActive" class="container max-w-screen-xl h-screen pt-32 pb-32 overflow-hidden" id="welcome">
-    <video class="h-full mx-auto grayscale object-cover" id="videoPlayer" poster="./../assets/img/header_with_bg.png" preload="auto" autobuffer="" autoplay="" loop="" playsinline="" muted="">
+    <video class="h-full mx-auto grayscale object-cover" id="videoPlayer" poster="./../assets/img/header.png" preload="auto" autobuffer="" autoplay="" loop="" playsinline="" muted="">
       <source src="./../assets/video/teaser.webm" type='video/webm; codecs="vp8, vorbis"'>
       <source src="./../assets/video/teaser.mp4" type="video/mp4">
     </video>
@@ -61,7 +61,7 @@ export default {
   filter:brightness(150%);
 }
 #logo {
-  background: url('./../assets/img/header3.png') no-repeat center center;
+  background: url('./../assets/img/header.png') no-repeat center center;
   background-size: cover;
 }
 /* 1280/680 + 2x 8rem padding */
