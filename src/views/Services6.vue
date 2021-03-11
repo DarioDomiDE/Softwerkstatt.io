@@ -5,7 +5,7 @@
       <h1>Leistungen</h1>
       <p class="mb-12 mx-auto w-full md:max-w-4xl text-left sm:text-center">Unsere Domäne, hierbei haben wir Spaß. Wir sind im Herzen Techies. Und unterstützen unsere Kunden in allen Phasen ihrer Digitalisierung. Eine Auwahl, was uns besonders am Herzen liegt:</p>
       <div id="articlesContainer">
-        <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-8 text-left">
+        <div class="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-x-8 gap-y-2 md:gap-y-4 lg:gap-y-8 text-left">
           <article :class="isActive(0) ? 'active' : '' + isEffect == 0 ? 'is-effect' : afterEffect == 0 ? 'after-effect' : ''" @mouseover="isEffect = 0" v-on:click="onClickActive(0)">
             <h3>
               <span>Strategie</span>
@@ -18,29 +18,29 @@
           </article>
           <article :class="isActive(1) ? 'active' : '' + isEffect == 1 ? 'is-effect' : ''" @mouseover="isEffect = 1" v-on:click="onClickActive(1)">
             <h3>
-              <span>Software Consulting</span>
+              <span>Konzeption</span>
               <div class="effect" :class="orientations[1] == 1 ? 'top' : orientations[1] == 2 ? 'right' : orientations[1] == 3 ? 'bottom' : 'left'">
-                <span class="text">Software Consulting</span>
+                <span class="text">Konzeption</span>
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Was braucht Ihre Lösung: Schnellste am Markt oder die Beste am Markt? Wir beraten Sie rund um Technologien und Frameworks und hinterfragen mit Ihnen, was für Sie wirklich wichtig ist statt nur dringend zu sein. Ist ein Prozess effizient? Oder nur effektiv?</p>
+            <p>Wir beraten Sie von der Idee bis zum Livegang, und unterstützen Sie dabei, mit einem anforderungsgerechtem Konzept den Grundstein für Potenzialsteigerungen zu setzen, indem wir mit Ihnen gemeinsam Lösungen auszuarbeiten und ein indivuelles Konzept erstellen.</p>
           </article>
           <article :class="isActive(2) ? 'active' : '' + isEffect == 2 ? 'is-effect' : ''" @mouseover="isEffect = 2" v-on:click="onClickActive(2)">
             <h3>
-              <span>Programmierung</span>
+              <span>Plattformen</span>
               <div class="effect" :class="orientations[2] == 1 ? 'top' : orientations[2] == 2 ? 'right' : orientations[2] == 3 ? 'bottom' : 'left'">
-                <span class="text">Programmierung</span>
+                <span class="text">Plattformen</span>
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Unser Herzstück: Wir bieten Ihnen unsere Erfahrung bei der Programmierung maßgeschneiderter Tools, Backends und Datenbanken an. Wir lieben Open Source, plattformübergreifend nutzbare Software und das Microsoft Ökosystem.</p>
+            <p>Wir wollen das Rad nicht neu zu erfinden, sondern die richtigen Tools und Systeme nutzen, um bei 50 % statt bei 0 anzufangen. Die richtige Wahl der Plattform ermöglicht es Ihnen, auf Funktionen aufzubauen, diese an Ihre Bedürfnisse anzupassen und die Potentiale für Ihre Software zu nutzen.</p>
           </article>
           <article :class="isActive(3) ? 'active' : '' + isEffect == 3 ? 'is-effect' : ''" @mouseover="isEffect = 3" v-on:click="onClickActive(3)">
             <h3>
-              <span>UX</span>
+              <span>Design &amp; UX</span>
               <div class="effect" :class="orientations[3] == 1 ? 'top' : orientations[3] == 2 ? 'right' : orientations[3] == 3 ? 'bottom' : 'left'">
-                <span class="text">UX</span>
+                <span class="text">Design &amp; UX</span>
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
@@ -48,23 +48,23 @@
           </article>
           <article :class="isActive(4) ? 'active' : '' + isEffect == 4 ? 'is-effect' : ''" @mouseover="isEffect = 4" v-on:click="onClickActive(4)">
             <h3>
-              <span>Konzeption</span>
+              <span>Websites</span>
               <div class="effect" :class="orientations[4] == 1 ? 'top' : orientations[4] == 2 ? 'right' : orientations[4] == 3 ? 'bottom' : 'left'">
-                <span class="text">Konzeption</span>
+                <span class="text">Websites</span>
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Wir beraten Sie von der Idee bis zum Livegang, und unterstützen Sie dabei, mit einem anforderungsgerechtem Konzept den Grundstein für Potenzialsteigerungen zu setzen, indem wir mit Ihnen gemeinsam Lösungen auszuarbeiten und ein indivuelles Konzept erstellen.</p>
+            <p>Web Plattformen und interne Web-Applikationen müssen hohen Anforderungen genügen: Plattformübergreifend auf Desktop und Mobile nutzbar sein, schnelle Ladezeiten gewährleisten und dem Unternehmen erlauben, Inhalte über ein CMS selbständig anzupassen.</p>
           </article>
           <article :class="isActive(5) ? 'active' : '' + isEffect == 5 ? 'is-effect' : ''" @mouseover="isEffect = 5" v-on:click="onClickActive(5)">
             <h3>
-              <span>Web Solutions</span>
+              <span>Programmierung</span>
               <div class="effect" :class="orientations[5] == 1 ? 'top' : orientations[5] == 2 ? 'right' : orientations[5] == 3 ? 'bottom' : 'left'">
-                <span class="text">Web Solutions</span>
+                <span class="text">Programmierung</span>
               </div>
             </h3>
             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg></span>
-            <p>Corporate Websites und interne Web-Applikationen müssen hohen Anforderungen genügen: Plattformübergreifend auf Desktop und Mobile nutzbar sein, schnelle Ladezeiten gewährleisten und dem Unternehmen erlauben, Inhalte über ein CMS selbständig anzupassen.</p>
+            <p>Unser Herzstück: Wir bieten Ihnen unsere Erfahrung bei der Programmierung maßgeschneiderter Tools, Backends und Datenbanken an. Wir lieben Open Source, plattformübergreifend nutzbare Software und das Microsoft Ökosystem.</p>
           </article>
         </div>
         <div class="hidden xl:block area area-y area-left" @mouseover="disableEffect(), left(1), left(4)"></div>
@@ -186,9 +186,6 @@ article {
   cursor: pointer;
   height: fit-content;
 }
-article.active .icon {
-  transform: rotate(180deg);
-}
 h3 {
   position: relative;
   margin-bottom: 0;
@@ -271,6 +268,9 @@ article:hover .effect .text {
   margin: -40px 25px 0 0;
   width: 30px;
   height: 30px;
+}
+article.active .icon {
+  transform: rotate(180deg);
 }
 .area {
   position: absolute;
