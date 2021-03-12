@@ -9,6 +9,7 @@ cp CNAME dist/CNAME
 cd dist
 # allow custom urls by overriding github's 404 page
 cp index.html 404.html
+cp ../sitemap.xml sitemap.xml
 # commit
 git init
 git add -A
