@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://softwerkstatt.io/</loc>
+        <priority>0.7</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://softwerkstatt.io/jobs</loc>
+        <priority>0.7</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <!-- <url>
+        <loc>https://softwerkstatt.io/jobs/fullstack-entwickler-hamburg</loc>
+        <priority>0.7</priority>
+        <changefreq>weekly</changefreq>
+    </url> -->
+    <!-- <url>
+        <loc>https://softwerkstatt.io/jobs/dotnet-entwickler-hamburg</loc>
+        <priority>0.7</priority>
+        <changefreq>weekly</changefreq>
+    </url> -->
+    <url>
+        <loc>https://softwerkstatt.io/wer-wir-sind</loc>
+        <priority>0.7</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://softwerkstatt.io/kontakt</loc>
+        <priority>0.3</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://softwerkstatt.io/privacy-policy</loc>
+        <priority>0.3</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://softwerkstatt.io/legal</loc>
+        <priority>0.3</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+</urlset>
